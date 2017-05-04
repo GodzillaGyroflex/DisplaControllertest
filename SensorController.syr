@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: SensorController.prj
 
@@ -144,32 +144,85 @@ Module <DisplayController> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <cent<3>> in unit <BinToBCD> has a constant value of 0 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <cent<2>> in unit <BinToBCD> has a constant value of 0 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <BinToBCD>.
     Related source file is "BinToBCD.v".
     Found 4-bit register for signal <un>.
-    Found 2-bit register for signal <cent<1:0>>.
+    Found 4-bit register for signal <milh>.
+    Found 4-bit register for signal <cent>.
     Found 4-bit register for signal <dec>.
-    Found 4-bit adder for signal <$add0000> created at line 45.
-    Found 4-bit adder for signal <$add0001> created at line 45.
-    Found 4-bit adder for signal <$add0002> created at line 45.
-    Found 4-bit adder for signal <$add0003> created at line 42.
-    Found 4-bit adder for signal <$add0004> created at line 45.
-    Found 4-bit adder for signal <$add0005> created at line 42.
-    Found 4-bit adder for signal <$add0006> created at line 45.
-    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0000> created at line 41.
-    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0001> created at line 41.
-    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0000> created at line 44.
-    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0001> created at line 44.
-    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0002> created at line 44.
-    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0003> created at line 44.
-    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0004> created at line 44.
+    Found 4-bit adder for signal <$add0000> created at line 50.
+    Found 4-bit adder for signal <$add0001> created at line 50.
+    Found 4-bit adder for signal <$add0002> created at line 50.
+    Found 4-bit adder for signal <$add0003> created at line 47.
+    Found 4-bit adder for signal <$add0004> created at line 50.
+    Found 4-bit adder for signal <$add0005> created at line 47.
+    Found 4-bit adder for signal <$add0006> created at line 50.
+    Found 4-bit adder for signal <$add0007> created at line 47.
+    Found 4-bit adder for signal <$add0008> created at line 50.
+    Found 4-bit adder for signal <$add0009> created at line 44.
+    Found 4-bit adder for signal <$add0010> created at line 47.
+    Found 4-bit adder for signal <$add0011> created at line 50.
+    Found 4-bit adder for signal <$add0012> created at line 44.
+    Found 4-bit adder for signal <$add0013> created at line 47.
+    Found 4-bit adder for signal <$add0014> created at line 50.
+    Found 4-bit adder for signal <$add0015> created at line 44.
+    Found 4-bit adder for signal <$add0016> created at line 47.
+    Found 4-bit adder for signal <$add0017> created at line 50.
+    Found 4-bit adder for signal <$add0018> created at line 41.
+    Found 4-bit adder for signal <$add0019> created at line 44.
+    Found 4-bit adder for signal <$add0020> created at line 47.
+    Found 4-bit adder for signal <$add0021> created at line 50.
+    Found 4-bit adder for signal <$add0022> created at line 41.
+    Found 4-bit adder for signal <$add0023> created at line 44.
+    Found 4-bit adder for signal <$add0024> created at line 47.
+    Found 4-bit adder for signal <$add0025> created at line 50.
+    Found 4-bit adder for signal <$add0026> created at line 41.
+    Found 4-bit adder for signal <$add0027> created at line 44.
+    Found 4-bit adder for signal <$add0028> created at line 47.
+    Found 4-bit adder for signal <$add0029> created at line 50.
+    Found 4-bit adder for signal <$add0030> created at line 41.
+    Found 4-bit adder for signal <$add0031> created at line 44.
+    Found 4-bit adder for signal <$add0032> created at line 47.
+    Found 4-bit adder for signal <$add0033> created at line 50.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0000> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0001> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0002> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0003> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0004> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0005> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0006> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0007> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0008> created at line 46.
+    Found 4-bit comparator greatequal for signal <cent_0$cmp_ge0009> created at line 46.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0000> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0001> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0002> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0003> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0004> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0005> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0006> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0007> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0008> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0009> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0010> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0011> created at line 49.
+    Found 4-bit comparator greatequal for signal <dec_0$cmp_ge0012> created at line 49.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0000> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0001> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0002> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh$cmp_ge0003> created at line 40.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0000> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0001> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0002> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0003> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0004> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0005> created at line 43.
+    Found 4-bit comparator greatequal for signal <milh_0$cmp_ge0006> created at line 43.
     Summary:
-	inferred  10 D-type flip-flop(s).
-	inferred   7 Adder/Subtractor(s).
-	inferred   7 Comparator(s).
+	inferred  16 D-type flip-flop(s).
+	inferred  34 Adder/Subtractor(s).
+	inferred  34 Comparator(s).
 Unit <BinToBCD> synthesized.
 
 
@@ -189,8 +242,7 @@ Unit <DisplayController> synthesized.
 
 Synthesizing Unit <SensorController>.
     Related source file is "SensorController.v".
-WARNING:Xst:653 - Signal <register> is used but never assigned. This sourceless signal will be automatically connected to value 11001100.
-WARNING:Xst:1780 - Signal <in0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <register> is used but never assigned. This sourceless signal will be automatically connected to value 0000101000010010.
 Unit <SensorController> synthesized.
 
 
@@ -200,14 +252,14 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 7
- 4-bit adder                                           : 7
+# Adders/Subtractors                                   : 34
+ 4-bit adder                                           : 34
 # Counters                                             : 1
  18-bit up counter                                     : 1
-# Registers                                            : 10
- 1-bit register                                        : 10
-# Comparators                                          : 7
- 4-bit comparator greatequal                           : 7
+# Registers                                            : 16
+ 1-bit register                                        : 16
+# Comparators                                          : 34
+ 4-bit comparator greatequal                           : 34
 # Multiplexers                                         : 1
  4-bit 4-to-1 multiplexer                              : 1
 # Decoders                                             : 1
@@ -227,14 +279,15 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 7
- 4-bit adder                                           : 7
+# Adders/Subtractors                                   : 34
+ 3-bit adder                                           : 4
+ 4-bit adder                                           : 30
 # Counters                                             : 1
  18-bit up counter                                     : 1
-# Registers                                            : 10
- Flip-Flops                                            : 10
-# Comparators                                          : 7
- 4-bit comparator greatequal                           : 7
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 34
+ 4-bit comparator greatequal                           : 34
 # Multiplexers                                         : 1
  4-bit 4-to-1 multiplexer                              : 1
 # Decoders                                             : 1
@@ -246,18 +299,29 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <un_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1426 - The value init of the FF/Latch un_2 hinder the constant cleaning in the block BinToBCD.
+WARNING:Xst:1426 - The value init of the FF/Latch un_3 hinder the constant cleaning in the block BinToBCD.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch cent_1 hinder the constant cleaning in the block BinToBCD.
+WARNING:Xst:1426 - The value init of the FF/Latch milh_1 hinder the constant cleaning in the block BinToBCD.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <dec_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dec_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dec_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dec_1> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch cent_2 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch cent_0 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch dec_2 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch dec_1 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch dec_0 hinder the constant cleaning in the block BinToBCD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <milh_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dec_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_1> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <un_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <un_1> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <un_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <BinToBCD/un_2> in Unit <SensorController> is equivalent to the following FF/Latch, which will be removed : <BinToBCD/cent_1> 
+INFO:Xst:2261 - The FF/Latch <BinToBCD/un_3> in Unit <SensorController> is equivalent to the following 6 FFs/Latches, which will be removed : <BinToBCD/dec_0> <BinToBCD/dec_1> <BinToBCD/dec_2> <BinToBCD/cent_0> <BinToBCD/cent_2> <BinToBCD/milh_1> 
 
 Optimizing unit <SensorController> ...
 
@@ -301,13 +365,15 @@ Design Statistics
 # IOs                              : 15
 
 Cell Usage :
-# BELS                             : 62
+# BELS                             : 69
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 17
-#      LUT2                        : 5
+#      LUT2                        : 4
 #      LUT3                        : 2
+#      LUT4                        : 7
 #      MUXCY                       : 17
+#      MUXF5                       : 1
 #      VCC                         : 1
 #      XORCY                       : 18
 # FlipFlops/Latches                : 19
@@ -325,9 +391,9 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                       14  out of   2448     0%  
+ Number of Slices:                       17  out of   2448     0%  
  Number of Slice Flip Flops:             19  out of   4896     0%  
- Number of 4 input LUTs:                 25  out of   4896     0%  
+ Number of 4 input LUTs:                 31  out of   4896     0%  
  Number of IOs:                          15
  Number of bonded IOBs:                  15  out of    108    13%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -370,7 +436,7 @@ Speed Grade: -4
 
    Minimum period: 4.351ns (Maximum Frequency: 229.832MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 5.981ns
+   Maximum output required time after clock: 7.974ns
    Maximum combinational path delay: 5.575ns
 
 Timing Detail:
@@ -418,23 +484,25 @@ Delay:               4.351ns (Levels of Logic = 18)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_clk1'
-  Total number of paths / destination ports: 25 / 10
+  Total number of paths / destination ports: 64 / 11
 -------------------------------------------------------------------------
-Offset:              5.981ns (Levels of Logic = 2)
-  Source:            DisplayController/count_17 (FF)
-  Destination:       seg0 (PAD)
+Offset:              7.974ns (Levels of Logic = 4)
+  Source:            DisplayController/count_16 (FF)
+  Destination:       seg3 (PAD)
   Source Clock:      fpga_clk1 rising
 
-  Data Path: DisplayController/count_17 to seg0
+  Data Path: DisplayController/count_16 to seg3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              7   0.591   0.883  DisplayController/count_17 (DisplayController/count_17)
-     LUT3:I0->O            3   0.704   0.531  seg31 (seg3_OBUF)
-     OBUF:I->O                 3.272          seg0_OBUF (seg0)
+     FDC:C->Q             14   0.591   1.175  DisplayController/count_16 (DisplayController/count_16)
+     LUT3:I0->O            1   0.704   0.000  DisplayController/Mmux_sseg_32 (DisplayController/Mmux_sseg_3)
+     MUXF5:I1->O           7   0.321   0.787  DisplayController/Mmux_sseg_2_f5 (DisplayController/sseg<0>)
+     LUT4:I1->O            1   0.704   0.420  DisplayController/Mrom_sseg_temp61 (seg6_OBUF)
+     OBUF:I->O                 3.272          seg6_OBUF (seg6)
     ----------------------------------------
-    Total                      5.981ns (4.567ns logic, 1.414ns route)
-                                       (76.4% logic, 23.6% route)
+    Total                      7.974ns (5.592ns logic, 2.382ns route)
+                                       (70.1% logic, 29.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -458,13 +526,13 @@ Delay:               5.575ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.31 secs
+Total CPU time to Xst completion: 5.29 secs
  
 --> 
 
-Total memory usage is 256076 kilobytes
+Total memory usage is 259340 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

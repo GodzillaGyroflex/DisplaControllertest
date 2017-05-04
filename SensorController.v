@@ -34,7 +34,7 @@ module SensorController(fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an
 	 wire [3:0] in1;
 	 wire [3:0] in2;
 	 wire [3:0] in3;
-	 reg [7:0] register = 204; 
+	 reg [15:0] register = 2578; 
 	 
 	 
 	/* Debouncer btn_plus (
@@ -68,13 +68,14 @@ module SensorController(fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an
     .bin(register), 
     .un(in3), 
     .dec(in2), 
-    .cent(in1)
+    .cent(in1),
+	 .milh(in0)
     );
 	 
 	 DisplayController DisplayController (
     .clk(fpga_clk1), 
     .reset(reset), 
-    .in0(4'h0), 
+    .in0(in0), 
     .in1(in1), 
     .in2(in2), 
     .in3(in3), 

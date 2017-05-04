@@ -1,0 +1,29 @@
+Command line:
+   BintoBCDtest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50534
+
+Thu May 04 16:17:54 2017
+
+
+ Elaboration Time: 0.249602 sec
+
+ Current Memory Usage: 1159.25 Meg
+
+ Total Signals          : 19
+ Total Nets             : 46
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 191
+Total Line Count : 42
+
+ Total Simulation Time: 0.249602 sec
+
+ Current Memory Usage: 1159.25 Meg
+
+Thu May 04 16:18:15 2017
+

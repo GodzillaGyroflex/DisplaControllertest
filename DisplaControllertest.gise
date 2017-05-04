@@ -22,6 +22,14 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="DisplaControllertest.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BinToBCD.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BinToBCD.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="BinToBCD.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BintoBCDtest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BintoBCDtest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="BintoBCDtest_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BintoBCDtest_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM2_arwz.ucf" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SensorController.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SensorController.cmd_log"/>
@@ -65,18 +73,96 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="ipcore_dir/DCM2.v" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sensorcontroller.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sensorcontroller.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sensorcontroller.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1493925450" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1493925450">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925462" xil_pn:in_ck="-3474447043987123881" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493925462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BinToBCD.v"/>
+      <outfile xil_pn:name="BintoBCDtest.v"/>
+      <outfile xil_pn:name="DCM_Controller.v"/>
+      <outfile xil_pn:name="Debouncer.v"/>
+      <outfile xil_pn:name="DisplayController.v"/>
+      <outfile xil_pn:name="Reg_Controller.v"/>
+      <outfile xil_pn:name="SensorController.v"/>
+      <outfile xil_pn:name="sensor_cont_tb.v"/>
+      <outfile xil_pn:name="testef.v"/>
+      <outfile xil_pn:name="testeff.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925465" xil_pn:in_ck="2640051229091872659" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2736707525562190780" xil_pn:start_ts="1493925465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925465" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4936530550906915582" xil_pn:start_ts="1493925465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925465" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6651423690070299717" xil_pn:start_ts="1493925465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925465" xil_pn:in_ck="-3474447043987123881" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493925465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BinToBCD.v"/>
+      <outfile xil_pn:name="BintoBCDtest.v"/>
+      <outfile xil_pn:name="DCM_Controller.v"/>
+      <outfile xil_pn:name="Debouncer.v"/>
+      <outfile xil_pn:name="DisplayController.v"/>
+      <outfile xil_pn:name="Reg_Controller.v"/>
+      <outfile xil_pn:name="SensorController.v"/>
+      <outfile xil_pn:name="sensor_cont_tb.v"/>
+      <outfile xil_pn:name="testef.v"/>
+      <outfile xil_pn:name="testeff.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925470" xil_pn:in_ck="-3474447043987123881" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4495817049832434585" xil_pn:start_ts="1493925465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="BintoBCDtest_beh.prj"/>
+      <outfile xil_pn:name="BintoBCDtest_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1493925470" xil_pn:in_ck="-1514453422447889388" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3066861591257079748" xil_pn:start_ts="1493925470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BintoBCDtest_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
     <transform xil_pn:end_ts="1493830723" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1493830723">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -105,12 +191,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493923349" xil_pn:in_ck="2528723513524982163" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2621249923930333362" xil_pn:start_ts="1493923341">
+    <transform xil_pn:end_ts="1493925562" xil_pn:in_ck="2528723513524982163" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2621249923930333362" xil_pn:start_ts="1493925553">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="SensorController.lso"/>
       <outfile xil_pn:name="SensorController.ngc"/>
       <outfile xil_pn:name="SensorController.ngr"/>
@@ -127,7 +214,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493923391" xil_pn:in_ck="8979385841217624296" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2134287663481038206" xil_pn:start_ts="1493923385">
+    <transform xil_pn:end_ts="1493925567" xil_pn:in_ck="8979385841217624296" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2134287663481038206" xil_pn:start_ts="1493925562">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="SensorController.bld"/>
@@ -136,7 +223,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493923396" xil_pn:in_ck="-916595672227363159" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493923391">
+    <transform xil_pn:end_ts="1493925573" xil_pn:in_ck="-916595672227363159" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493925567">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="SensorController.pcf"/>
@@ -149,7 +236,7 @@
       <outfile xil_pn:name="SensorController_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493923410" xil_pn:in_ck="5706987577689430018" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493923396">
+    <transform xil_pn:end_ts="1493925587" xil_pn:in_ck="5706987577689430018" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493925573">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="SensorController.ncd"/>
@@ -163,7 +250,7 @@
       <outfile xil_pn:name="SensorController_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493923428" xil_pn:in_ck="2509107701036380001" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1493923419">
+    <transform xil_pn:end_ts="1493925662" xil_pn:in_ck="2509107701036380001" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1493925651">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="SensorController.ut"/>
@@ -175,13 +262,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1493923183" xil_pn:in_ck="-5494991423668929173" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1493923182">
+    <transform xil_pn:end_ts="1493923431" xil_pn:in_ck="-5494991423668929173" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1493923430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1493923410" xil_pn:in_ck="-4365865130867183835" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493923406">
+    <transform xil_pn:end_ts="1493925587" xil_pn:in_ck="-4365865130867183835" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493925583">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="SensorController.twr"/>
