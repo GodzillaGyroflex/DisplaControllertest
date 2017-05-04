@@ -60,14 +60,14 @@
 # NET "sw<0>"     LOC = "P38"; # Bank = 2, Pin name = IP,                  Sch name = SW0
 # NET "sw<1>"     LOC = "P36"; # Bank = 3, Pin name = IP,                  Sch name = SW1
 # NET "enable"     LOC = "P29"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW2
-# NET "sw<3>"     LOC = "P24"; # Bank = 3, Pin name = IP                   Sch name = SW3
-# NET "sw<4>"     LOC = "P18"; # Bank = 3, Pin name = IP,                  Sch name = SW4
+NET "Mode"     LOC = "P24"; # Bank = 3, Pin name = IP                   Sch name = SW3
+NET "Stress"     LOC = "P18"; # Bank = 3, Pin name = IP,                  Sch name = SW4
 # NET "sw<5>"     LOC = "P12"; # Bank = 3, Pin name = IP/VREF_3,           Sch name = SW5
 # NET "sw<6>"     LOC = "P10"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW6
 # NET "sw<7>"     LOC = "P6";  # Bank = 3, Pin name = IP,                  Sch name = SW7#
 
 # Buttons                                                                                                                        
- NET "reset"    LOC = "P69"; # Bank = 2, Pin name = IP,                   Sch name = BTN0
+// NET "reset"    LOC = "P69"; # Bank = 2, Pin name = IP,                   Sch name = BTN0
 # NET "btn1"    LOC = "P48"; # Bank = 2, Pin name = IP_L3N_2/VREF_2       Sch name = BTN1
 // NET "btn2"    LOC = "P47"; # Bank = 2, Pin name = IP_L3P_2,             Sch name = BTN2
 // NET "btn3"    LOC = "P41"; # Bank = 2, Pin name = IP,                   Sch name = BTN3

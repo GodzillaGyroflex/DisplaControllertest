@@ -38,18 +38,15 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SensorController.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SensorController.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SensorController.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SensorController.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="SensorController.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="SensorController.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SensorController.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="SensorController.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SensorController.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SensorController.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="SensorController.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="SensorController.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="SensorController.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="SensorController.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="SensorController.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SensorController.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SensorController_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="SensorController_guide.ncd" xil_pn:origination="imported"/>
@@ -57,15 +54,43 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SensorController_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SensorController_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="SensorController_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SensorController_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SensorController_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SensorController_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="SensorController_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SensorController_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SensorController_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SensorController_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SensorController_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SensorController_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Top.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Top.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Top.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Top.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Top.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Top.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Top.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Top.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Top.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Top.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Top.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Top.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Top.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Top.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Top.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Top.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Top.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Top_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Top_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Top_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Top_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Top_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Top_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Top_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Top_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -79,6 +104,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sensorcontroller.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sensorcontroller.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sensorcontroller.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="top.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="top.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -116,6 +144,7 @@
     <transform xil_pn:end_ts="1493925465" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6651423690070299717" xil_pn:start_ts="1493925465">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1493925465" xil_pn:in_ck="-3474447043987123881" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493925465">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -152,112 +181,115 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493830723" xil_pn:name="TRAN_schematicsToHdl" xil_pn:start_ts="1493830723">
+    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-9220452403676013396" xil_pn:start_ts="1493929450">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493830723" xil_pn:name="TRAN_regenerateCores" xil_pn:start_ts="1493830723">
+    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6229109801353681872" xil_pn:start_ts="1493929450">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493830723" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1493830723">
+    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1493929450">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493926023" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2492063607701933515" xil_pn:start_ts="1493926023">
+    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5375096142591415978" xil_pn:start_ts="1493929450">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493830723" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1493830723">
+    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252417716204" xil_pn:start_ts="1493929450">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493830723" xil_pn:name="TRAN_platgen" xil_pn:start_ts="1493830723">
+    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5423068898193296646" xil_pn:start_ts="1493929450">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493927151" xil_pn:in_ck="6756377043152448179" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2621249923930333362" xil_pn:start_ts="1493927142">
+    <transform xil_pn:end_ts="1493929769" xil_pn:in_ck="1015151610908615754" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2889374167054534525" xil_pn:start_ts="1493929752">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="SensorController.lso"/>
-      <outfile xil_pn:name="SensorController.ngc"/>
       <outfile xil_pn:name="SensorController.ngr"/>
-      <outfile xil_pn:name="SensorController.prj"/>
-      <outfile xil_pn:name="SensorController.stx"/>
-      <outfile xil_pn:name="SensorController.syr"/>
-      <outfile xil_pn:name="SensorController.xst"/>
-      <outfile xil_pn:name="SensorController_xst.xrpt"/>
+      <outfile xil_pn:name="Top.lso"/>
+      <outfile xil_pn:name="Top.ngc"/>
+      <outfile xil_pn:name="Top.ngr"/>
+      <outfile xil_pn:name="Top.prj"/>
+      <outfile xil_pn:name="Top.stx"/>
+      <outfile xil_pn:name="Top.syr"/>
+      <outfile xil_pn:name="Top.xst"/>
+      <outfile xil_pn:name="Top_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1493927151" xil_pn:in_ck="85592440060668420" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6294853543692021408" xil_pn:start_ts="1493927151">
+    <transform xil_pn:end_ts="1493929650" xil_pn:in_ck="85592440060668420" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952577109" xil_pn:start_ts="1493929650">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493927156" xil_pn:in_ck="8979385841217624296" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2134287663481038206" xil_pn:start_ts="1493927151">
+    <transform xil_pn:end_ts="1493929776" xil_pn:in_ck="2941707494839755905" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8283412161079782829" xil_pn:start_ts="1493929769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SensorController.bld"/>
-      <outfile xil_pn:name="SensorController.ngd"/>
-      <outfile xil_pn:name="SensorController_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="Top.bld"/>
+      <outfile xil_pn:name="Top.ngd"/>
+      <outfile xil_pn:name="Top_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493927162" xil_pn:in_ck="-916595672227363159" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493927156">
+    <transform xil_pn:end_ts="1493929781" xil_pn:in_ck="-3985240643265663197" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1493929776">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="SensorController.pcf"/>
-      <outfile xil_pn:name="SensorController_map.map"/>
-      <outfile xil_pn:name="SensorController_map.mrp"/>
-      <outfile xil_pn:name="SensorController_map.ncd"/>
-      <outfile xil_pn:name="SensorController_map.ngm"/>
-      <outfile xil_pn:name="SensorController_map.xrpt"/>
-      <outfile xil_pn:name="SensorController_summary.xml"/>
-      <outfile xil_pn:name="SensorController_usage.xml"/>
+      <outfile xil_pn:name="Top.pcf"/>
+      <outfile xil_pn:name="Top_map.map"/>
+      <outfile xil_pn:name="Top_map.mrp"/>
+      <outfile xil_pn:name="Top_map.ncd"/>
+      <outfile xil_pn:name="Top_map.ngm"/>
+      <outfile xil_pn:name="Top_map.xrpt"/>
+      <outfile xil_pn:name="Top_summary.xml"/>
+      <outfile xil_pn:name="Top_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493927175" xil_pn:in_ck="5706987577689430018" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493927162">
+    <transform xil_pn:end_ts="1493929797" xil_pn:in_ck="6359689317683855221" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1493929781">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SensorController.ncd"/>
-      <outfile xil_pn:name="SensorController.pad"/>
-      <outfile xil_pn:name="SensorController.par"/>
-      <outfile xil_pn:name="SensorController.ptwx"/>
-      <outfile xil_pn:name="SensorController.unroutes"/>
-      <outfile xil_pn:name="SensorController.xpi"/>
-      <outfile xil_pn:name="SensorController_pad.csv"/>
-      <outfile xil_pn:name="SensorController_pad.txt"/>
-      <outfile xil_pn:name="SensorController_par.xrpt"/>
+      <outfile xil_pn:name="Top.ncd"/>
+      <outfile xil_pn:name="Top.pad"/>
+      <outfile xil_pn:name="Top.par"/>
+      <outfile xil_pn:name="Top.ptwx"/>
+      <outfile xil_pn:name="Top.unroutes"/>
+      <outfile xil_pn:name="Top.xpi"/>
+      <outfile xil_pn:name="Top_pad.csv"/>
+      <outfile xil_pn:name="Top_pad.txt"/>
+      <outfile xil_pn:name="Top_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1493927190" xil_pn:in_ck="2509107701036380001" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1493927180">
+    <transform xil_pn:end_ts="1493929814" xil_pn:in_ck="-1932720421308360617" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1493929804">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SensorController.ut"/>
+      <outfile xil_pn:name="Top.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="sensorcontroller.bgn"/>
-      <outfile xil_pn:name="sensorcontroller.bit"/>
-      <outfile xil_pn:name="sensorcontroller.drc"/>
+      <outfile xil_pn:name="top.bgn"/>
+      <outfile xil_pn:name="top.bit"/>
+      <outfile xil_pn:name="top.drc"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1493927196" xil_pn:in_ck="-5494991423668929173" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1493927195">
+    <transform xil_pn:end_ts="1493929820" xil_pn:in_ck="-877141182950908661" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1493929819">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493927175" xil_pn:in_ck="-4365865130867183835" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493927172">
+    <transform xil_pn:end_ts="1493929797" xil_pn:in_ck="6481453974881629083" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493929793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SensorController.twr"/>
-      <outfile xil_pn:name="SensorController.twx"/>
+      <outfile xil_pn:name="Top.twr"/>
+      <outfile xil_pn:name="Top.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>

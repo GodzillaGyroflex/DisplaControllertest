@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SensorController(fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an1,an2,an3,an0,led0
+module SensorController(value,fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an1,an2,an3,an0,led0
     );
 	 
 	 
@@ -34,7 +34,7 @@ module SensorController(fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an
 	 wire [3:0] in1;
 	 wire [3:0] in2;
 	 wire [3:0] in3;
-	 reg [15:0] register = 2578; 
+	 input [15:0] value; 
 	 
 	 
 	/* Debouncer btn_plus (
@@ -65,7 +65,7 @@ module SensorController(fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an
 	 
 	 BinToBCD BinToBCD (
 	 .clk(fpga_clk1),
-    .bin(register), 
+    .bin(value), 
     .un(in3), 
     .dec(in2), 
     .cent(in1),

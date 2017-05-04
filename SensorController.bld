@@ -13,6 +13,24 @@ Done.
 Annotating constraints to design from ucf file "TOP_MODULE.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "Mode"     LOC = "P24";>
+   [TOP_MODULE.ucf(63)]: NET "Mode" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Mode"     LOC = "P24";> [TOP_MODULE.ucf(63)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Stress"     LOC = "P18";>
+   [TOP_MODULE.ucf(64)]: NET "Stress" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Stress"     LOC = "P18";> [TOP_MODULE.ucf(64)]' could not be found and
+   so the Locate constraint will be removed.
+
 Done...
 
 Checking expanded design ...
@@ -25,13 +43,14 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
-  Number of warnings:   0
+  Number of errors:     2
+  Number of warnings:   2
 
-Total memory usage is 154180 kilobytes
+Total memory usage is 154948 kilobytes
 
-Writing NGD file "SensorController.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec
 Total CPU time to NGDBUILD completion:   3 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "SensorController.bld"...
