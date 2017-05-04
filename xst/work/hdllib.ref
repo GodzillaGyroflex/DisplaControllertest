@@ -1,5 +1,5 @@
 MO Reg_Controller NULL Reg_Controller.v vlg35/_reg___controller.bin 1493922663
-MO SensorController NULL SensorController.v vlg76/_sensor_controller.bin 1493926147
-MO BinToBCD NULL BinToBCD.v vlg5D/_bin_to_b_c_d.bin 1493926147
-MO DisplayController NULL DisplayController.v vlg42/_display_controller.bin 1493926147
+MO SensorController NULL SensorController.v vlg76/_sensor_controller.bin 1493927145
+MO BinToBCD NULL BinToBCD.v vlg5D/_bin_to_b_c_d.bin 1493927145
+MO DisplayController NULL DisplayController.v vlg42/_display_controller.bin 1493927145
 MO Debouncer NULL Debouncer.v vlg63/_debouncer.bin 1493922663
