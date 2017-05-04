@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu May 04 15:43:14 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led0" LOCATE = SITE "P15" LEVEL 1;
+COMP "dp" LOCATE = SITE "P22" LEVEL 1;
+COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
+COMP "an0" LOCATE = SITE "P34" LEVEL 1;
+COMP "an1" LOCATE = SITE "P33" LEVEL 1;
+COMP "an2" LOCATE = SITE "P32" LEVEL 1;
+COMP "an3" LOCATE = SITE "P26" LEVEL 1;
+COMP "seg0" LOCATE = SITE "P25" LEVEL 1;
+COMP "seg1" LOCATE = SITE "P16" LEVEL 1;
+COMP "seg2" LOCATE = SITE "P23" LEVEL 1;
+COMP "seg3" LOCATE = SITE "P21" LEVEL 1;
+COMP "seg4" LOCATE = SITE "P20" LEVEL 1;
+COMP "seg5" LOCATE = SITE "P17" LEVEL 1;
+COMP "seg6" LOCATE = SITE "P83" LEVEL 1;
+COMP "reset" LOCATE = SITE "P69" LEVEL 1;
+NET "fpga_clk1_BUFGP/IBUFG" BEL "fpga_clk1_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+TIMEGRP fpga_clk1 = BEL "DisplayController/count_0" BEL
+        "DisplayController/count_1" BEL "DisplayController/count_2" BEL
+        "DisplayController/count_3" BEL "DisplayController/count_4" BEL
+        "DisplayController/count_5" BEL "DisplayController/count_6" BEL
+        "DisplayController/count_7" BEL "DisplayController/count_8" BEL
+        "DisplayController/count_9" BEL "DisplayController/count_10" BEL
+        "DisplayController/count_11" BEL "DisplayController/count_12" BEL
+        "DisplayController/count_13" BEL "DisplayController/count_14" BEL
+        "DisplayController/count_15" BEL "DisplayController/count_16" BEL
+        "DisplayController/count_17" BEL "BinToBCD/un_2" BEL
+        "fpga_clk1_BUFGP/BUFG.GCLKMUX" BEL "fpga_clk1_BUFGP/BUFG";
+TS_fpga_clk1 = PERIOD TIMEGRP "fpga_clk1" 40 ns HIGH 50%;
+SCHEMATIC END;
+

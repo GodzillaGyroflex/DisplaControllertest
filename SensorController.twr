@@ -1,0 +1,695 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
+-fastpaths -xml SensorController.twx SensorController.ncd -o
+SensorController.twr SensorController.pcf -ucf TOP_MODULE.ucf
+
+Design file:              SensorController.ncd
+Physical constraint file: SensorController.pcf
+Device,package,speed:     xc3s250e,tq144,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_fpga_clk1 = PERIOD TIMEGRP "fpga_clk1" 40 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 171 paths analyzed, 43 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.979ns.
+--------------------------------------------------------------------------------
+
+Paths for end point DisplayController/count_17 (SLICE_X39Y18.CIN), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     36.021ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_0 (FF)
+  Destination:          DisplayController/count_17 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.964ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.015ns (0.029 - 0.044)
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_0 to DisplayController/count_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.XQ      Tcko                  0.591   DisplayController/count<0>
+                                                       DisplayController/count_0
+    SLICE_X39Y10.F3      net (fanout=1)        0.383   DisplayController/count<0>
+    SLICE_X39Y10.COUT    Topcyf                1.162   DisplayController/count<0>
+                                                       DisplayController/Mcount_count_lut<0>_INV_0
+                                                       DisplayController/Mcount_count_cy<0>
+                                                       DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.COUT    Tbyp                  0.118   DisplayController/count<2>
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.COUT    Tbyp                  0.118   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.COUT    Tbyp                  0.118   DisplayController/count<14>
+                                                       DisplayController/Mcount_count_cy<14>
+                                                       DisplayController/Mcount_count_cy<15>
+    SLICE_X39Y18.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<15>
+    SLICE_X39Y18.CLK     Tcinck                1.002   DisplayController/count<16>
+                                                       DisplayController/Mcount_count_cy<16>
+                                                       DisplayController/Mcount_count_xor<17>
+                                                       DisplayController/count_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.964ns (3.581ns logic, 0.383ns route)
+                                                       (90.3% logic, 9.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_1 (FF)
+  Destination:          DisplayController/count_17 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.949ns (Levels of Logic = 9)
+  Clock Path Skew:      -0.015ns (0.029 - 0.044)
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_1 to DisplayController/count_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.YQ      Tcko                  0.587   DisplayController/count<0>
+                                                       DisplayController/count_1
+    SLICE_X39Y10.G1      net (fanout=1)        0.533   DisplayController/count<1>
+    SLICE_X39Y10.COUT    Topcyg                1.001   DisplayController/count<0>
+                                                       DisplayController/count<1>_rt
+                                                       DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.COUT    Tbyp                  0.118   DisplayController/count<2>
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.COUT    Tbyp                  0.118   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.COUT    Tbyp                  0.118   DisplayController/count<14>
+                                                       DisplayController/Mcount_count_cy<14>
+                                                       DisplayController/Mcount_count_cy<15>
+    SLICE_X39Y18.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<15>
+    SLICE_X39Y18.CLK     Tcinck                1.002   DisplayController/count<16>
+                                                       DisplayController/Mcount_count_cy<16>
+                                                       DisplayController/Mcount_count_xor<17>
+                                                       DisplayController/count_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.949ns (3.416ns logic, 0.533ns route)
+                                                       (86.5% logic, 13.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.061ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_2 (FF)
+  Destination:          DisplayController/count_17 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.924ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.015ns (0.029 - 0.044)
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_2 to DisplayController/count_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y11.XQ      Tcko                  0.591   DisplayController/count<2>
+                                                       DisplayController/count_2
+    SLICE_X39Y11.F2      net (fanout=1)        0.461   DisplayController/count<2>
+    SLICE_X39Y11.COUT    Topcyf                1.162   DisplayController/count<2>
+                                                       DisplayController/count<2>_rt
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.COUT    Tbyp                  0.118   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.COUT    Tbyp                  0.118   DisplayController/count<14>
+                                                       DisplayController/Mcount_count_cy<14>
+                                                       DisplayController/Mcount_count_cy<15>
+    SLICE_X39Y18.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<15>
+    SLICE_X39Y18.CLK     Tcinck                1.002   DisplayController/count<16>
+                                                       DisplayController/Mcount_count_cy<16>
+                                                       DisplayController/Mcount_count_xor<17>
+                                                       DisplayController/count_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.924ns (3.463ns logic, 0.461ns route)
+                                                       (88.3% logic, 11.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point DisplayController/count_15 (SLICE_X39Y17.CIN), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     36.154ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_0 (FF)
+  Destination:          DisplayController/count_15 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.846ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_0 to DisplayController/count_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.XQ      Tcko                  0.591   DisplayController/count<0>
+                                                       DisplayController/count_0
+    SLICE_X39Y10.F3      net (fanout=1)        0.383   DisplayController/count<0>
+    SLICE_X39Y10.COUT    Topcyf                1.162   DisplayController/count<0>
+                                                       DisplayController/Mcount_count_lut<0>_INV_0
+                                                       DisplayController/Mcount_count_cy<0>
+                                                       DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.COUT    Tbyp                  0.118   DisplayController/count<2>
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.COUT    Tbyp                  0.118   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CLK     Tcinck                1.002   DisplayController/count<14>
+                                                       DisplayController/Mcount_count_cy<14>
+                                                       DisplayController/Mcount_count_xor<15>
+                                                       DisplayController/count_15
+    -------------------------------------------------  ---------------------------
+    Total                                      3.846ns (3.463ns logic, 0.383ns route)
+                                                       (90.0% logic, 10.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.169ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_1 (FF)
+  Destination:          DisplayController/count_15 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.831ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_1 to DisplayController/count_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.YQ      Tcko                  0.587   DisplayController/count<0>
+                                                       DisplayController/count_1
+    SLICE_X39Y10.G1      net (fanout=1)        0.533   DisplayController/count<1>
+    SLICE_X39Y10.COUT    Topcyg                1.001   DisplayController/count<0>
+                                                       DisplayController/count<1>_rt
+                                                       DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.COUT    Tbyp                  0.118   DisplayController/count<2>
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.COUT    Tbyp                  0.118   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CLK     Tcinck                1.002   DisplayController/count<14>
+                                                       DisplayController/Mcount_count_cy<14>
+                                                       DisplayController/Mcount_count_xor<15>
+                                                       DisplayController/count_15
+    -------------------------------------------------  ---------------------------
+    Total                                      3.831ns (3.298ns logic, 0.533ns route)
+                                                       (86.1% logic, 13.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.194ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_2 (FF)
+  Destination:          DisplayController/count_15 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.806ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_2 to DisplayController/count_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y11.XQ      Tcko                  0.591   DisplayController/count<2>
+                                                       DisplayController/count_2
+    SLICE_X39Y11.F2      net (fanout=1)        0.461   DisplayController/count<2>
+    SLICE_X39Y11.COUT    Topcyf                1.162   DisplayController/count<2>
+                                                       DisplayController/count<2>_rt
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.COUT    Tbyp                  0.118   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<13>
+    SLICE_X39Y17.CLK     Tcinck                1.002   DisplayController/count<14>
+                                                       DisplayController/Mcount_count_cy<14>
+                                                       DisplayController/Mcount_count_xor<15>
+                                                       DisplayController/count_15
+    -------------------------------------------------  ---------------------------
+    Total                                      3.806ns (3.345ns logic, 0.461ns route)
+                                                       (87.9% logic, 12.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point DisplayController/count_13 (SLICE_X39Y16.CIN), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     36.272ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_0 (FF)
+  Destination:          DisplayController/count_13 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.728ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_0 to DisplayController/count_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.XQ      Tcko                  0.591   DisplayController/count<0>
+                                                       DisplayController/count_0
+    SLICE_X39Y10.F3      net (fanout=1)        0.383   DisplayController/count<0>
+    SLICE_X39Y10.COUT    Topcyf                1.162   DisplayController/count<0>
+                                                       DisplayController/Mcount_count_lut<0>_INV_0
+                                                       DisplayController/Mcount_count_cy<0>
+                                                       DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.COUT    Tbyp                  0.118   DisplayController/count<2>
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CLK     Tcinck                1.002   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_xor<13>
+                                                       DisplayController/count_13
+    -------------------------------------------------  ---------------------------
+    Total                                      3.728ns (3.345ns logic, 0.383ns route)
+                                                       (89.7% logic, 10.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.287ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_1 (FF)
+  Destination:          DisplayController/count_13 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.713ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_1 to DisplayController/count_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.YQ      Tcko                  0.587   DisplayController/count<0>
+                                                       DisplayController/count_1
+    SLICE_X39Y10.G1      net (fanout=1)        0.533   DisplayController/count<1>
+    SLICE_X39Y10.COUT    Topcyg                1.001   DisplayController/count<0>
+                                                       DisplayController/count<1>_rt
+                                                       DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<1>
+    SLICE_X39Y11.COUT    Tbyp                  0.118   DisplayController/count<2>
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CLK     Tcinck                1.002   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_xor<13>
+                                                       DisplayController/count_13
+    -------------------------------------------------  ---------------------------
+    Total                                      3.713ns (3.180ns logic, 0.533ns route)
+                                                       (85.6% logic, 14.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.312ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               DisplayController/count_2 (FF)
+  Destination:          DisplayController/count_13 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      3.688ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 0.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: DisplayController/count_2 to DisplayController/count_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y11.XQ      Tcko                  0.591   DisplayController/count<2>
+                                                       DisplayController/count_2
+    SLICE_X39Y11.F2      net (fanout=1)        0.461   DisplayController/count<2>
+    SLICE_X39Y11.COUT    Topcyf                1.162   DisplayController/count<2>
+                                                       DisplayController/count<2>_rt
+                                                       DisplayController/Mcount_count_cy<2>
+                                                       DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<3>
+    SLICE_X39Y12.COUT    Tbyp                  0.118   DisplayController/count<4>
+                                                       DisplayController/Mcount_count_cy<4>
+                                                       DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<5>
+    SLICE_X39Y13.COUT    Tbyp                  0.118   DisplayController/count<6>
+                                                       DisplayController/Mcount_count_cy<6>
+                                                       DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<7>
+    SLICE_X39Y14.COUT    Tbyp                  0.118   DisplayController/count<8>
+                                                       DisplayController/Mcount_count_cy<8>
+                                                       DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<9>
+    SLICE_X39Y15.COUT    Tbyp                  0.118   DisplayController/count<10>
+                                                       DisplayController/Mcount_count_cy<10>
+                                                       DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CIN     net (fanout=1)        0.000   DisplayController/Mcount_count_cy<11>
+    SLICE_X39Y16.CLK     Tcinck                1.002   DisplayController/count<12>
+                                                       DisplayController/Mcount_count_cy<12>
+                                                       DisplayController/Mcount_count_xor<13>
+                                                       DisplayController/count_13
+    -------------------------------------------------  ---------------------------
+    Total                                      3.688ns (3.227ns logic, 0.461ns route)
+                                                       (87.5% logic, 12.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_fpga_clk1 = PERIOD TIMEGRP "fpga_clk1" 40 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point DisplayController/count_0 (SLICE_X39Y10.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.580ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DisplayController/count_0 (FF)
+  Destination:          DisplayController/count_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.580ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 40.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: DisplayController/count_0 to DisplayController/count_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y10.XQ      Tcko                  0.473   DisplayController/count<0>
+                                                       DisplayController/count_0
+    SLICE_X39Y10.F3      net (fanout=1)        0.306   DisplayController/count<0>
+    SLICE_X39Y10.CLK     Tckf        (-Th)    -0.801   DisplayController/count<0>
+                                                       DisplayController/Mcount_count_lut<0>_INV_0
+                                                       DisplayController/Mcount_count_xor<0>
+                                                       DisplayController/count_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.580ns (1.274ns logic, 0.306ns route)
+                                                       (80.6% logic, 19.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point DisplayController/count_16 (SLICE_X39Y18.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.583ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DisplayController/count_16 (FF)
+  Destination:          DisplayController/count_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.583ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 40.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: DisplayController/count_16 to DisplayController/count_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y18.XQ      Tcko                  0.473   DisplayController/count<16>
+                                                       DisplayController/count_16
+    SLICE_X39Y18.F3      net (fanout=8)        0.309   DisplayController/count<16>
+    SLICE_X39Y18.CLK     Tckf        (-Th)    -0.801   DisplayController/count<16>
+                                                       DisplayController/count<16>_rt
+                                                       DisplayController/Mcount_count_xor<16>
+                                                       DisplayController/count_16
+    -------------------------------------------------  ---------------------------
+    Total                                      1.583ns (1.274ns logic, 0.309ns route)
+                                                       (80.5% logic, 19.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point DisplayController/count_2 (SLICE_X39Y11.F2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.643ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               DisplayController/count_2 (FF)
+  Destination:          DisplayController/count_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.643ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         fpga_clk1_BUFGP rising at 40.000ns
+  Destination Clock:    fpga_clk1_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: DisplayController/count_2 to DisplayController/count_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y11.XQ      Tcko                  0.473   DisplayController/count<2>
+                                                       DisplayController/count_2
+    SLICE_X39Y11.F2      net (fanout=1)        0.369   DisplayController/count<2>
+    SLICE_X39Y11.CLK     Tckf        (-Th)    -0.801   DisplayController/count<2>
+                                                       DisplayController/count<2>_rt
+                                                       DisplayController/Mcount_count_xor<2>
+                                                       DisplayController/count_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.643ns (1.274ns logic, 0.369ns route)
+                                                       (77.5% logic, 22.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_fpga_clk1 = PERIOD TIMEGRP "fpga_clk1" 40 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 36.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: DisplayController/count<0>/SR
+  Logical resource: DisplayController/count_0/SR
+  Location pin: SLICE_X39Y10.SR
+  Clock network: led0_OBUF
+--------------------------------------------------------------------------------
+Slack: 36.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: DisplayController/count<0>/SR
+  Logical resource: DisplayController/count_0/SR
+  Location pin: SLICE_X39Y10.SR
+  Clock network: led0_OBUF
+--------------------------------------------------------------------------------
+Slack: 36.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: DisplayController/count<0>/SR
+  Logical resource: DisplayController/count_1/SR
+  Location pin: SLICE_X39Y10.SR
+  Clock network: led0_OBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock fpga_clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+fpga_clk1      |    3.979|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 171 paths, 0 nets, and 36 connections
+
+Design statistics:
+   Minimum period:   3.979ns{1}   (Maximum frequency: 251.319MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu May 04 15:43:28 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 173 MB
+
+
+
