@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu May 04 16:19:31 2017
+// Written by: Map P.20131013 on Thu May 04 16:29:23 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -20,17 +20,5 @@ COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
 COMP "an0" LOCATE = SITE "P34" LEVEL 1;
 COMP "an1" LOCATE = SITE "P33" LEVEL 1;
 COMP "an2" LOCATE = SITE "P32" LEVEL 1;
-TIMEGRP fpga_clk1 = BEL "DisplayController/count_0" BEL
-        "DisplayController/count_1" BEL "DisplayController/count_2" BEL
-        "DisplayController/count_3" BEL "DisplayController/count_4" BEL
-        "DisplayController/count_5" BEL "DisplayController/count_6" BEL
-        "DisplayController/count_7" BEL "DisplayController/count_8" BEL
-        "DisplayController/count_9" BEL "DisplayController/count_10" BEL
-        "DisplayController/count_11" BEL "DisplayController/count_12" BEL
-        "DisplayController/count_13" BEL "DisplayController/count_14" BEL
-        "DisplayController/count_15" BEL "DisplayController/count_16" BEL
-        "DisplayController/count_17" BEL "BinToBCD/un_3" BEL
-        "fpga_clk1_BUFGP/BUFG.GCLKMUX" BEL "fpga_clk1_BUFGP/BUFG";
-TS_fpga_clk1 = PERIOD TIMEGRP "fpga_clk1" 40 ns HIGH 50%;
 SCHEMATIC END;
 

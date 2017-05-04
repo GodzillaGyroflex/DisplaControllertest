@@ -7,8 +7,8 @@
 #NET "Clk2"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5P_2/D4/GCLK30, Sch name = CLK2
 #NET "lut_end" XBLKNM=CRIT_WIRE;
 
-NET "fpga_clk1" TNM_NET = fpga_clk1;
-TIMESPEC TS_fpga_clk1 = PERIOD "fpga_clk1" 40 ns HIGH 50%;
+//NET "fpga_clk1" TNM_NET = fpga_clk1;
+//TIMESPEC TS_fpga_clk1 = PERIOD "fpga_clk1" 40 ns HIGH 50%;
                                                                                                                         
 # onBoard USB controller                                                                                                                        
 # NET "EppAstb"   LOC = "P125"; # Bank = 0, Pin name = IO_L5P_0/GCLK14,    Sch name = U-FLGA
