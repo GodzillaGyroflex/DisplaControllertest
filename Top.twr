@@ -2,8 +2,8 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
--fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf
 
 Design file:              Top.ncd
 Physical constraint file: Top.pcf
@@ -44,17 +44,17 @@ Clock fpga_clk1 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-an0         |    9.755(R)|fpga_clk1_BUFGP   |   0.000|
-an1         |    9.767(R)|fpga_clk1_BUFGP   |   0.000|
-an2         |    9.974(R)|fpga_clk1_BUFGP   |   0.000|
-an3         |    9.463(R)|fpga_clk1_BUFGP   |   0.000|
-seg0        |   12.853(R)|fpga_clk1_BUFGP   |   0.000|
-seg1        |   13.063(R)|fpga_clk1_BUFGP   |   0.000|
-seg2        |   12.716(R)|fpga_clk1_BUFGP   |   0.000|
-seg3        |   13.015(R)|fpga_clk1_BUFGP   |   0.000|
-seg4        |   13.143(R)|fpga_clk1_BUFGP   |   0.000|
-seg5        |   12.659(R)|fpga_clk1_BUFGP   |   0.000|
-seg6        |   13.084(R)|fpga_clk1_BUFGP   |   0.000|
+an0         |    9.772(R)|fpga_clk1_BUFGP   |   0.000|
+an1         |    9.213(R)|fpga_clk1_BUFGP   |   0.000|
+an2         |    9.517(R)|fpga_clk1_BUFGP   |   0.000|
+an3         |    9.547(R)|fpga_clk1_BUFGP   |   0.000|
+seg0        |   13.178(R)|fpga_clk1_BUFGP   |   0.000|
+seg1        |   13.846(R)|fpga_clk1_BUFGP   |   0.000|
+seg2        |   13.823(R)|fpga_clk1_BUFGP   |   0.000|
+seg3        |   13.532(R)|fpga_clk1_BUFGP   |   0.000|
+seg4        |   13.786(R)|fpga_clk1_BUFGP   |   0.000|
+seg5        |   13.798(R)|fpga_clk1_BUFGP   |   0.000|
+seg6        |   13.487(R)|fpga_clk1_BUFGP   |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Mode
@@ -62,8 +62,8 @@ Clock to Setup on destination clock Mode
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.904|         |         |         |
-Stress         |    3.904|         |         |         |
+Mode           |    3.902|         |         |         |
+Stress         |    3.902|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Stress
@@ -71,8 +71,8 @@ Clock to Setup on destination clock Stress
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.904|         |         |         |
-Stress         |    3.904|         |         |         |
+Mode           |    3.902|         |         |         |
+Stress         |    3.902|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fpga_clk1
@@ -80,20 +80,28 @@ Clock to Setup on destination clock fpga_clk1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |   31.173|         |         |         |
-Stress         |   31.173|         |         |         |
-fpga_clk1      |   25.104|         |         |         |
+Mode           |   11.543|         |         |         |
+Stress         |   11.543|         |         |         |
+fpga_clk1      |   20.835|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Mode           |ring_out       |   15.947|
+Stress         |ring_out       |   15.285|
+---------------+---------------+---------+
 
-Analysis completed Thu May 04 17:29:55 2017 
+
+Analysis completed Fri May 05 13:36:09 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 177 MB
+Peak Memory Usage: 162 MB
 
 
 

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Saulo/Documents/DisplaControllertest/BintoBCDtest_isim_beh.exe" -prj "C:/Users/Saulo/Documents/DisplaControllertest/BintoBCDtest_beh.prj" "work.BintoBCDtest" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest_isim_beh.exe" -prj "C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest_beh.prj" "work.toptest" "work.glbl" 

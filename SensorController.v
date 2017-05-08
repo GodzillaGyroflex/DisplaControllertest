@@ -24,6 +24,7 @@ module SensorController(value,fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	 
 	 input fpga_clk1;
 	 input reset;	
+	 input [15:0] value; 
 	 output seg0, seg1, seg2, seg3, seg4, seg5, seg6, dp; 
 	 output an0,an1,an2,an3; 
 	 output led0;
@@ -34,7 +35,7 @@ module SensorController(value,fpga_clk1,reset,seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	 wire [3:0] in1;
 	 wire [3:0] in2;
 	 wire [3:0] in3;
-	 input [15:0] value; 
+	
 	 
 	 
 	/* Debouncer btn_plus (

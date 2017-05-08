@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Top.prj
 
@@ -155,7 +155,6 @@ Analyzing hierarchy for module <DisplayController> in library <work> with parame
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <Top>.
-WARNING:Xst:852 - "Top.v" line 31: Unconnected input port 'reset' of instance 'Display' is tied to GND.
 Module <Top> is correct for synthesis.
  
 Analyzing module <RingOsc2> in library <work>.
@@ -175,7 +174,6 @@ Module <inverter> is correct for synthesis.
  
 Analyzing module <Counting_circuit> in library <work>.
 	max = 32'sb00000000000000000000000001100100
-WARNING:Xst:916 - "Counting_circuit.v" line 42: Delay is ignored for synthesis.
 Module <Counting_circuit> is correct for synthesis.
  
 Analyzing module <nBitCounter> in library <work>.
@@ -320,8 +318,11 @@ Unit <RingOsc2> synthesized.
 Synthesizing Unit <Counting_circuit>.
     Related source file is "Counting_circuit.v".
 WARNING:Xst:1780 - Signal <reset> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 16-bit comparator lessequal for signal <value_out$cmp_le0000> created at line 36.
+    Found 16-bit register for signal <value_out>.
+    Found 1-bit register for signal <rst>.
+    Found 16-bit comparator lessequal for signal <rst$cmp_le0000> created at line 36.
     Summary:
+	inferred  17 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <Counting_circuit> synthesized.
 
@@ -347,8 +348,9 @@ Macro Statistics
 # Counters                                             : 3
  16-bit up counter                                     : 2
  18-bit up counter                                     : 1
-# Registers                                            : 16
- 1-bit register                                        : 16
+# Registers                                            : 18
+ 1-bit register                                        : 17
+ 16-bit register                                       : 1
 # Comparators                                          : 35
  16-bit comparator lessequal                           : 1
  4-bit comparator greatequal                           : 34
@@ -376,8 +378,8 @@ Macro Statistics
 # Counters                                             : 3
  16-bit up counter                                     : 2
  18-bit up counter                                     : 1
-# Registers                                            : 16
- Flip-Flops                                            : 16
+# Registers                                            : 33
+ Flip-Flops                                            : 33
 # Comparators                                          : 35
  16-bit comparator lessequal                           : 1
  4-bit comparator greatequal                           : 34
@@ -391,7 +393,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit Top : the following signal(s) form a combinatorial loop: RingOscillator/e, RingOscillator/LUTSel1/OUTSel_and0000, RingOscillator/LUTout, ring_out, RingOscillator/d, RingOscillator/a, RingOscillator/b, RingOscillator/c.
+WARNING:Xst:2170 - Unit Top : the following signal(s) form a combinatorial loop: RingOscillator/e, RingOscillator/LUTout, RingOscillator/c, RingOscillator/LUTSel1/OUTSel_and0000, RingOscillator/d, ring_out, RingOscillator/a, RingOscillator/b.
 
 Optimizing unit <Top> ...
 
@@ -409,8 +411,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 66
- Flip-Flops                                            : 66
+# Registers                                            : 83
+ Flip-Flops                                            : 83
 
 =========================================================================
 
@@ -436,34 +438,36 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 16
+# IOs                              : 17
 
 Cell Usage :
-# BELS                             : 488
+# BELS                             : 464
 #      GND                         : 1
-#      INV                         : 6
+#      INV                         : 7
 #      LUT1                        : 53
-#      LUT2                        : 19
-#      LUT2_D                      : 3
-#      LUT3                        : 33
-#      LUT3_D                      : 3
-#      LUT3_L                      : 4
-#      LUT4                        : 172
-#      LUT4_D                      : 48
-#      LUT4_L                      : 18
-#      MUXCY                       : 52
-#      MUXF5                       : 25
+#      LUT2                        : 15
+#      LUT2_D                      : 4
+#      LUT2_L                      : 1
+#      LUT3                        : 34
+#      LUT3_D                      : 8
+#      LUT3_L                      : 6
+#      LUT4                        : 148
+#      LUT4_D                      : 49
+#      LUT4_L                      : 16
+#      MUXCY                       : 54
+#      MUXF5                       : 17
 #      VCC                         : 1
 #      XORCY                       : 50
-# FlipFlops/Latches                : 66
-#      FD                          : 33
+# FlipFlops/Latches                : 83
+#      FD                          : 34
 #      FDC                         : 32
+#      FDE                         : 16
 #      FDR                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 15
+# IO Buffers                       : 16
 #      IBUF                        : 2
-#      OBUF                        : 13
+#      OBUF                        : 14
 =========================================================================
 
 Device utilization summary:
@@ -471,11 +475,11 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                      185  out of   2448     7%  
- Number of Slice Flip Flops:             66  out of   4896     1%  
- Number of 4 input LUTs:                359  out of   4896     7%  
- Number of IOs:                          16
- Number of bonded IOBs:                  16  out of    108    14%  
+ Number of Slices:                      175  out of   2448     7%  
+ Number of Slice Flip Flops:             83  out of   4896     1%  
+ Number of 4 input LUTs:                341  out of   4896     6%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    108    15%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -499,7 +503,7 @@ Clock Information:
 -------------------------------------------------------+-----------------------------------+-------+
 Clock Signal                                           | Clock buffer(FF name)             | Load  |
 -------------------------------------------------------+-----------------------------------+-------+
-fpga_clk1                                              | BUFGP                             | 50    |
+fpga_clk1                                              | BUFGP                             | 67    |
 RingOscillator/LUTout(RingOscillator/LUTSel1/OUTSel1:O)| NONE(*)(Counter/Counter2/count_15)| 16    |
 -------------------------------------------------------+-----------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -519,10 +523,10 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 29.333ns (Maximum Frequency: 34.092MHz)
+   Minimum period: 23.062ns (Maximum Frequency: 43.361MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 8.053ns
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 14.486ns
 
 Timing Detail:
 --------------
@@ -530,56 +534,48 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_clk1'
-  Clock period: 29.333ns (frequency: 34.092MHz)
-  Total number of paths / destination ports: 334599379 / 50
+  Clock period: 23.062ns (frequency: 43.361MHz)
+  Total number of paths / destination ports: 53196305 / 67
 -------------------------------------------------------------------------
-Delay:               29.333ns (Levels of Logic = 25)
-  Source:            Counter/Counter1/count_0 (FF)
+Delay:               23.062ns (Levels of Logic = 17)
+  Source:            Counter/value_out_14 (FF)
   Destination:       Display/BinToBCD/dec_2 (FF)
   Source Clock:      fpga_clk1 rising
   Destination Clock: fpga_clk1 rising
 
-  Data Path: Counter/Counter1/count_0 to Display/BinToBCD/dec_2
+  Data Path: Counter/value_out_14 to Display/BinToBCD/dec_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.591   0.622  Counter/Counter1/count_0 (Counter/Counter1/count_0)
-     LUT2:I0->O            1   0.704   0.000  Counter/Mcompar_value_out_cmp_le0000_lut<0> (Counter/Mcompar_value_out_cmp_le0000_lut<0>)
-     MUXCY:S->O            1   0.464   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<0> (Counter/Mcompar_value_out_cmp_le0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<1> (Counter/Mcompar_value_out_cmp_le0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<2> (Counter/Mcompar_value_out_cmp_le0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Counter/Mcompar_value_out_cmp_le0000_cy<3> (Counter/Mcompar_value_out_cmp_le0000_cy<3>)
-     MUXCY:CI->O           7   0.459   0.743  Counter/Mcompar_value_out_cmp_le0000_cy<4> (Counter/Mcompar_value_out_cmp_le0000_cy<4>)
-     LUT3:I2->O           46   0.704   1.267  Counter/Mcompar_value_out_cmp_le0000_cy<6>1 (Counter/rst)
-     MUXF5:S->O           11   0.739   0.937  Display/BinToBCD/dec_0_mux00011 (Display/BinToBCD/dec_0_mux0001)
-     LUT4_L:I3->LO         1   0.704   0.104  Display/BinToBCD/Madd__add0004_cy<1>11_SW0 (N274)
-     LUT4:I3->O           15   0.704   1.096  Display/BinToBCD/Madd__add0004_cy<1>11 (Display/BinToBCD/Madd__add0004_cy<1>)
-     LUT3:I1->O           11   0.704   0.937  Display/BinToBCD/dec_0_mux00031 (Display/BinToBCD/Madd__add0005_cy<0>)
-     LUT4:I3->O            1   0.704   0.000  Display/BinToBCD/cent_0_mux0001_G (N339)
-     MUXF5:I1->O          11   0.321   0.937  Display/BinToBCD/cent_0_mux0001 (Display/BinToBCD/cent_0_mux0001)
-     LUT4:I3->O            1   0.704   0.455  Display/BinToBCD/dec_mux00071_SW0 (N50)
-     LUT4:I2->O            5   0.704   0.637  Display/BinToBCD/dec_mux00071 (Display/BinToBCD/Madd__add0010_lut<2>)
-     LUT4_D:I3->O          6   0.704   0.704  Display/BinToBCD/cent_0_cmp_ge00031 (Display/BinToBCD/cent_0_cmp_ge0003)
-     LUT3:I2->O            1   0.704   0.424  Display/BinToBCD/Madd__add0013_cy<1>11 (Display/BinToBCD/Madd__add0013_cy<1>)
-     LUT4:I3->O            6   0.704   0.844  Display/BinToBCD/dec_mux00121 (Display/BinToBCD/Madd__add0016_lut<3>)
-     LUT3:I0->O            3   0.704   0.566  Display/BinToBCD/dec_mux00151 (Display/BinToBCD/Madd__add0020_lut<3>)
-     LUT4:I2->O           10   0.704   0.961  Display/BinToBCD/cent_0_cmp_ge00061 (Display/BinToBCD/cent_0_cmp_ge0006)
-     LUT2:I1->O            1   0.704   0.424  Display/BinToBCD/Madd__add0024_cy<1>11_SW0 (N334)
-     LUT4:I3->O            7   0.704   0.883  Display/BinToBCD/dec_mux00211 (Display/BinToBCD/Madd__add0028_lut<3>)
-     LUT3:I0->O            5   0.704   0.637  Display/BinToBCD/dec_mux00241 (Display/BinToBCD/Madd__add0032_lut<3>)
-     LUT4:I3->O            1   0.704   0.424  Display/BinToBCD/dec_mux00281_SW1_SW0 (N319)
+     FDE:C->Q             12   0.591   1.136  Counter/value_out_14 (Counter/value_out_14)
+     LUT4:I0->O            1   0.704   0.000  Display/BinToBCD/dec_0_mux000211_G (N328)
+     MUXF5:I1->O          14   0.321   1.004  Display/BinToBCD/dec_0_mux000211 (Display/BinToBCD/N35)
+     LUT4_D:I3->O          2   0.704   0.482  Display/BinToBCD/un_mux00071 (Display/BinToBCD/Madd__add0004_lut<2>)
+     LUT3:I2->O            6   0.704   0.673  Display/BinToBCD/un_mux00091 (Display/BinToBCD/Madd__add0006_lut<3>)
+     LUT4_D:I3->O          8   0.704   0.932  Display/BinToBCD/dec_0_cmp_ge00041 (Display/BinToBCD/dec_0_cmp_ge0004)
+     LUT4:I0->O           10   0.704   0.886  Display/BinToBCD/dec_0_cmp_ge00051 (Display/BinToBCD/dec_0_cmp_ge0005)
+     LUT4:I3->O            1   0.704   0.424  Display/BinToBCD/dec_0_cmp_ge00061_SW2 (N242)
+     LUT4_L:I3->LO         1   0.704   0.135  Display/BinToBCD/Madd__add0014_cy<1>11 (Display/BinToBCD/Madd__add0014_cy<1>)
+     LUT4:I2->O            7   0.704   0.712  Display/BinToBCD/un_mux00211 (Display/BinToBCD/Madd__add0017_lut<3>)
+     LUT4_D:I3->O         14   0.704   1.004  Display/BinToBCD/dec_0_mux00081 (Display/BinToBCD/Madd__add0020_cy<0>)
+     LUT4_D:I3->O          1   0.704   0.455  Display/BinToBCD/cent_0_cmp_ge00061_SW1 (N53)
+     LUT4:I2->O           12   0.704   1.040  Display/BinToBCD/cent_0_cmp_ge00061 (Display/BinToBCD/cent_0_cmp_ge0006)
+     LUT2:I1->O            1   0.704   0.424  Display/BinToBCD/Madd__add0024_cy<1>11_SW0 (N249)
+     LUT4_D:I3->O          7   0.704   0.712  Display/BinToBCD/dec_mux00211 (Display/BinToBCD/Madd__add0028_lut<3>)
+     LUT4:I3->O            1   0.704   0.455  Display/BinToBCD/cent_0_mux000911_SW2_SW0 (N315)
+     LUT4_L:I2->LO         1   0.704   0.104  Display/BinToBCD/cent_0_mux000911_SW2 (N185)
      LUT4:I3->O            1   0.704   0.000  Display/BinToBCD/dec_mux00281 (Display/BinToBCD/dec_mux0028)
      FD:D                      0.308          Display/BinToBCD/dec_2
     ----------------------------------------
-    Total                     29.333ns (15.731ns logic, 13.602ns route)
-                                       (53.6% logic, 46.4% route)
+    Total                     23.062ns (12.484ns logic, 10.578ns route)
+                                       (54.1% logic, 45.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RingOscillator/LUTout'
-  Clock period: 4.400ns (frequency: 227.273MHz)
+  Clock period: 4.260ns (frequency: 234.742MHz)
   Total number of paths / destination ports: 136 / 16
 -------------------------------------------------------------------------
-Delay:               4.400ns (Levels of Logic = 16)
+Delay:               4.260ns (Levels of Logic = 16)
   Source:            Counter/Counter2/count_1 (FF)
   Destination:       Counter/Counter2/count_15 (FF)
   Source Clock:      RingOscillator/LUTout rising
@@ -589,7 +585,7 @@ Delay:               4.400ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.591   0.762  Counter/Counter2/count_1 (Counter/Counter2/count_1)
+     FDC:C->Q              2   0.591   0.622  Counter/Counter2/count_1 (Counter/Counter2/count_1)
      LUT1:I0->O            1   0.704   0.000  Counter/Counter2/Mcount_count_cy<1>_rt (Counter/Counter2/Mcount_count_cy<1>_rt)
      MUXCY:S->O            1   0.464   0.000  Counter/Counter2/Mcount_count_cy<1> (Counter/Counter2/Mcount_count_cy<1>)
      MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<2> (Counter/Counter2/Mcount_count_cy<2>)
@@ -608,8 +604,8 @@ Delay:               4.400ns (Levels of Logic = 16)
      XORCY:CI->O           1   0.804   0.000  Counter/Counter2/Mcount_count_xor<15> (Counter/Result<15>1)
      FDC:D                     0.308          Counter/Counter2/count_15
     ----------------------------------------
-    Total                      4.400ns (3.638ns logic, 0.762ns route)
-                                       (82.7% logic, 17.3% route)
+    Total                      4.260ns (3.638ns logic, 0.622ns route)
+                                       (85.4% logic, 14.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_clk1'
@@ -634,16 +630,41 @@ Offset:              8.053ns (Levels of Logic = 4)
                                        (69.4% logic, 30.6% route)
 
 =========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               14.486ns (Levels of Logic = 9)
+  Source:            Mode (PAD)
+  Destination:       ring_out (PAD)
+
+  Data Path: Mode to ring_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  Mode_IBUF (Mode_IBUF)
+     LUT3:I0->O            1   0.704   0.595  RingOscillator/LUTSel1/OUTSel1 (RingOscillator/LUTout)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut1/o1 (RingOscillator/a)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut2/o1 (RingOscillator/b)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut3/o1 (RingOscillator/c)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut4/o1 (RingOscillator/d)
+     LUT1:I0->O            2   0.704   0.447  RingOscillator/Lut5/o1 (RingOscillator/e)
+     INV:I->O             17   0.704   1.051  RingOscillator/Lut7/o1_INV_0 (ring_out_OBUF)
+     OBUF:I->O                 3.272          ring_out_OBUF (ring_out)
+    ----------------------------------------
+    Total                     14.486ns (9.418ns logic, 5.068ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.21 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.11 secs
  
 --> 
 
-Total memory usage is 268300 kilobytes
+Total memory usage is 267312 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

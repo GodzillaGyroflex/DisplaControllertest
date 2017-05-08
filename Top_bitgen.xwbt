@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Saulo\Documents\DisplaControllertest\Top.ncd
-OUTFILE=C:\Users\Saulo\Documents\DisplaControllertest\Top.bit
+INFILE=C:\Users\LESCPC03\Downloads\DisplaControllertest\Top.ncd
+OUTFILE=C:\Users\LESCPC03\Downloads\DisplaControllertest\Top.bit
 FAMILY=Spartan3E
 PART=xc3s250e-4tq144
-WORKINGDIR=C:\Users\Saulo\Documents\DisplaControllertest
+WORKINGDIR=C:\Users\LESCPC03\Downloads\DisplaControllertest
 LICENSE=WebPack
-USER_INFO=211320707_0_0_579
+USER_INFO=211124949_0_0_878

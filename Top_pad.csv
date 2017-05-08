@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Thu May 04 17:29:51 2017
+#Fri May 05 13:36:04 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -100,7 +100,7 @@ P78,,IBUF,IP,UNUSED,,1,,,,,,,,,
 P79,,,VCCO_1,,,1,,,,,2.50,,,,
 P80,,,VCCINT,,,,,,,,1.2,,,,
 P81,,DIFFM,IO_L03P_1/A12,UNUSED,,1,,,,,,,,,
-P82,,DIFFS,IO_L03N_1/A11,UNUSED,,1,,,,,,,,,
+P82,ring_out,IOB,IO_L03N_1/A11,OUTPUT,LVCMOS25*,1,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 P83,seg6,IOB,IO/VREF_1,OUTPUT,LVCMOS25*,1,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 P84,,IBUF,IP,UNUSED,,1,,,,,,,,,
 P85,,DIFFM,IO_L04P_1/A10/RHCLK0,UNUSED,,1,,,,,,,,,

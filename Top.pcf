@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu May 04 17:29:39 2017
+// Written by: Map P.20131013 on Fri May 05 13:35:50 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -19,6 +19,7 @@ COMP "seg5" LOCATE = SITE "P17" LEVEL 1;
 COMP "seg6" LOCATE = SITE "P83" LEVEL 1;
 COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
 COMP "Stress" LOCATE = SITE "P18" LEVEL 1;
+COMP "ring_out" LOCATE = SITE "P82" LEVEL 1;
 NET "fpga_clk1_BUFGP/IBUFG" BEL "fpga_clk1_BUFGP/BUFG.GCLKMUX"
         USELOCALCONNECT;
 SCHEMATIC END;

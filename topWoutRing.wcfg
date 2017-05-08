@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="toptest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/toptest/seg0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg0</obj_property>
+      <obj_property name="ObjectShortName">seg0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/seg1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg1</obj_property>
+      <obj_property name="ObjectShortName">seg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/seg2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg2</obj_property>
+      <obj_property name="ObjectShortName">seg2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/seg3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg3</obj_property>
+      <obj_property name="ObjectShortName">seg3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/seg4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg4</obj_property>
+      <obj_property name="ObjectShortName">seg4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/seg5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg5</obj_property>
+      <obj_property name="ObjectShortName">seg5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/seg6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">seg6</obj_property>
+      <obj_property name="ObjectShortName">seg6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/an0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">an0</obj_property>
+      <obj_property name="ObjectShortName">an0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/an1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">an1</obj_property>
+      <obj_property name="ObjectShortName">an1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/an2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">an2</obj_property>
+      <obj_property name="ObjectShortName">an2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/an3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">an3</obj_property>
+      <obj_property name="ObjectShortName">an3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/led0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led0</obj_property>
+      <obj_property name="ObjectShortName">led0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/fpga_clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fpga_clk1</obj_property>
+      <obj_property name="ObjectShortName">fpga_clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/Mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Mode</obj_property>
+      <obj_property name="ObjectShortName">Mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/Stress" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Stress</obj_property>
+      <obj_property name="ObjectShortName">Stress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/ring_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ring_out</obj_property>
+      <obj_property name="ObjectShortName">ring_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/uut/Counter/value_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">value_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">value_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/uut/Counter/Counter2/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/toptest/uut/Counter/Counter2/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -18,17 +18,17 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Top(fpga_clk1, Mode, Stress, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3,led0);
+module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3,led0);
 	input fpga_clk1, Mode, Stress;
 	output seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3, led0;
-	wire ring_out;
+	output ring_out;
 	wire [15:0] value;
 	
 	RingOsc2 RingOscillator(.Mode(Mode), .Stress(Stress), .OUT(ring_out));
 	
 	Counting_circuit Counter(.clk(fpga_clk1), .Ring_in(ring_out), .value_out(value));
 	
-	SensorController Display(.fpga_clk1(fpga_clk1), .value(value),
+	SensorController Display(.fpga_clk1(fpga_clk1), .value(value), .reset(1'b0),
 										.seg0(seg0),
 										.seg1(seg1),
 										.seg2(seg2),

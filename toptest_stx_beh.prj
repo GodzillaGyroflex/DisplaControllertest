@@ -1,0 +1,8 @@
+verilog isim_temp "DisplayController.v"
+verilog isim_temp "Counter.v"
+verilog isim_temp "BinToBCD.v"
+verilog isim_temp "SensorController.v"
+verilog isim_temp "Counting_circuit.v"
+verilog isim_temp "Top.v"
+verilog isim_temp "toptest.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
