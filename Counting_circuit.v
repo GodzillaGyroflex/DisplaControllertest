@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Counting_circuit(clk, Ring_in, value_out);
-		parameter max = 100;
+		parameter max = 99;
 		input clk, Ring_in;
 		output reg [15:0] value_out;
 		wire [15:0] rst_value;
