@@ -44,17 +44,17 @@ Clock fpga_clk1 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-an0         |    8.793(R)|fpga_clk1_BUFGP   |   0.000|
-an1         |    8.577(R)|fpga_clk1_BUFGP   |   0.000|
-an2         |    8.877(R)|fpga_clk1_BUFGP   |   0.000|
-an3         |    8.884(R)|fpga_clk1_BUFGP   |   0.000|
-seg0        |   13.670(R)|fpga_clk1_BUFGP   |   0.000|
-seg1        |   14.257(R)|fpga_clk1_BUFGP   |   0.000|
-seg2        |   13.906(R)|fpga_clk1_BUFGP   |   0.000|
-seg3        |   13.657(R)|fpga_clk1_BUFGP   |   0.000|
-seg4        |   13.644(R)|fpga_clk1_BUFGP   |   0.000|
-seg5        |   14.138(R)|fpga_clk1_BUFGP   |   0.000|
-seg6        |   13.693(R)|fpga_clk1_BUFGP   |   0.000|
+an0         |    9.890(R)|fpga_clk1_BUFGP   |   0.000|
+an1         |    9.377(R)|fpga_clk1_BUFGP   |   0.000|
+an2         |    9.654(R)|fpga_clk1_BUFGP   |   0.000|
+an3         |    9.748(R)|fpga_clk1_BUFGP   |   0.000|
+seg0        |   12.866(R)|fpga_clk1_BUFGP   |   0.000|
+seg1        |   12.609(R)|fpga_clk1_BUFGP   |   0.000|
+seg2        |   12.349(R)|fpga_clk1_BUFGP   |   0.000|
+seg3        |   12.090(R)|fpga_clk1_BUFGP   |   0.000|
+seg4        |   11.996(R)|fpga_clk1_BUFGP   |   0.000|
+seg5        |   12.649(R)|fpga_clk1_BUFGP   |   0.000|
+seg6        |   12.634(R)|fpga_clk1_BUFGP   |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Mode
@@ -62,8 +62,9 @@ Clock to Setup on destination clock Mode
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.885|         |         |         |
-Stress         |    3.885|         |         |         |
+Mode           |    3.989|         |         |         |
+Stress         |    3.989|         |         |         |
+fpga_clk1      |    5.336|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Stress
@@ -71,8 +72,9 @@ Clock to Setup on destination clock Stress
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.885|         |         |         |
-Stress         |    3.885|         |         |         |
+Mode           |    3.989|         |         |         |
+Stress         |    3.989|         |         |         |
+fpga_clk1      |    5.336|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fpga_clk1
@@ -80,28 +82,28 @@ Clock to Setup on destination clock fpga_clk1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    9.865|         |         |         |
-Stress         |    9.865|         |         |         |
-fpga_clk1      |   20.026|         |         |         |
+Mode           |   41.662|         |         |         |
+Stress         |   41.662|         |         |         |
+fpga_clk1      |    3.964|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-Mode           |ring_out       |   15.201|
-Stress         |ring_out       |   15.123|
+Mode           |ring_out       |   15.630|
+Stress         |ring_out       |   14.968|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon May 08 14:45:46 2017 
+Analysis completed Wed May 10 15:58:32 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 177 MB
+Peak Memory Usage: 176 MB
 
 
 

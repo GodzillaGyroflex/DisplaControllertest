@@ -32,7 +32,7 @@ module Counting_circuit(clk, Ring_in, value_out);
 		
 		nBitCounter Counter2(.count(ring_value), .clk(Ring_in), .rst_n(rst));
 		
-		always@(posedge clk)
+		always@(posedge Ring_in)
 			if(rst_value <= max) 
 				begin
 					//value_out = 0;

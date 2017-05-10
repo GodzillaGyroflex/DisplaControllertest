@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : tq144
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Mon May 08 14:45:27 2017
+Mapped Date    : Wed May 10 15:58:16 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -28,14 +28,14 @@ Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
   Number of Slice Flip Flops:            83 out of   4,896    1%
-  Number of 4 input LUTs:               290 out of   4,896    5%
+  Number of 4 input LUTs:               191 out of   4,896    3%
 Logic Distribution:
-  Number of occupied Slices:            184 out of   2,448    7%
-    Number of Slices containing only related logic:     184 out of     184 100%
-    Number of Slices containing unrelated logic:          0 out of     184   0%
+  Number of occupied Slices:            139 out of   2,448    5%
+    Number of Slices containing only related logic:     139 out of     139 100%
+    Number of Slices containing unrelated logic:          0 out of     139   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         337 out of   4,896    6%
-    Number used as logic:               290
+  Total Number of 4 input LUTs:         238 out of   4,896    4%
+    Number used as logic:               191
     Number used as a route-thru:         47
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -44,9 +44,9 @@ Logic Distribution:
   Number of bonded IOBs:                 17 out of     108   15%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                3.37
+Average Fanout of Non-Clock Nets:                2.93
 
-Peak Memory Usage:  306 MB
+Peak Memory Usage:  307 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
