@@ -1,29 +1,24 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest_isim_beh.exe -prj C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest_beh.prj work.toptest work.glbl 
+Running: F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb_isim_beh.exe -prj C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb_beh.prj work.Duty_Cycle_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/DisplayController.v" into library work
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/Counter.v" into library work
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/BinToBCD.v" into library work
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/SensorController.v" into library work
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/Counting_circuit.v" into library work
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/Top.v" into library work
-Analyzing Verilog file "C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest.v" into library work
-Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/Counter.v" into library work
+Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_Circuit.v" into library work
+Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb.v" into library work
+Analyzing Verilog file "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:329 - "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_Circuit.v" Line 29: Target <C2_out> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:189 - "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_Circuit.v" Line 28: Size mismatch in connection of port <count>. Formal port size is 16-bit while actual signal size is 17-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_Circuit.v" Line 29: Size mismatch in connection of port <count>. Formal port size is 16-bit while actual signal size is 17-bit.
 Completed static elaboration
 Compiling module nBitCounter
-Compiling module Counting_circuit
-Compiling module BinToBCD
-Compiling module DisplayController
-Compiling module SensorController
-Compiling module Top
-Compiling module toptest
+Compiling module Duty_Cycle_Circuit
+Compiling module Duty_Cycle_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 5 sub-compilation(s) to finish...
-Compiled 8 Verilog Units
-Built simulation executable C:/Users/LESCPC03/Downloads/DisplaControllertest/toptest_isim_beh.exe
-Fuse Memory Usage: 26968 KB
-Fuse CPU Usage: 639 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb_isim_beh.exe
+Fuse Memory Usage: 27408 KB
+Fuse CPU Usage: 686 ms

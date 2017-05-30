@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.18 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: Top.prj
 
@@ -334,6 +334,7 @@ Unit <SensorController> synthesized.
 
 Synthesizing Unit <Top>.
     Related source file is "Top.v".
+WARNING:Xst:653 - Signal <enable> is used but never assigned. This sourceless signal will be automatically connected to value 1.
 Unit <Top> synthesized.
 
 
@@ -393,7 +394,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit Top : the following signal(s) form a combinatorial loop: RingOscillator/LUTSel1/OUTSel_and0000, RingOscillator/d, RingOscillator/a, RingOscillator/b, ring_out, RingOscillator/e, RingOscillator/LUTout, RingOscillator/c.
+WARNING:Xst:2170 - Unit Top : the following signal(s) form a combinatorial loop: RingOscillator/a, ring_out, RingOscillator/c, RingOscillator/d, RingOscillator/LUTout, RingOscillator/LUTSel1/OUTSel_and0000, RingOscillator/e, RingOscillator/b.
 
 Optimizing unit <Top> ...
 
@@ -454,7 +455,7 @@ Cell Usage :
 #      XORCY                       : 50
 # FlipFlops/Latches                : 83
 #      FD                          : 34
-#      FDC                         : 32
+#      FDCE                        : 32
 #      FDE                         : 16
 #      FDR                         : 1
 # Clock Buffers                    : 1
@@ -580,7 +581,7 @@ Delay:               4.260ns (Levels of Logic = 16)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.591   0.622  Counter/Counter2/count_1 (Counter/Counter2/count_1)
+     FDCE:C->Q             2   0.591   0.622  Counter/Counter2/count_1 (Counter/Counter2/count_1)
      LUT1:I0->O            1   0.704   0.000  Counter/Counter2/Mcount_count_cy<1>_rt (Counter/Counter2/Mcount_count_cy<1>_rt)
      MUXCY:S->O            1   0.464   0.000  Counter/Counter2/Mcount_count_cy<1> (Counter/Counter2/Mcount_count_cy<1>)
      MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<2> (Counter/Counter2/Mcount_count_cy<2>)
@@ -597,7 +598,7 @@ Delay:               4.260ns (Levels of Logic = 16)
      MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<13> (Counter/Counter2/Mcount_count_cy<13>)
      MUXCY:CI->O           0   0.059   0.000  Counter/Counter2/Mcount_count_cy<14> (Counter/Counter2/Mcount_count_cy<14>)
      XORCY:CI->O           1   0.804   0.000  Counter/Counter2/Mcount_count_xor<15> (Counter/Result<15>1)
-     FDC:D                     0.308          Counter/Counter2/count_15
+     FDCE:D                    0.308          Counter/Counter2/count_15
     ----------------------------------------
     Total                      4.260ns (3.638ns logic, 0.622ns route)
                                        (85.4% logic, 14.6% route)
@@ -653,13 +654,13 @@ Delay:               14.698ns (Levels of Logic = 9)
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.59 secs
+Total CPU time to Xst completion: 10.60 secs
  
 --> 
 
-Total memory usage is 267276 kilobytes
+Total memory usage is 267148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

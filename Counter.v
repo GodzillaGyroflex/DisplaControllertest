@@ -19,24 +19,25 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module nBitCounter(count, clk, rst_n);
+module nBitCounter(count, enable, clk, rst_n);
   parameter n = 15;
  
   output reg [n:0] count;
   input clk;
   input rst_n;
+  input enable;
  
   // Set the initial value
   initial
     count = 0;
  
   // Increment count on clock
-  always @(posedge clk or negedge rst_n)
+  always @(posedge clk or negedge rst_n)  
     if (!rst_n)
-      count = 0;
-    else
+      count = 0;		
+    else if(enable)
       count = count + 1;
- 
+	
 endmodule
 
 		

@@ -18,9 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Counting_circuit(clk, Ring_in, value_out);
+module Counting_circuit(clk, enable, Ring_in, value_out);
 		parameter max = 99;
-		input clk, Ring_in;
+		input clk, Ring_in, enable;
 		output reg [15:0] value_out;
 		wire [15:0] rst_value;
 		wire reset;
@@ -28,9 +28,9 @@ module Counting_circuit(clk, Ring_in, value_out);
 		wire [15:0] ring_value;
 		
 		
-		nBitCounter Counter1(.count(rst_value), .clk(clk), .rst_n(rst));
+		nBitCounter Counter1(.count(rst_value), .enable(enable), .clk(clk), .rst_n(rst));
 		
-		nBitCounter Counter2(.count(ring_value), .clk(Ring_in), .rst_n(rst));
+		nBitCounter Counter2(.count(ring_value), .enable(enable), .clk(Ring_in), .rst_n(rst));
 		
 		always@(posedge Ring_in)
 			if(rst_value <= max) 
