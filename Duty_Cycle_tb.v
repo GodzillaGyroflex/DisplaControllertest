@@ -31,7 +31,7 @@ module Duty_Cycle_tb;
 	reg reset;
 
 	// Outputs
-	wire [16:0] value;
+	wire [15:0] value;
 
 	// Instantiate the Unit Under Test (UUT)
 	Duty_Cycle_Circuit uut (

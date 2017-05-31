@@ -137,7 +137,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1496169750" xil_pn:in_ck="-6677282691820055525" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1496169750">
+    <transform xil_pn:end_ts="1496258618" xil_pn:in_ck="-165923549988391682" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1496258618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BinToBCD.v"/>
@@ -154,6 +154,7 @@
       <outfile xil_pn:name="SensorController.v"/>
       <outfile xil_pn:name="Top.v"/>
       <outfile xil_pn:name="inverter.v"/>
+      <outfile xil_pn:name="nBitCounter2.v"/>
       <outfile xil_pn:name="sensor_cont_tb.v"/>
       <outfile xil_pn:name="testef.v"/>
       <outfile xil_pn:name="testeff.v"/>
@@ -171,7 +172,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1496169750" xil_pn:in_ck="-6677282691820055525" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1496169750">
+    <transform xil_pn:end_ts="1496258618" xil_pn:in_ck="-165923549988391682" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1496258618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="BinToBCD.v"/>
@@ -188,21 +189,25 @@
       <outfile xil_pn:name="SensorController.v"/>
       <outfile xil_pn:name="Top.v"/>
       <outfile xil_pn:name="inverter.v"/>
+      <outfile xil_pn:name="nBitCounter2.v"/>
       <outfile xil_pn:name="sensor_cont_tb.v"/>
       <outfile xil_pn:name="testef.v"/>
       <outfile xil_pn:name="testeff.v"/>
       <outfile xil_pn:name="toptest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1496169754" xil_pn:in_ck="-6677282691820055525" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2128096979499663267" xil_pn:start_ts="1496169750">
+    <transform xil_pn:end_ts="1496258623" xil_pn:in_ck="-165923549988391682" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2128096979499663267" xil_pn:start_ts="1496258618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Duty_Cycle_tb_beh.prj"/>
       <outfile xil_pn:name="Duty_Cycle_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1496169772" xil_pn:in_ck="-6791309537826381288" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3640681577597007174" xil_pn:start_ts="1496169771">
+    <transform xil_pn:end_ts="1496258623" xil_pn:in_ck="-5085992002073832730" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3640681577597007174" xil_pn:start_ts="1496258623">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -245,6 +250,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>

@@ -5,8 +5,6 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_Circuit.v" Line 24.  For instance uut/Counter1/, width 16 of formal port count is not equal to width 17 of actual signal C1_out.
-WARNING: File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_Circuit.v" Line 25.  For instance uut/Counter2/, width 16 of formal port count is not equal to width 17 of actual variable C2_out. 
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -17,4 +15,4 @@ Finished circuit initialization process.
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 36483860 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb.v" Line 57
+Stopped at time : 87909620 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb.v" Line 56

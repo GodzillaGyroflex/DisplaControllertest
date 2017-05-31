@@ -71,7 +71,7 @@ LAB4:    xsi_set_current_line(32, ng0);
     t7 = *((unsigned int *)t6);
     t8 = *((unsigned int *)t5);
     t9 = (t7 | t8);
-    if (t9 != 131071U)
+    if (t9 != 65535U)
         goto LAB6;
 
 LAB5:    if (*((unsigned int *)t5) == 0)
@@ -103,23 +103,22 @@ LAB7:    *((unsigned int *)t4) = 1;
 LAB9:    xsi_set_current_line(32, ng0);
 
 LAB12:    xsi_set_current_line(33, ng0);
-    t17 = ((char*)((ng1)));
-    t18 = (t0 + 2408);
-    xsi_vlogvar_assign_value(t18, t17, 0, 0, 1);
+    t17 = (t0 + 1848U);
+    t18 = *((char **)t17);
+    t17 = (t0 + 2248);
+    xsi_vlogvar_assign_value(t17, t18, 0, 0, 16);
     xsi_set_current_line(34, ng0);
-    t2 = (t0 + 2248);
-    t3 = (t2 + 56U);
-    t5 = *((char **)t3);
-    t6 = (t0 + 2088);
-    xsi_vlogvar_assign_value(t6, t5, 0, 0, 17);
+    t2 = ((char*)((ng1)));
+    t3 = (t0 + 2408);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     goto LAB11;
 
 }
 
 
-extern void work_m_00000000002524399306_1625398582_init()
+extern void work_m_00000000001288132972_1625398582_init()
 {
 	static char *pe[] = {(void *)Always_31_0};
-	xsi_register_didat("work_m_00000000002524399306_1625398582", "isim/Duty_Cycle_tb_isim_beh.exe.sim/work/m_00000000002524399306_1625398582.didat");
+	xsi_register_didat("work_m_00000000001288132972_1625398582", "isim/Duty_Cycle_tb_isim_beh.exe.sim/work/m_00000000001288132972_1625398582.didat");
 	xsi_register_executes(pe);
 }
