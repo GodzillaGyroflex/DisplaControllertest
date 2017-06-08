@@ -71,7 +71,7 @@ LAB4:    xsi_set_current_line(32, ng0);
     t7 = *((unsigned int *)t6);
     t8 = *((unsigned int *)t5);
     t9 = (t7 | t8);
-    if (t9 != 65535U)
+    if (t9 != 255U)
         goto LAB6;
 
 LAB5:    if (*((unsigned int *)t5) == 0)

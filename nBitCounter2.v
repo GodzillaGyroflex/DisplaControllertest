@@ -19,8 +19,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module nBitCounter2(count, enable, clk, rst_n);
-  parameter n = 3;
+module eightBitCounter(count, enable, clk, rst_n);
+  parameter n = 7;
  
   output reg [n:0] count;
   input clk;

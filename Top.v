@@ -24,10 +24,13 @@ module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	output ring_out;
 	wire [15:0] value;
 	reg enable = 1;
+	reg reset = 0;
 	
 	RingOsc2 RingOscillator(.Mode(Mode), .Stress(Stress), .OUT(ring_out));
 	
 	Counting_circuit Counter(.clk(fpga_clk1), .enable(enable), .Ring_in(ring_out), .value_out(value));
+	
+	//Duty_Cycle_Circuit Dut(.ring_in(ring_out), .enable(enable), .clk(fpga_clk1), .reset(reset), .value(value));
 	
 	SensorController Display(.fpga_clk1(fpga_clk1), .value(value), .reset(1'b0),
 										.seg0(seg0),

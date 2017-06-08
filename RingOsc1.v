@@ -21,19 +21,26 @@
 module RingOsc2(Mode, Stress, OUT);
 	input Mode, Stress;
 	output wire OUT;
-	(* S = "TRUE"*)wire LUTout, a, b, c, e, d;
+	(* S = "TRUE"*)wire LUTout, a, b, c, e, d, f, g, h, i, j, k, l, m;
 	
 	
 	
 	LUTSel LUTSel1(.Mode(Mode), .Stress(Stress), .INSel(OUT), .OUTSel(LUTout));
 	
-	inverter Lut1(a,LUTout);
-	inverter Lut2(b,a);
-	inverter Lut3(c,b);
-	inverter Lut4(d,c);
-	inverter Lut5(e,d);
-	
-	inverter Lut7(OUT,e);	
+	inverter Lut2(a,LUTout);
+	inverter Lut3(b,a);
+	inverter Lut4(c,b);
+	inverter Lut5(d,c);
+	inverter Lut6(e,d);	
+	inverter Lut7(f,e);
+	inverter Lut8(g,f);
+	inverter Lut9(h,g);
+	inverter Lut10(i,h);
+	inverter Lut11(j,i);
+	inverter Lut12(k,j);
+	inverter Lut13(l,k);
+	inverter Lut14(m,l);
+	inverter Lut15(OUT,m); 
 	
 	
 endmodule

@@ -21,11 +21,11 @@
 module Duty_Cycle_Circuit(ring_in, enable, clk, reset, value);
 	input clk, ring_in, reset, enable;
 	output reg [15:0] value;
-	wire [15:0] C1_out;
+	wire [7:0] C1_out;
 	wire [15:0] C2_out;
 	reg C1_carry;
 	
-	nBitCounter Counter1(.count(C1_out), .enable(enable), .clk(clk), .rst_n(reset));
+	eightBitCounter Counter1(.count(C1_out), .enable(enable), .clk(clk), .rst_n(reset));
 	nBitCounter Counter2(.count(C2_out), .enable(ring_in), .clk(clk), .rst_n(C1_carry));
 	
 	always@(posedge clk) 

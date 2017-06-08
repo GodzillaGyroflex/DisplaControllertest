@@ -12,8 +12,8 @@
    </db_ref_list>
    <WVObjectSize size="8" />
    <wvobject fp_name="/Duty_Cycle_tb/value" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">value[3:0]</obj_property>
-      <obj_property name="ObjectShortName">value[3:0]</obj_property>
+      <obj_property name="ElementShortName">value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">value[15:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Duty_Cycle_tb/ring_in" type="logic" db_ref_id="1">
@@ -33,15 +33,17 @@
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
    <wvobject fp_name="/Duty_Cycle_tb/uut/C1_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">C1_out[3:0]</obj_property>
-      <obj_property name="ObjectShortName">C1_out[3:0]</obj_property>
+      <obj_property name="ElementShortName">C1_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C1_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Duty_Cycle_tb/uut/C1_carry" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">C1_carry</obj_property>
       <obj_property name="ObjectShortName">C1_carry</obj_property>
    </wvobject>
    <wvobject fp_name="/Duty_Cycle_tb/uut/Counter2/count" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">count[3:0]</obj_property>
-      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

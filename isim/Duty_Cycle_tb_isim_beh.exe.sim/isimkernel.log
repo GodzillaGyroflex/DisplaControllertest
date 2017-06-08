@@ -2,29 +2,29 @@ Command line:
    Duty_Cycle_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  64410
+     -socket  55295
 
-Wed May 31 16:23:45 2017
+Thu Jun 08 14:47:05 2017
 
 
- Elaboration Time: 0.187202 sec
+ Elaboration Time: 0.171601 sec
 
- Current Memory Usage: 1316.54 Meg
+ Current Memory Usage: 1159.26 Meg
 
  Total Signals          : 26
- Total Nets             : 66
+ Total Nets             : 58
  Total Signal Drivers   : 13
  Total Blocks           : 5
  Total Primitive Blocks : 3
  Total Processes        : 22
  Total Traceable Variables  : 28
- Total Scalar Nets and Variables : 263
-Total Line Count : 42
-Total Line Count : 42
+ Total Scalar Nets and Variables : 247
+Total Line Count : 46
+Total Line Count : 46
 
- Total Simulation Time: 8.67366 sec
+ Total Simulation Time: 4.63323 sec
 
- Current Memory Usage: 687.362 Meg
+ Current Memory Usage: 1316.51 Meg
 
-Wed May 31 16:30:22 2017
+Thu Jun 08 14:47:35 2017
 
