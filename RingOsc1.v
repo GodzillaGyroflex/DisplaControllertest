@@ -19,15 +19,29 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module RingOsc2(Mode, Stress, OUT);
+	parameter LENGTH = 15;
 	input Mode, Stress;
 	output wire OUT;
-	(* S = "TRUE"*)wire LUTout, a, b, c, e, d, f, g, h, i, j, k, l, m;
+	(* S = "TRUE"*)wire [LENGTH : 0] connect_wire;
+	
+	//LUTout, a, b, c, e, d, f, g, h, i, j, k, l, m;
 	
 	
 	
-	LUTSel LUTSel1(.Mode(Mode), .Stress(Stress), .INSel(OUT), .OUTSel(LUTout));
+	LUTSel LUTSel1(.Mode(Mode), .Stress(Stress), .INSel(OUT), .OUTSel(connect_wire[0]));
+	assign OUT = connect_wire[LENGTH];
+	genvar i;  
+	generate  
+		for (i=1; i <= LENGTH; i = i+1)  
+			begin: Lut  
+				inverter Lut(connect_wire[i], connect_wire[i-1]); 				
+			end  
+		//inverter last(OUT, connect_wire[LENGTH]);
+	endgenerate  
 	
-	inverter Lut2(a,LUTout);
+	
+	
+	/* inverter Lut2(a,LUTout);
 	inverter Lut3(b,a);
 	inverter Lut4(c,b);
 	inverter Lut5(d,c);
@@ -40,7 +54,7 @@ module RingOsc2(Mode, Stress, OUT);
 	inverter Lut12(k,j);
 	inverter Lut13(l,k);
 	inverter Lut14(m,l);
-	inverter Lut15(OUT,m); 
+	inverter Lut15(OUT,m); */
 	
 	
 endmodule
