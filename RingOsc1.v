@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module RingOsc2(Mode, Stress, OUT);
-	parameter LENGTH = 15;
+	parameter LENGTH = 20;
 	input Mode, Stress;
 	output wire OUT;
 	(* S = "TRUE"*)wire [LENGTH : 0] connect_wire;
