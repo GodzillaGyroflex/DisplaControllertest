@@ -39,6 +39,9 @@
     <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM2_arwz.ucf" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Displaytest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Displaytest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Duty_Cycle_Circuit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Duty_Cycle_Circuit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Duty_Cycle_Circuit.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Duty_Cycle_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PWM_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PWM_test_isim_beh.exe"/>
@@ -77,18 +80,15 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Top.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Top.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Top.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Top.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Top.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Top.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Top.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Top.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Top.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Top.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Top.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Top.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Top.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Top.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Top.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Top_guide.ncd" xil_pn:origination="imported"/>
@@ -96,15 +96,49 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Top_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Top_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Top_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Top_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Top_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="UART_send_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UART_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="UART_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="UART_test_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="UART_transmitter.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UART_transmitter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UART_transmitter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="UART_transmitter.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UART_transmitter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="UART_transmitter.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="UART_transmitter.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="UART_transmitter.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="UART_transmitter.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="UART_transmitter.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UART_transmitter.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="UART_transmitter.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="UART_transmitter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="UART_transmitter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="UART_transmitter.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="UART_transmitter.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="UART_transmitter.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="UART_transmitter.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="UART_transmitter.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="UART_transmitter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UART_transmitter_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="UART_transmitter_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="UART_transmitter_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="UART_transmitter_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="UART_transmitter_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="UART_transmitter_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UART_transmitter_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UART_transmitter_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="UART_transmitter_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="UART_transmitter_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UART_transmitter_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UART_transmitter_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="UART_transmitter_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="UART_transmitter_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UART_transmitter_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -126,6 +160,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="top.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="toptest_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="toptest_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="uart_transmitter.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="uart_transmitter.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="uart_transmitter.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -139,13 +176,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497025984" xil_pn:in_ck="1346702118418987526" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1497025984">
+    <transform xil_pn:end_ts="1497463573" xil_pn:in_ck="3359011237237474601" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1497463573">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BinToBCD.v"/>
       <outfile xil_pn:name="BintoBCDtest.v"/>
       <outfile xil_pn:name="Counter.v"/>
@@ -161,6 +194,9 @@
       <outfile xil_pn:name="RingOsc1.v"/>
       <outfile xil_pn:name="SensorController.v"/>
       <outfile xil_pn:name="Top.v"/>
+      <outfile xil_pn:name="UART_send_test.v"/>
+      <outfile xil_pn:name="UART_test.v"/>
+      <outfile xil_pn:name="UART_transmitter.v"/>
       <outfile xil_pn:name="inverter.v"/>
       <outfile xil_pn:name="nBitCounter2.v"/>
       <outfile xil_pn:name="sensor_cont_tb.v"/>
@@ -168,26 +204,21 @@
       <outfile xil_pn:name="testeff.v"/>
       <outfile xil_pn:name="toptest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1497025322" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1615704530704634090" xil_pn:start_ts="1497025322">
+    <transform xil_pn:end_ts="1497380656" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7049226437219096050" xil_pn:start_ts="1497380656">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497025322" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3681272185834893228" xil_pn:start_ts="1497025322">
+    <transform xil_pn:end_ts="1497380656" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1645822404064024908" xil_pn:start_ts="1497380656">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1496939611" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6229109801353681872" xil_pn:start_ts="1496939611">
+    <transform xil_pn:end_ts="1497380656" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8081843110567316597" xil_pn:start_ts="1497380656">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497025984" xil_pn:in_ck="1346702118418987526" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1497025984">
+    <transform xil_pn:end_ts="1497463573" xil_pn:in_ck="3359011237237474601" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1497463573">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BinToBCD.v"/>
       <outfile xil_pn:name="BintoBCDtest.v"/>
       <outfile xil_pn:name="Counter.v"/>
@@ -203,6 +234,9 @@
       <outfile xil_pn:name="RingOsc1.v"/>
       <outfile xil_pn:name="SensorController.v"/>
       <outfile xil_pn:name="Top.v"/>
+      <outfile xil_pn:name="UART_send_test.v"/>
+      <outfile xil_pn:name="UART_test.v"/>
+      <outfile xil_pn:name="UART_transmitter.v"/>
       <outfile xil_pn:name="inverter.v"/>
       <outfile xil_pn:name="nBitCounter2.v"/>
       <outfile xil_pn:name="sensor_cont_tb.v"/>
@@ -210,28 +244,24 @@
       <outfile xil_pn:name="testeff.v"/>
       <outfile xil_pn:name="toptest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1497025989" xil_pn:in_ck="1346702118418987526" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1813990330620616181" xil_pn:start_ts="1497025984">
+    <transform xil_pn:end_ts="1497463578" xil_pn:in_ck="3359011237237474601" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-31650366393943643" xil_pn:start_ts="1497463573">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="PWM_test_beh.prj"/>
-      <outfile xil_pn:name="PWM_test_isim_beh.exe"/>
+      <outfile xil_pn:name="UART_test_beh.prj"/>
+      <outfile xil_pn:name="UART_test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1497025990" xil_pn:in_ck="-5947425920362174744" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3691472390719840296" xil_pn:start_ts="1497025989">
+    <transform xil_pn:end_ts="1497463579" xil_pn:in_ck="-1157101183296465691" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2430861794968679016" xil_pn:start_ts="1497463578">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="PWM_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="UART_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -239,123 +269,120 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-9220452403676013396" xil_pn:start_ts="1493929450">
+    <transform xil_pn:end_ts="1497461665" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1371855362590358415" xil_pn:start_ts="1497461665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6229109801353681872" xil_pn:start_ts="1493929450">
+    <transform xil_pn:end_ts="1497461665" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8081843110567316597" xil_pn:start_ts="1497461665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1493929450">
+    <transform xil_pn:end_ts="1497461666" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1497461665">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5375096142591415978" xil_pn:start_ts="1493929450">
+    <transform xil_pn:end_ts="1497461666" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4366537198674201391" xil_pn:start_ts="1497461666">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252417716204" xil_pn:start_ts="1493929450">
+    <transform xil_pn:end_ts="1497461666" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252417716204" xil_pn:start_ts="1497461666">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493929450" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5423068898193296646" xil_pn:start_ts="1493929450">
+    <transform xil_pn:end_ts="1497461666" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1114099116478491777" xil_pn:start_ts="1497461666">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497296259" xil_pn:in_ck="307373081033092041" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2889374167054534525" xil_pn:start_ts="1497296244">
+    <transform xil_pn:end_ts="1497463210" xil_pn:in_ck="275786751137283333" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2822876179571954696" xil_pn:start_ts="1497463202">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="SensorController.ngr"/>
-      <outfile xil_pn:name="Top.lso"/>
-      <outfile xil_pn:name="Top.ngc"/>
-      <outfile xil_pn:name="Top.ngr"/>
-      <outfile xil_pn:name="Top.prj"/>
-      <outfile xil_pn:name="Top.stx"/>
-      <outfile xil_pn:name="Top.syr"/>
-      <outfile xil_pn:name="Top.xst"/>
-      <outfile xil_pn:name="Top_xst.xrpt"/>
+      <outfile xil_pn:name="UART_transmitter.lso"/>
+      <outfile xil_pn:name="UART_transmitter.ngc"/>
+      <outfile xil_pn:name="UART_transmitter.ngr"/>
+      <outfile xil_pn:name="UART_transmitter.prj"/>
+      <outfile xil_pn:name="UART_transmitter.stx"/>
+      <outfile xil_pn:name="UART_transmitter.syr"/>
+      <outfile xil_pn:name="UART_transmitter.xst"/>
+      <outfile xil_pn:name="UART_transmitter_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="toptest_stx_beh.prj"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1494001712" xil_pn:in_ck="85592440060668420" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952577109" xil_pn:start_ts="1494001712">
+    <transform xil_pn:end_ts="1497461675" xil_pn:in_ck="85592440060668420" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3202404967244705626" xil_pn:start_ts="1497461675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497296265" xil_pn:in_ck="2941707494839755905" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8283412161079782829" xil_pn:start_ts="1497296259">
+    <transform xil_pn:end_ts="1497463216" xil_pn:in_ck="4730749508034927071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5004429055833647800" xil_pn:start_ts="1497463210">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Top.bld"/>
-      <outfile xil_pn:name="Top.ngd"/>
-      <outfile xil_pn:name="Top_ngdbuild.xrpt"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="UART_transmitter.bld"/>
+      <outfile xil_pn:name="UART_transmitter.ngd"/>
+      <outfile xil_pn:name="UART_transmitter_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497296271" xil_pn:in_ck="-3985240643265663197" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1497296265">
+    <transform xil_pn:end_ts="1497463222" xil_pn:in_ck="2422446259065481602" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1497463216">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Top.pcf"/>
-      <outfile xil_pn:name="Top_map.map"/>
-      <outfile xil_pn:name="Top_map.mrp"/>
-      <outfile xil_pn:name="Top_map.ncd"/>
-      <outfile xil_pn:name="Top_map.ngm"/>
-      <outfile xil_pn:name="Top_map.xrpt"/>
-      <outfile xil_pn:name="Top_summary.xml"/>
-      <outfile xil_pn:name="Top_usage.xml"/>
+      <outfile xil_pn:name="UART_transmitter.pcf"/>
+      <outfile xil_pn:name="UART_transmitter_map.map"/>
+      <outfile xil_pn:name="UART_transmitter_map.mrp"/>
+      <outfile xil_pn:name="UART_transmitter_map.ncd"/>
+      <outfile xil_pn:name="UART_transmitter_map.ngm"/>
+      <outfile xil_pn:name="UART_transmitter_map.xrpt"/>
+      <outfile xil_pn:name="UART_transmitter_summary.xml"/>
+      <outfile xil_pn:name="UART_transmitter_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497296286" xil_pn:in_ck="6359689317683855221" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1497296271">
+    <transform xil_pn:end_ts="1497463237" xil_pn:in_ck="5139134432137957357" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1497463222">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Top.ncd"/>
-      <outfile xil_pn:name="Top.pad"/>
-      <outfile xil_pn:name="Top.par"/>
-      <outfile xil_pn:name="Top.ptwx"/>
-      <outfile xil_pn:name="Top.unroutes"/>
-      <outfile xil_pn:name="Top.xpi"/>
-      <outfile xil_pn:name="Top_pad.csv"/>
-      <outfile xil_pn:name="Top_pad.txt"/>
-      <outfile xil_pn:name="Top_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="UART_transmitter.ncd"/>
+      <outfile xil_pn:name="UART_transmitter.pad"/>
+      <outfile xil_pn:name="UART_transmitter.par"/>
+      <outfile xil_pn:name="UART_transmitter.ptwx"/>
+      <outfile xil_pn:name="UART_transmitter.unroutes"/>
+      <outfile xil_pn:name="UART_transmitter.xpi"/>
+      <outfile xil_pn:name="UART_transmitter_pad.csv"/>
+      <outfile xil_pn:name="UART_transmitter_pad.txt"/>
+      <outfile xil_pn:name="UART_transmitter_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497296311" xil_pn:in_ck="-1932720421308360617" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1497296296">
+    <transform xil_pn:end_ts="1497463261" xil_pn:in_ck="1067662268850107442" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1497463247">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Top.ut"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="UART_transmitter.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="top.bgn"/>
-      <outfile xil_pn:name="top.bit"/>
-      <outfile xil_pn:name="top.drc"/>
+      <outfile xil_pn:name="uart_transmitter.bgn"/>
+      <outfile xil_pn:name="uart_transmitter.bit"/>
+      <outfile xil_pn:name="uart_transmitter.drc"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1497296313" xil_pn:in_ck="-877141182950908661" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1497296312">
+    <transform xil_pn:end_ts="1497463283" xil_pn:in_ck="-1676782929367940816" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1497463281">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1496672823" xil_pn:in_ck="6481453974881629083" xil_pn:name="TRAN_fpgaFloorplanPostPAR" xil_pn:start_ts="1496672823">
+    <transform xil_pn:end_ts="1497463237" xil_pn:in_ck="-6476174130030093962" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1497463233">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
-    </transform>
-    <transform xil_pn:end_ts="1497296286" xil_pn:in_ck="6481453974881629083" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1497296282">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Top.twr"/>
-      <outfile xil_pn:name="Top.twx"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="UART_transmitter.twr"/>
+      <outfile xil_pn:name="UART_transmitter.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>

@@ -1,18 +1,25 @@
-Running: F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Saulo/Documents/DisplaControllertest/PWM_test_isim_beh.exe -prj C:/Users/Saulo/Documents/DisplaControllertest/PWM_test_beh.prj work.PWM_test work.glbl 
+Running: F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Saulo/Documents/DisplaControllertest/UART_test_isim_beh.exe -prj C:/Users/Saulo/Documents/DisplaControllertest/UART_test_beh.prj work.UART_test work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/PWM_gen.v" into library work
-Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/PWM_test.v" into library work
+Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" into library work
+WARNING:HDLCompiler:693 - "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" Line 43: Parameter declaration becomes local in uart_send with formal parameter declaration list
+WARNING:HDLCompiler:693 - "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" Line 45: Parameter declaration becomes local in uart_send with formal parameter declaration list
+WARNING:HDLCompiler:693 - "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" Line 46: Parameter declaration becomes local in uart_send with formal parameter declaration list
+WARNING:HDLCompiler:693 - "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" Line 47: Parameter declaration becomes local in uart_send with formal parameter declaration list
+WARNING:HDLCompiler:693 - "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" Line 48: Parameter declaration becomes local in uart_send with formal parameter declaration list
+Analyzing Verilog file "C:/Users/Saulo/Documents/DisplaControllertest/UART_test.v" into library work
 Analyzing Verilog file "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.v" Line 27: Size mismatch in connection of port <start_send>. Formal port size is 1-bit while actual signal size is 32-bit.
 Completed static elaboration
-Compiling module PWM_gen
-Compiling module PWM_test
+Compiling module uart_send_default
+Compiling module UART_transmitter
+Compiling module UART_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 3 Verilog Units
-Built simulation executable C:/Users/Saulo/Documents/DisplaControllertest/PWM_test_isim_beh.exe
-Fuse Memory Usage: 27280 KB
-Fuse CPU Usage: 623 ms
+Compiled 4 Verilog Units
+Built simulation executable C:/Users/Saulo/Documents/DisplaControllertest/UART_test_isim_beh.exe
+Fuse Memory Usage: 27824 KB
+Fuse CPU Usage: 701 ms

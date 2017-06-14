@@ -1,10 +1,11 @@
 ISim log file
-Running: C:\Users\Saulo\Documents\DisplaControllertest\PWM_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Saulo/Documents/DisplaControllertest/PWM_test_isim_beh.wdb 
+Running: C:\Users\Saulo\Documents\DisplaControllertest\UART_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Saulo/Documents/DisplaControllertest/UART_test_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING:  For instance uut/sender/, width 1 of formal port start_send is not equal to width 32 of actual constant.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -15,4 +16,4 @@ Finished circuit initialization process.
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 52933830 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/PWM_test.v" Line 45
+Stopped at time : 63934090 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/UART_test.v" Line 50
