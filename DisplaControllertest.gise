@@ -179,6 +179,10 @@
     <transform xil_pn:end_ts="1497620220" xil_pn:in_ck="3359011237237474601" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1497620220">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BinToBCD.v"/>
       <outfile xil_pn:name="BintoBCDtest.v"/>
       <outfile xil_pn:name="Counter.v"/>
@@ -219,6 +223,11 @@
     <transform xil_pn:end_ts="1497620220" xil_pn:in_ck="3359011237237474601" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1497620220">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BinToBCD.v"/>
       <outfile xil_pn:name="BintoBCDtest.v"/>
       <outfile xil_pn:name="Counter.v"/>
@@ -247,7 +256,10 @@
     <transform xil_pn:end_ts="1497620224" xil_pn:in_ck="3359011237237474601" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-31650366393943643" xil_pn:start_ts="1497620220">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="UART_test_beh.prj"/>
       <outfile xil_pn:name="UART_test_isim_beh.exe"/>
@@ -259,6 +271,7 @@
     <transform xil_pn:end_ts="1497630775" xil_pn:in_ck="-1157101183296465691" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2430861794968679016" xil_pn:start_ts="1497630775">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="UART_test_isim_beh.wdb"/>
@@ -293,13 +306,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497463210" xil_pn:in_ck="275786751137283333" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2822876179571954696" xil_pn:start_ts="1497463202">
+    <transform xil_pn:end_ts="1497636463" xil_pn:in_ck="275786751137283333" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2822876179571954696" xil_pn:start_ts="1497636455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="UART_transmitter.lso"/>
@@ -314,24 +325,22 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1497461675" xil_pn:in_ck="85592440060668420" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3202404967244705626" xil_pn:start_ts="1497461675">
+    <transform xil_pn:end_ts="1497636463" xil_pn:in_ck="8226068155054082707" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3202404967244705626" xil_pn:start_ts="1497636463">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1497463216" xil_pn:in_ck="4730749508034927071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5004429055833647800" xil_pn:start_ts="1497463210">
+    <transform xil_pn:end_ts="1497636469" xil_pn:in_ck="7078749274442081870" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5004429055833647800" xil_pn:start_ts="1497636463">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_transmitter.bld"/>
       <outfile xil_pn:name="UART_transmitter.ngd"/>
       <outfile xil_pn:name="UART_transmitter_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497463222" xil_pn:in_ck="2422446259065481602" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1497463216">
+    <transform xil_pn:end_ts="1497636474" xil_pn:in_ck="4377845016644912849" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4434801857544382025" xil_pn:start_ts="1497636469">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="UART_transmitter.pcf"/>
@@ -344,10 +353,9 @@
       <outfile xil_pn:name="UART_transmitter_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497463237" xil_pn:in_ck="5139134432137957357" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1497463222">
+    <transform xil_pn:end_ts="1497636488" xil_pn:in_ck="-3840757504526990564" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1497636474">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_transmitter.ncd"/>
       <outfile xil_pn:name="UART_transmitter.pad"/>
       <outfile xil_pn:name="UART_transmitter.par"/>
@@ -359,10 +367,9 @@
       <outfile xil_pn:name="UART_transmitter_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1497463261" xil_pn:in_ck="1067662268850107442" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1497463247">
+    <transform xil_pn:end_ts="1497636528" xil_pn:in_ck="1067662268850107442" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1497636514">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_transmitter.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="uart_transmitter.bgn"/>
@@ -372,15 +379,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1497463283" xil_pn:in_ck="-1676782929367940816" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1497463281">
+    <transform xil_pn:end_ts="1497636533" xil_pn:in_ck="-1676782929367940816" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1497636531">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1497463237" xil_pn:in_ck="-6476174130030093962" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1497463233">
+    <transform xil_pn:end_ts="1497636488" xil_pn:in_ck="-8037674428319808699" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1497636485">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="UART_transmitter.twr"/>
       <outfile xil_pn:name="UART_transmitter.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
 -fastpaths -xml UART_transmitter.twx UART_transmitter.ncd -o
-UART_transmitter.twr UART_transmitter.pcf
+UART_transmitter.twr UART_transmitter.pcf -ucf UARTconst.ucf
 
 Design file:              UART_transmitter.ncd
 Physical constraint file: UART_transmitter.pcf
@@ -45,7 +45,7 @@ Clock fpga_clk1 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-tx          |   10.327(R)|fpga_clk1_BUFGP   |   0.000|
+tx          |   11.577(R)|fpga_clk1_BUFGP   |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock fpga_clk1
@@ -53,18 +53,18 @@ Clock to Setup on destination clock fpga_clk1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-fpga_clk1      |    6.698|         |         |         |
+fpga_clk1      |    5.465|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Jun 14 15:00:35 2017 
+Analysis completed Fri Jun 16 15:08:07 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 173 MB
+Peak Memory Usage: 172 MB
 
 
 

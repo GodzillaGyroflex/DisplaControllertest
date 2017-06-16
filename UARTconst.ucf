@@ -9,7 +9,7 @@
 
 //NET "fpga_clk1" TNM_NET = fpga_clk1;
 //TIMESPEC TS_fpga_clk1 = PERIOD "fpga_clk1" 40 ns HIGH 50%;
-                                                                                                                        
+                                                                                                                      
 # onBoard USB controller                                                                                                                        
 # NET "EppAstb"   LOC = "P125"; # Bank = 0, Pin name = IO_L5P_0/GCLK14,    Sch name = U-FLGA
 # NET "EppDstb"   LOC = "P124"; # Bank = 0, Pin name = IO/VREF_0,          Sch name = U-FLGB
@@ -31,40 +31,20 @@
 # NET "UsbMode"   LOC = "P122"; # Bank = 0, Pin name = IO_L4P_0/GCLK12,    Sch name = U-INT0#
 # NET "UsbAdr<0>" LOC = "P116"; # Bank = 0, Pin name = IO_L2P_0,           Sch name = U-FAD0
 # NET "UsbAdr<1>" LOC = "P113"; # Bank = 0, Pin name = IO_L1N_0,           Sch name = U-FAD1
+ 
 
-# onBoard 7seg display                                                                                                                        
- NET "seg0"    LOC = "P25"; # Bank = 3, Pin name = IO_L8P_3,            Sch name = CA
- NET "seg1"    LOC = "P16"; # Bank = 3, Pin name = IO_L5P_3/GCLK22,     Sch name = CB
- NET "seg2"    LOC = "P23"; # Bank = 3, Pin name = IO_L7N_3/GCLK27      Sch name = CC
- NET "seg3"    LOC = "P21"; # Bank = 3, Pin name = IO_L6N_3/GCLK25,     Sch name = CD
- NET "seg4"    LOC = "P20"; # Bank = 3, Pin name = IO_L6P_3/GCLK24/TRDY2,Sch name = CE
- NET "seg5"    LOC = "P17"; # Bank = 3, Pin name = IO_L5N_3/GCLK23/IRDY2,Sch name = CF
- NET "seg6"    LOC = "P83"; # Bank = 1, Pin name = IO/VREF_1,           Sch name = CG
- NET "dp"        LOC = "P22"; # Bank = 3, Pin name = IO_L7P_3/GCLK26,     Sch name = DP
- NET "an0"     LOC = "P34"; # Bank = 3, Pin name = IO_L10P_3,           Sch name = AN1
- NET "an1"     LOC = "P33"; # Bank = 3, Pin name = IO_L9N_3,            Sch name = AN2
- NET "an2"     LOC = "P32"; # Bank = 3, Pin name = IO_L9P_3,            Sch name = AN3
- NET "an3"     LOC = "P26"; # Bank = 3, Pin name = IO_L8N_3,            Sch name = AN4
 
 #  Leds                                                                                                                        
 # NET "ready"    LOC = "P15"; # Bank = 3, Pin name = IO_L4N_3/GCLK21      Sch name = LD0
 # NET "clk1_lock"    LOC = "P14"; # Bank = 3, Pin name = IO_L4P_3/GCLK20      Sch name = LD1
 # NET "clk2_lock"    LOC = "P8";  # Bank = 3, Pin name = IO_L3N_3,            Sch name = LD2
-# NET "ready"    LOC = "P7";  # Bank = 3, Pin name = IO_L3P_3,            Sch name = LD3
+ NET "ready"    LOC = "P7";  # Bank = 3, Pin name = IO_L3P_3,            Sch name = LD3
 # NET "Led<4>"    LOC = "P5";  # Bank = 3, Pin name = IO_L2N_3/VREF_3,     Sch name = LD4
 # NET "led_reset"    LOC = "P4";  # Bank = 3, Pin name = IO_L2P_3,            Sch name = LD5
 # NET "alarm"    LOC = "P3";  # Bank = 3, Pin name = IO_L1N_3,            Sch name = LD6
 # NET "reg_alarm"    LOC = "P2";  # Bank = 3, Pin name = IO_L1P_3,            Sch name = LD7
 
-# Switches                                                                                                                        
-# NET "sw<0>"     LOC = "P38"; # Bank = 2, Pin name = IP,                  Sch name = SW0
-# NET "sw<1>"     LOC = "P36"; # Bank = 3, Pin name = IP,                  Sch name = SW1
-# NET "enable"     LOC = "P29"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW2
-NET "Mode"     LOC = "P24"; # Bank = 3, Pin name = IP                   Sch name = SW3
-NET "Stress"     LOC = "P18"; # Bank = 3, Pin name = IP,                  Sch name = SW4
-# NET "sw<5>"     LOC = "P12"; # Bank = 3, Pin name = IP/VREF_3,           Sch name = SW5
-# NET "sw<6>"     LOC = "P10"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW6
-# NET "sw<7>"     LOC = "P6";  # Bank = 3, Pin name = IP,                  Sch name = SW7#
+
 
 # Buttons                                                                                                                        
 // NET "reset"    LOC = "P69"; # Bank = 2, Pin name = IP,                   Sch name = BTN0
@@ -90,7 +70,7 @@ NET "Stress"     LOC = "P18"; # Bank = 3, Pin name = IP,                  Sch na
 # 6 pin connectors                                                                                                                       
 #NET "JA0" LOC = "P81"; # Bank = 1, Pin name = IO_L3P_1/A12,            Sch name = JA-1
 # NET "JA<1>" LOC = "P91"; # Bank = 1, Pin name = IO_L6P_1/A6/GCLK8/IRDY1, Sch name = JA-2
-NET "ring_out" LOC = "P82"; # Bank = 1, Pin name = IO_L3N_1/A11,            Sch name = JA-3
+//NET "ring_out" LOC = "P82"; # Bank = 1, Pin name = IO_L3N_1/A11,            Sch name = JA-3
 # NET "JA<3>" LOC = "P92"; # Bank = 1, Pin name = IO_L6N_1/A5/GCLK9,       Sch name = JA-4
 #NET "JB0" LOC = "P87"; # Bank = 1, Pin name = IO_L5P_1/A8/GCLK6,       Sch name = JB-1
 # NET "JB<1>" LOC = "P93"; # Bank = 1, Pin name = IO_L7P_1/A4/GCLK10,      Sch name = JB-2

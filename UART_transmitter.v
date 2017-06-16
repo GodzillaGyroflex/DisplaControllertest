@@ -18,16 +18,16 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module UART_transmitter(input fpga_clk1,
-                input rx,
-                output tx);
+module UART_transmitter(input fpga_clk1, output tx, output ready);
 
-    reg [31:0] count = 0;
-    wire ready; 
-    uart_send sender("F", 1, fpga_clk1, tx, ready);  
+    reg [31:0] count = 0; 
+	 reg [7:0] data_send = 8'b01000110;
+	 wire dud;
+    uart_send sender(data_send, 1, fpga_clk1, tx, dud); 
+		assign ready = 1;
 
     always @(posedge fpga_clk1)
-        if(count == 100000000) count <= 0;
+        if(count == 100000000) count <= 0; 
         else count <= count + 1;
 
 endmodule

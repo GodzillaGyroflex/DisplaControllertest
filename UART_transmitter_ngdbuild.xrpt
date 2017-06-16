@@ -5,13 +5,13 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Jun 14 15:00:15 2017">
+  <application stringID="NgdBuild" timeStamp="Fri Jun 16 15:07:47 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
+          <item stringID="variable" value="PATH"/>
           <item stringID="value" value="F:\14.7\ISE_DS\ISE\\lib\nt64;F:\14.7\ISE_DS\ISE\\bin\nt64;F:\14.7\ISE_DS\ISE\bin\nt64;F:\14.7\ISE_DS\ISE\lib\nt64;F:\14.7\ISE_DS\ISE\..\..\..\DocNav;F:\14.7\ISE_DS\PlanAhead\bin;F:\14.7\ISE_DS\EDK\bin\nt64;F:\14.7\ISE_DS\EDK\lib\nt64;F:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;F:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;F:\14.7\ISE_DS\EDK\gnuwin\bin;F:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;F:\14.7\ISE_DS\common\bin\nt64;F:\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\ProgramData\Oracle\Java\javapath;C:\Qt\Qt5.3.2\Tools\mingw482_32\bin;C:\Qt\Qt5.3.2\5.3\mingw482_32\lib\cmake;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\tools;C:\Program Files\TortoiseGit\bin;C:\Program Files\Java\jdk1.7.0_75\bin;D:\Android\OpenCV-2.4.9-android-sdk;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\QuickTime\QTSystem\"/>
         </row>
         <row stringID="row" value="1">
@@ -54,6 +54,7 @@
         <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc3s250e-tq144-4"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="UARTconst.ucf"/>
       </section>
     </task>
     <task stringID="NGDBUILD_REPORT">
@@ -68,36 +69,36 @@
         <item dataType="int" stringID="NGDBUILD_NUM_BUFGP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="48"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="46"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="22"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="54"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="13"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="15"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="48"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="16"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FD" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="48"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="46"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="22"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="54"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="13"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="15"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="48"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="16"/>
       </section>
       <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
         <section stringID="NGDBUILD_CORE_INSTANCES"/>
