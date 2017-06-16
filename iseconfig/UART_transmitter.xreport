@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-14T13:10:01</DateModified>
+  <DateModified>2017-06-16T10:21:41</DateModified>
   <ModuleName>UART_transmitter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Saulo/Documents/DisplaControllertest/iseconfig/UART_transmitter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Saulo/Documents/DisplaControllertest</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Saulo/Documents/DisplaControllertest\</ImplementationReportsDirectory>
   <DateInitialized>2017-06-14T13:10:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

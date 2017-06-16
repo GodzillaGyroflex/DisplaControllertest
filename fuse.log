@@ -19,7 +19,8 @@ Compiling module UART_transmitter
 Compiling module UART_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 4 Verilog Units
 Built simulation executable C:/Users/Saulo/Documents/DisplaControllertest/UART_test_isim_beh.exe
-Fuse Memory Usage: 27824 KB
-Fuse CPU Usage: 701 ms
+Fuse Memory Usage: 27836 KB
+Fuse CPU Usage: 670 ms

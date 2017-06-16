@@ -24,7 +24,7 @@ module UART_transmitter(input fpga_clk1,
 
     reg [31:0] count = 0;
     wire ready; 
-    uart_send sender("X", 1, fpga_clk1, tx, ready);  
+    uart_send sender("F", 1, fpga_clk1, tx, ready);  
 
     always @(posedge fpga_clk1)
         if(count == 100000000) count <= 0;

@@ -25,7 +25,7 @@ static const char *ng0 = "C:/Users/Saulo/Documents/DisplaControllertest/UART_tra
 static int ng1[] = {100000000, 0};
 static int ng2[] = {0, 0};
 static int ng3[] = {1, 0};
-static int ng4[] = {88, 0};
+static int ng4[] = {70, 0};
 
 
 
