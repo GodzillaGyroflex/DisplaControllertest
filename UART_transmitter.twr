@@ -45,7 +45,8 @@ Clock fpga_clk1 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-tx          |   11.577(R)|fpga_clk1_BUFGP   |   0.000|
+ready       |   10.380(R)|fpga_clk1_BUFGP   |   0.000|
+tx          |   11.646(R)|fpga_clk1_BUFGP   |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock fpga_clk1
@@ -53,11 +54,11 @@ Clock to Setup on destination clock fpga_clk1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-fpga_clk1      |    5.465|         |         |         |
+fpga_clk1      |    5.694|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jun 16 15:08:07 2017 
+Analysis completed Mon Jun 19 15:03:55 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

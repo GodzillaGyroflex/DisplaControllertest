@@ -90,3 +90,26 @@ map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o UART_tr
 par -w -intstyle ise -ol high -t 1 UART_transmitter_map.ncd UART_transmitter.ncd UART_transmitter.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_transmitter.twx UART_transmitter.ncd -o UART_transmitter.twr UART_transmitter.pcf -ucf UARTconst.ucf 
 bitgen -intstyle ise -f UART_transmitter.ut UART_transmitter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UARTconst.ucf -p xc3s250e-tq144-4 UART_transmitter.ngc UART_transmitter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o UART_transmitter_map.ncd UART_transmitter.ngd UART_transmitter.pcf 
+par -w -intstyle ise -ol high -t 1 UART_transmitter_map.ncd UART_transmitter.ncd UART_transmitter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_transmitter.twx UART_transmitter.ncd -o UART_transmitter.twr UART_transmitter.pcf -ucf UARTconst.ucf 
+bitgen -intstyle ise -f UART_transmitter.ut UART_transmitter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UARTconst.ucf -p xc3s250e-tq144-4 UART_transmitter.ngc UART_transmitter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o UART_transmitter_map.ncd UART_transmitter.ngd UART_transmitter.pcf 
+par -w -intstyle ise -ol high -t 1 UART_transmitter_map.ncd UART_transmitter.ncd UART_transmitter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_transmitter.twx UART_transmitter.ncd -o UART_transmitter.twr UART_transmitter.pcf -ucf UARTconst.ucf 
+bitgen -intstyle ise -f UART_transmitter.ut UART_transmitter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UARTconst.ucf -p xc3s250e-tq144-4 UART_transmitter.ngc UART_transmitter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o UART_transmitter_map.ncd UART_transmitter.ngd UART_transmitter.pcf 
+par -w -intstyle ise -ol high -t 1 UART_transmitter_map.ncd UART_transmitter.ncd UART_transmitter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_transmitter.twx UART_transmitter.ncd -o UART_transmitter.twr UART_transmitter.pcf -ucf UARTconst.ucf 
+bitgen -intstyle ise -f UART_transmitter.ut UART_transmitter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/UART_transmitter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UARTconst.ucf -p xc3s250e-tq144-4 UART_transmitter.ngc UART_transmitter.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o UART_transmitter_map.ncd UART_transmitter.ngd UART_transmitter.pcf 
+par -w -intstyle ise -ol high -t 1 UART_transmitter_map.ncd UART_transmitter.ncd UART_transmitter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_transmitter.twx UART_transmitter.ncd -o UART_transmitter.twr UART_transmitter.pcf -ucf UARTconst.ucf 

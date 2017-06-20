@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : tq144
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Jun 16 15:07:50 2017
+Mapped Date    : Mon Jun 19 15:03:39 2017
 
 Design Summary
 --------------
@@ -33,9 +33,9 @@ Logic Distribution:
   Number of bonded IOBs:                  3 out of     108    2%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                2.67
+Average Fanout of Non-Clock Nets:                2.59
 
-Peak Memory Usage:  306 MB
+Peak Memory Usage:  304 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   1 secs 
 

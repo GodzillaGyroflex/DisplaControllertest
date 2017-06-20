@@ -12,7 +12,7 @@
 // Description: 
 //
 // Dependencies: 
-//
+// 
 // Revision: 
 // Revision 0.01 - File Created
 // Additional Comments: 
@@ -20,15 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 module UART_transmitter(input fpga_clk1, output tx, output ready);
 
-    reg [31:0] count = 0; 
-	 reg [7:0] data_send = 8'b01000110;
+     
+	 reg [7:0] data_send = 8'b11111111;
 	 wire dud;
-    uart_send sender(data_send, 1, fpga_clk1, tx, dud); 
-		assign ready = 1;
-
-    always @(posedge fpga_clk1)
-        if(count == 100000000) count <= 0; 
-        else count <= count + 1;
+    uart_send sender(data_send, 1, fpga_clk1, tx, ready); 
+    
 
 endmodule
 

@@ -19,22 +19,24 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Duty_Cycle_Circuit(ring_in, enable, clk, reset, value);
+	parameter max = 255;
 	input clk, ring_in, reset, enable;
-	output reg [15:0] value;
+	output reg [7:0] value;
 	wire [7:0] C1_out;
-	wire [15:0] C2_out;
-	reg C1_carry;
+	wire [7:0] C2_out;
+	reg rst;
 	
 	eightBitCounter Counter1(.count(C1_out), .enable(enable), .clk(clk), .rst_n(reset));
-	nBitCounter Counter2(.count(C2_out), .enable(ring_in), .clk(clk), .rst_n(C1_carry));
+	eightBitCounter Counter2(.count(C2_out), .enable(ring_in),.clk(clk), .rst_n(rst));
 	
 	always@(posedge clk) 
-		if(&C1_out) begin
-			value = C2_out;
-			C1_carry = 0;
+		if(C1_out < max) begin		
+			rst = 1;
 			end
-		else
-			C1_carry = 1;
-
+		else begin
+			value = C2_out;
+			rst = 0;
+			end
+			
 
 endmodule

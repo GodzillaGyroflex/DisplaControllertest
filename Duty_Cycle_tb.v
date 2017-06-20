@@ -31,7 +31,7 @@ module Duty_Cycle_tb;
 	reg reset;
 
 	// Outputs
-	wire [15:0] value;
+	wire [7:0] value;
 
 	// Instantiate the Unit Under Test (UUT)
 	Duty_Cycle_Circuit uut (
@@ -56,9 +56,9 @@ module Duty_Cycle_tb;
 			forever #10 clk = ~clk;
 			forever begin
 				ring_in = 1; 
-				#100;
+				#23;
 				ring_in = 0; 
-				#100;	end
+				#23;	end
 		join		
 		// Add stimulus here
 

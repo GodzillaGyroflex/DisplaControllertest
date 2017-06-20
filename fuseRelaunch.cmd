@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Saulo/Documents/DisplaControllertest/UART_test_isim_beh.exe" -prj "C:/Users/Saulo/Documents/DisplaControllertest/UART_test_beh.prj" "work.UART_test" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb_isim_beh.exe" -prj "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb_beh.prj" "work.Duty_Cycle_tb" "work.glbl" 
