@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jun 19 15:03:41 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ready" LOCATE = SITE "P7" LEVEL 1;
+COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
+COMP "tx" LOCATE = SITE "P94" LEVEL 1;
+NET "fpga_clk1_BUFGP/IBUFG" BEL "fpga_clk1_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+

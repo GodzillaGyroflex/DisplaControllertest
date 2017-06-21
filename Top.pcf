@@ -1,18 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed May 10 15:58:18 2017
+// Written by: Map P.20131013 on Tue Jun 20 16:28:31 2017
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "led0" LOCATE = SITE "P15" LEVEL 1;
 COMP "dp" LOCATE = SITE "P22" LEVEL 1;
-COMP "Stress" LOCATE = SITE "P18" LEVEL 1;
-COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
-COMP "Mode" LOCATE = SITE "P24" LEVEL 1;
 COMP "an0" LOCATE = SITE "P34" LEVEL 1;
 COMP "an1" LOCATE = SITE "P33" LEVEL 1;
 COMP "an2" LOCATE = SITE "P32" LEVEL 1;
 COMP "an3" LOCATE = SITE "P26" LEVEL 1;
-COMP "ring_out" LOCATE = SITE "P82" LEVEL 1;
+COMP "Mode" LOCATE = SITE "P24" LEVEL 1;
 COMP "seg0" LOCATE = SITE "P25" LEVEL 1;
 COMP "seg1" LOCATE = SITE "P16" LEVEL 1;
 COMP "seg2" LOCATE = SITE "P23" LEVEL 1;
@@ -20,6 +16,11 @@ COMP "seg3" LOCATE = SITE "P21" LEVEL 1;
 COMP "seg4" LOCATE = SITE "P20" LEVEL 1;
 COMP "seg5" LOCATE = SITE "P17" LEVEL 1;
 COMP "seg6" LOCATE = SITE "P83" LEVEL 1;
+COMP "CCout" LOCATE = SITE "P94" LEVEL 1;
+COMP "DCout" LOCATE = SITE "P93" LEVEL 1;
+COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
+COMP "Stress" LOCATE = SITE "P18" LEVEL 1;
+COMP "ring_out" LOCATE = SITE "P82" LEVEL 1;
 NET "fpga_clk1_BUFGP/IBUFG" BEL "fpga_clk1_BUFGP/BUFG.GCLKMUX"
         USELOCALCONNECT;
 SCHEMATIC END;

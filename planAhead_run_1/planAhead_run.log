@@ -1,0 +1,74 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Saulo/Documents/DisplaControllertest/pa.fromNcd.tcl
+# create_project -name DisplaControllertest -dir "C:/Users/Saulo/Documents/DisplaControllertest/planAhead_run_1" -part xc3s250etq144-4
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Users/Saulo/Documents/DisplaControllertest/Top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/Saulo/Documents/DisplaControllertest} }
+# set_property target_constrs_file "TOP_MODULE.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Saulo/Documents/DisplaControllertest/TOP_MODULE.ucf' to fileset 'constrs_1'
+# add_files [list {TOP_MODULE.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s250etq144-4
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Top.ngc ...
+WARNING:NetListWriters:298 - No output is written to Top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Top.edif ...
+ngc2edif: Total memory usage is 93280 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/DisplaControllertest.data/cache/Top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/DisplaControllertest.data/cache/Top_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockRegion.xml
+Loading clock buffers from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockBuffers.xml
+Loading package from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/tq144/Package.xml
+Loading io standards from F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/tq144/SSORules.xml
+Loading list of drcs for the architecture : F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/Saulo/Documents/DisplaControllertest/TOP_MODULE.ucf]
+Finished Parsing UCF File [C:/Users/Saulo/Documents/DisplaControllertest/TOP_MODULE.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: a9991edf
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 552.566 ; gain = 145.418
+# read_xdl -file "C:/Users/Saulo/Documents/DisplaControllertest/Top.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '3s250e.nph' in environment F:\14.7\ISE_DS\ISE\.
+   "Top" is an NCD, version 3.2, device xc3s250e, package tq144, speed -4
+Successfully converted design 'C:\Users\Saulo\Documents\DisplaControllertest\Top.ncd' to 'C:\Users\Saulo\Documents\DisplaControllertest\Top.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : C:/Users/Saulo/Documents/DisplaControllertest/Top.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/Users/Saulo/Documents/DisplaControllertest/Top.ncd
+INFO: [Designutils 20-671] Placed 403 instances
+read_xdl: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 553.848 ; gain = 0.000
+# if {[catch {read_twx -name results_1 -file "C:/Users/Saulo/Documents/DisplaControllertest/Top.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Users/Saulo/Documents/DisplaControllertest/Top.twx\": $eInfo"
+# }
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jun 05 11:29:53 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

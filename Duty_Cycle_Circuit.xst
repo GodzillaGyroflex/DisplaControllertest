@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Saulo/Documents/DisplaControllertest/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Saulo/Documents/DisplaControllertest/xst"
+elaborate
+-ifn Duty_Cycle_Circuit.prj
+-ifmt mixed

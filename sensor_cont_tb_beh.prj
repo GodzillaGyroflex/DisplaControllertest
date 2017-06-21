@@ -1,0 +1,5 @@
+verilog work "DisplayController.v"
+verilog work "BinToBCD.v"
+verilog work "SensorController.v"
+verilog work "sensor_cont_tb.v"
+verilog work "F:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

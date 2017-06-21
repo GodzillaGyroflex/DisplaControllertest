@@ -1,0 +1,3 @@
+verilog work "nBitCounter2.v"
+verilog work "Counter.v"
+verilog work "Duty_Cycle_Circuit.v"
