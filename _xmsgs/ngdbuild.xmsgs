@@ -5,5 +5,20 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;INST &quot;Dut/rst_not00014&quot; AREA_GROUP = &quot;Duty_cycle_meas&quot;;&gt; [TOP_MODULE.ucf(162)]</arg>: <arg fmt="%s" index="2">INST</arg> &quot;<arg fmt="%s" index="3">Dut/rst_not00014</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;INST &quot;Dut/rst_not00019&quot; AREA_GROUP = &quot;Duty_cycle_meas&quot;;&gt; [TOP_MODULE.ucf(235)]</arg>: <arg fmt="%s" index="2">INST</arg> &quot;<arg fmt="%s" index="3">Dut/rst_not00019</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;INST &quot;Dut/rst_not000110&quot; AREA_GROUP = &quot;Duty_cycle_meas&quot;;&gt; [TOP_MODULE.ucf(236)]</arg>: <arg fmt="%s" index="2">INST</arg> &quot;<arg fmt="%s" index="3">Dut/rst_not000110</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
 </messages>
 

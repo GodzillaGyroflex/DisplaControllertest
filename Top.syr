@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: Top.prj
 
@@ -145,7 +145,7 @@ Analyzing hierarchy for module <Counting_circuit> in library <work> with paramet
 	max = "00000000000000000000000001100011"
 
 Analyzing hierarchy for module <Duty_Cycle_Circuit> in library <work> with parameters.
-	max = "00000000000000000000000011111110"
+	max = "00000000000000000000000000011001"
 
 Analyzing hierarchy for module <SensorController> in library <work>.
 
@@ -200,7 +200,7 @@ Analyzing module <nBitCounter> in library <work>.
 Module <nBitCounter> is correct for synthesis.
  
 Analyzing module <Duty_Cycle_Circuit> in library <work>.
-	max = 32'sb00000000000000000000000011111110
+	max = 32'sb00000000000000000000000000011001
 Module <Duty_Cycle_Circuit> is correct for synthesis.
  
 Analyzing module <eightBitCounter> in library <work>.
@@ -389,9 +389,10 @@ Unit <Counting_circuit> synthesized.
 
 Synthesizing Unit <Duty_Cycle_Circuit>.
     Related source file is "Duty_Cycle_Circuit.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <value>.
     Found 1-bit register for signal <rst>.
-    Found 9-bit comparator lessequal for signal <rst$cmp_le0000> created at line 33.
+    Found 8-bit comparator lessequal for signal <rst$cmp_le0000> created at line 33.
     Summary:
 	inferred   9 D-type flip-flop(s).
 	inferred   1 Comparator(s).
@@ -432,7 +433,7 @@ Macro Statistics
 # Comparators                                          : 36
  16-bit comparator lessequal                           : 1
  4-bit comparator greatequal                           : 34
- 9-bit comparator lessequal                            : 1
+ 8-bit comparator lessequal                            : 1
 # Multiplexers                                         : 3
  1-bit 8-to-1 multiplexer                              : 2
  4-bit 4-to-1 multiplexer                              : 1
@@ -472,7 +473,7 @@ Macro Statistics
 # Comparators                                          : 36
  16-bit comparator lessequal                           : 1
  4-bit comparator greatequal                           : 34
- 9-bit comparator lessequal                            : 1
+ 8-bit comparator lessequal                            : 1
 # Multiplexers                                         : 3
  1-bit 8-to-1 multiplexer                              : 2
  4-bit 4-to-1 multiplexer                              : 1
@@ -485,13 +486,29 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <state_2> has a constant value of 0 in block <uart_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Counter/value_out_15> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_14> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_13> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_12> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_11> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_10> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_9> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/value_out_8> of sequential type is unconnected in block <Top>.
 WARNING:Xst:1293 - FF/Latch <milh_1> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<0>, connect_wire<4>, connect_wire<9>, connect_wire<8>, connect_wire<3>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<29>, connect_wire<28>, connect_wire<10>, connect_wire<27>, connect_wire<2>, LUTSel1/OUTSel_and0000, connect_wire<6>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<7>, connect_wire<1>, connect_wire<26>, connect_wire<12>, connect_wire<5>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<30>, connect_wire<11>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_8> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_9> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_10> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_11> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_12> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_13> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_14> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Counter/Counter2/count_15> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<20>, connect_wire<29>, connect_wire<28>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<25>, connect_wire<1>, connect_wire<4>, connect_wire<7>, connect_wire<26>, connect_wire<30>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<23>, connect_wire<0>, connect_wire<3>, connect_wire<6>, connect_wire<21>, LUTSel1/OUTSel_and0000, connect_wire<27>, connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<22>, connect_wire<24>, connect_wire<2>, connect_wire<5>.
 
 Optimizing unit <Top> ...
 
@@ -502,26 +519,6 @@ WARNING:Xst:1293 - FF/Latch <bit_index_3> has a constant value of 0 in block <ua
 Optimizing unit <BinToBCD> ...
 
 Optimizing unit <RingOsc2> ...
-
-Optimizing unit <Counting_circuit> ...
-
-Optimizing unit <Duty_Cycle_Circuit> ...
-WARNING:Xst:2677 - Node <Counter/Counter2/count_15> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_14> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_13> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_12> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_11> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_10> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_9> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/Counter2/count_8> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_15> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_14> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_13> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_12> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_11> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_10> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_9> of sequential type is unconnected in block <Top>.
-WARNING:Xst:2677 - Node <Counter/value_out_8> of sequential type is unconnected in block <Top>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -563,11 +560,11 @@ Design Statistics
 # IOs                              : 19
 
 Cell Usage :
-# BELS                             : 424
+# BELS                             : 423
 #      GND                         : 1
 #      INV                         : 11
 #      LUT1                        : 113
-#      LUT2                        : 13
+#      LUT2                        : 12
 #      LUT3                        : 24
 #      LUT4                        : 59
 #      LUT4_L                      : 1
@@ -595,7 +592,7 @@ Selected Device : 3s250etq144-4
 
  Number of Slices:                      117  out of   2448     4%  
  Number of Slice Flip Flops:            144  out of   4896     2%  
- Number of 4 input LUTs:                221  out of   4896     4%  
+ Number of 4 input LUTs:                220  out of   4896     4%  
  Number of IOs:                          19
  Number of bonded IOBs:                  19  out of    108    17%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -618,12 +615,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------------+----------------------------------+-------+
-Clock Signal                                                    | Clock buffer(FF name)            | Load  |
-----------------------------------------------------------------+----------------------------------+-------+
-fpga_clk1                                                       | BUFGP                            | 127   |
-RingOscillator/connect_wire<0>(RingOscillator/LUTSel1/OUTSel1:O)| NONE(*)(Counter/Counter2/count_7)| 17    |
-----------------------------------------------------------------+----------------------------------+-------+
+----------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                    | Clock buffer(FF name)       | Load  |
+----------------------------------------------------------------+-----------------------------+-------+
+RingOscillator/connect_wire<0>(RingOscillator/LUTSel1/OUTSel1:O)| NONE(*)(Counter/value_out_7)| 17    |
+fpga_clk1                                                       | BUFGP                       | 127   |
+----------------------------------------------------------------+-----------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -631,13 +628,12 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
--------------------------------------------------+-------------------------------+-------+
-Control Signal                                   | Buffer(FF name)               | Load  |
--------------------------------------------------+-------------------------------+-------+
-Counter/rst_inv(Counter/rst_inv1_INV_0:O)        | NONE(Counter/Counter1/count_0)| 24    |
-Display/DisplayController/Mmux_sseg_42(XST_GND:G)| NONE(Dut/Counter1/count_0)    | 8     |
-Dut/rst_inv(Dut/rst_inv1_INV_0:O)                | NONE(Dut/Counter2/count_0)    | 8     |
--------------------------------------------------+-------------------------------+-------+
+-----------------------------------------+-------------------------------+-------+
+Control Signal                           | Buffer(FF name)               | Load  |
+-----------------------------------------+-------------------------------+-------+
+Counter/rst_inv(Counter/rst_inv1_INV_0:O)| NONE(Counter/Counter1/count_0)| 24    |
+Dut/rst_inv(Dut/rst_inv1_INV_0:O)        | NONE(Dut/Counter1/count_0)    | 16    |
+-----------------------------------------+-------------------------------+-------+
 
 Timing Summary:
 ---------------
@@ -651,30 +647,6 @@ Speed Grade: -4
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'fpga_clk1'
-  Clock period: 6.613ns (frequency: 151.217MHz)
-  Total number of paths / destination ports: 1567 / 173
--------------------------------------------------------------------------
-Delay:               6.613ns (Levels of Logic = 3)
-  Source:            DCsender/cycle_count_4 (FF)
-  Destination:       DCsender/cycle_count_15 (FF)
-  Source Clock:      fpga_clk1 rising
-  Destination Clock: fpga_clk1 rising
-
-  Data Path: DCsender/cycle_count_4 to DCsender/cycle_count_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              2   0.591   0.622  DCsender/cycle_count_4 (DCsender/cycle_count_4)
-     LUT4:I0->O            1   0.704   0.595  DCsender/cycle_count_cmp_eq00007 (DCsender/cycle_count_cmp_eq00007)
-     LUT4:I0->O            6   0.704   0.748  DCsender/cycle_count_cmp_eq000067 (DCsender/cycle_count_cmp_eq0000)
-     LUT2:I1->O           16   0.704   1.034  DCsender/cycle_count_or00001 (DCsender/cycle_count_or0000)
-     FDR:R                     0.911          DCsender/cycle_count_0
-    ----------------------------------------
-    Total                      6.613ns (3.614ns logic, 2.999ns route)
-                                       (54.6% logic, 45.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RingOscillator/connect_wire<0>'
@@ -699,11 +671,35 @@ Delay:               3.788ns (Levels of Logic = 8)
      MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<4> (Counter/Counter2/Mcount_count_cy<4>)
      MUXCY:CI->O           1   0.059   0.000  Counter/Counter2/Mcount_count_cy<5> (Counter/Counter2/Mcount_count_cy<5>)
      MUXCY:CI->O           0   0.059   0.000  Counter/Counter2/Mcount_count_cy<6> (Counter/Counter2/Mcount_count_cy<6>)
-     XORCY:CI->O           1   0.804   0.000  Counter/Counter2/Mcount_count_xor<7> (Counter/Result<7>1)
+     XORCY:CI->O           1   0.804   0.000  Counter/Counter2/Mcount_count_xor<7> (Result<7>3)
      FDCE:D                    0.308          Counter/Counter2/count_7
     ----------------------------------------
     Total                      3.788ns (3.166ns logic, 0.622ns route)
                                        (83.6% logic, 16.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fpga_clk1'
+  Clock period: 6.613ns (frequency: 151.217MHz)
+  Total number of paths / destination ports: 1558 / 173
+-------------------------------------------------------------------------
+Delay:               6.613ns (Levels of Logic = 3)
+  Source:            DCsender/cycle_count_4 (FF)
+  Destination:       DCsender/cycle_count_15 (FF)
+  Source Clock:      fpga_clk1 rising
+  Destination Clock: fpga_clk1 rising
+
+  Data Path: DCsender/cycle_count_4 to DCsender/cycle_count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  DCsender/cycle_count_4 (DCsender/cycle_count_4)
+     LUT4:I0->O            1   0.704   0.595  DCsender/cycle_count_cmp_eq00007 (DCsender/cycle_count_cmp_eq00007)
+     LUT4:I0->O            6   0.704   0.748  DCsender/cycle_count_cmp_eq000067 (DCsender/cycle_count_cmp_eq0000)
+     LUT2:I1->O           16   0.704   1.034  DCsender/cycle_count_or00001 (DCsender/cycle_count_or0000)
+     FDR:R                     0.911          DCsender/cycle_count_0
+    ----------------------------------------
+    Total                      6.613ns (3.614ns logic, 2.999ns route)
+                                       (54.6% logic, 45.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_clk1'
@@ -711,10 +707,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_clk1'
 -------------------------------------------------------------------------
 Offset:              43.303ns (Levels of Logic = 32)
   Source:            Mode (PAD)
-  Destination:       Dut/Counter2/count_7 (FF)
+  Destination:       Dut/Counter2/count_0 (FF)
   Destination Clock: fpga_clk1 rising
 
-  Data Path: Mode to Dut/Counter2/count_7
+  Data Path: Mode to Dut/Counter2/count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -831,13 +827,13 @@ Delay:               46.020ns (Levels of Logic = 33)
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.51 secs
+Total CPU time to Xst completion: 7.49 secs
  
 --> 
 
-Total memory usage is 263948 kilobytes
+Total memory usage is 263244 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   44 (   0 filtered)
+Number of warnings :   45 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

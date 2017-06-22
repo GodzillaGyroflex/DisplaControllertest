@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Thu Jun 22 14:39:14 2017">
+  <application stringID="NgdBuild" timeStamp="Thu Jun 22 16:40:19 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -59,9 +59,9 @@
     </task>
     <task stringID="NGDBUILD_REPORT">
       <section stringID="NGDBUILD_DESIGN_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="2"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="1"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
@@ -75,7 +75,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="113"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="13"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="24"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="59"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="1"/>
@@ -97,7 +97,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="11"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="113"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="13"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="24"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="59"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="1"/>
