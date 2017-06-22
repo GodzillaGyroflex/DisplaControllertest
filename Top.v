@@ -50,9 +50,9 @@ module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	
 	
 	
-	uart_send #(115200,100) CCsender(.data_byte(value1), .start_send(1), .clk(fpga_clk1), .tx(CCout), .ready());
+	uart_send #(9600,100) CCsender(.data_byte(value1), .start_send(1), .clk(fpga_clk1), .tx(CCout), .ready());
 	
-	uart_send #(115200,100) DCsender(.data_byte(value2), .start_send(1), .clk(fpga_clk1), .tx(DCout), .ready());
+	uart_send #(9600,100) DCsender(.data_byte(value2), .start_send(1), .clk(fpga_clk1), .tx(DCout), .ready());
 	
 	
 	

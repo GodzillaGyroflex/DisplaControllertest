@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: Top.prj
 
@@ -145,14 +145,14 @@ Analyzing hierarchy for module <Counting_circuit> in library <work> with paramet
 	max = "00000000000000000000000001100011"
 
 Analyzing hierarchy for module <Duty_Cycle_Circuit> in library <work> with parameters.
-	max = "00000000000000000000000011111111"
+	max = "00000000000000000000000011111110"
 
 Analyzing hierarchy for module <SensorController> in library <work>.
 
 Analyzing hierarchy for module <uart_send> in library <work> with parameters.
-	BAUD_RATE = "00000000000000011100001000000000"
+	BAUD_RATE = "00000000000000000010010110000000"
 	CLOCK_SPEED_MHZ = "00000000000000000000000001100100"
-	CYCLES_WAIT = 868
+	CYCLES_WAIT = 10417
 	DATA_BIT = "00000000000000000000000000000011"
 	END_BIT = "00000000000000000000000000000010"
 	IDLE = "00000000000000000000000000000000"
@@ -200,7 +200,7 @@ Analyzing module <nBitCounter> in library <work>.
 Module <nBitCounter> is correct for synthesis.
  
 Analyzing module <Duty_Cycle_Circuit> in library <work>.
-	max = 32'sb00000000000000000000000011111111
+	max = 32'sb00000000000000000000000011111110
 Module <Duty_Cycle_Circuit> is correct for synthesis.
  
 Analyzing module <eightBitCounter> in library <work>.
@@ -218,9 +218,9 @@ Analyzing module <DisplayController> in library <work>.
 Module <DisplayController> is correct for synthesis.
  
 Analyzing module <uart_send> in library <work>.
-	BAUD_RATE = 32'sb00000000000000011100001000000000
+	BAUD_RATE = 32'sb00000000000000000010010110000000
 	CLOCK_SPEED_MHZ = 32'sb00000000000000000000000001100100
-	CYCLES_WAIT = 868
+	CYCLES_WAIT = 10417
 	DATA_BIT = 32'sb00000000000000000000000000000011
 	END_BIT = 32'sb00000000000000000000000000000010
 	IDLE = 32'sb00000000000000000000000000000000
@@ -391,7 +391,7 @@ Synthesizing Unit <Duty_Cycle_Circuit>.
     Related source file is "Duty_Cycle_Circuit.v".
     Found 8-bit register for signal <value>.
     Found 1-bit register for signal <rst>.
-    Found 9-bit comparator less for signal <rst$cmp_lt0000> created at line 33.
+    Found 9-bit comparator lessequal for signal <rst$cmp_le0000> created at line 33.
     Summary:
 	inferred   9 D-type flip-flop(s).
 	inferred   1 Comparator(s).
@@ -432,7 +432,7 @@ Macro Statistics
 # Comparators                                          : 36
  16-bit comparator lessequal                           : 1
  4-bit comparator greatequal                           : 34
- 9-bit comparator less                                 : 1
+ 9-bit comparator lessequal                            : 1
 # Multiplexers                                         : 3
  1-bit 8-to-1 multiplexer                              : 2
  4-bit 4-to-1 multiplexer                              : 1
@@ -472,7 +472,7 @@ Macro Statistics
 # Comparators                                          : 36
  16-bit comparator lessequal                           : 1
  4-bit comparator greatequal                           : 34
- 9-bit comparator less                                 : 1
+ 9-bit comparator lessequal                            : 1
 # Multiplexers                                         : 3
  1-bit 8-to-1 multiplexer                              : 2
  4-bit 4-to-1 multiplexer                              : 1
@@ -491,7 +491,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_2> has a const
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_2> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <milh_0> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cent_3> has a constant value of 0 in block <BinToBCD>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<1>, connect_wire<5>, LUTSel1/OUTSel_and0000, connect_wire<26>, connect_wire<9>, connect_wire<4>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<30>, connect_wire<11>, connect_wire<10>, connect_wire<8>, connect_wire<0>, connect_wire<3>, connect_wire<7>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<29>, connect_wire<28>, connect_wire<27>, connect_wire<2>, connect_wire<13>, connect_wire<6>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<12>.
+WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<0>, connect_wire<4>, connect_wire<9>, connect_wire<8>, connect_wire<3>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<29>, connect_wire<28>, connect_wire<10>, connect_wire<27>, connect_wire<2>, LUTSel1/OUTSel_and0000, connect_wire<6>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<7>, connect_wire<1>, connect_wire<26>, connect_wire<12>, connect_wire<5>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<30>, connect_wire<11>.
 
 Optimizing unit <Top> ...
 
@@ -658,18 +658,18 @@ Timing constraint: Default period analysis for Clock 'fpga_clk1'
   Total number of paths / destination ports: 1567 / 173
 -------------------------------------------------------------------------
 Delay:               6.613ns (Levels of Logic = 3)
-  Source:            DCsender/cycle_count_8 (FF)
+  Source:            DCsender/cycle_count_4 (FF)
   Destination:       DCsender/cycle_count_15 (FF)
   Source Clock:      fpga_clk1 rising
   Destination Clock: fpga_clk1 rising
 
-  Data Path: DCsender/cycle_count_8 to DCsender/cycle_count_15
+  Data Path: DCsender/cycle_count_4 to DCsender/cycle_count_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.591   0.622  DCsender/cycle_count_8 (DCsender/cycle_count_8)
-     LUT4:I0->O            1   0.704   0.595  DCsender/cycle_count_cmp_eq00008 (DCsender/cycle_count_cmp_eq00008)
-     LUT4:I0->O            6   0.704   0.748  DCsender/cycle_count_cmp_eq000068 (DCsender/cycle_count_cmp_eq0000)
+     FDR:C->Q              2   0.591   0.622  DCsender/cycle_count_4 (DCsender/cycle_count_4)
+     LUT4:I0->O            1   0.704   0.595  DCsender/cycle_count_cmp_eq00007 (DCsender/cycle_count_cmp_eq00007)
+     LUT4:I0->O            6   0.704   0.748  DCsender/cycle_count_cmp_eq000067 (DCsender/cycle_count_cmp_eq0000)
      LUT2:I1->O           16   0.704   1.034  DCsender/cycle_count_or00001 (DCsender/cycle_count_or0000)
      FDR:R                     0.911          DCsender/cycle_count_0
     ----------------------------------------
@@ -831,11 +831,11 @@ Delay:               46.020ns (Levels of Logic = 33)
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.61 secs
+Total CPU time to Xst completion: 7.51 secs
  
 --> 
 
-Total memory usage is 263500 kilobytes
+Total memory usage is 263948 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   44 (   0 filtered)

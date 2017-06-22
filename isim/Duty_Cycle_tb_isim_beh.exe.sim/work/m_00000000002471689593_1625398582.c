@@ -76,8 +76,10 @@ LAB5:    t8 = (t6 + 4);
     if (*((unsigned int *)t8) != 0)
         goto LAB6;
 
-LAB9:    if (*((unsigned int *)t5) < *((unsigned int *)t6))
-        goto LAB7;
+LAB9:    if (*((unsigned int *)t5) > *((unsigned int *)t6))
+        goto LAB8;
+
+LAB7:    *((unsigned int *)t7) = 1;
 
 LAB8:    t10 = (t7 + 4);
     t11 = *((unsigned int *)t10);
@@ -105,9 +107,6 @@ LAB12:    goto LAB2;
 LAB6:    t9 = (t7 + 4);
     *((unsigned int *)t7) = 1;
     *((unsigned int *)t9) = 1;
-    goto LAB8;
-
-LAB7:    *((unsigned int *)t7) = 1;
     goto LAB8;
 
 LAB10:    xsi_set_current_line(33, ng0);

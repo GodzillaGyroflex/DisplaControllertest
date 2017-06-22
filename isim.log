@@ -15,9 +15,4 @@ Finished circuit initialization process.
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 54867670 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/nBitCounter2.v" Line 36
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 39059030 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb.v" Line 56
+Stopped at time : 93121830 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/nBitCounter2.v" Line 35
