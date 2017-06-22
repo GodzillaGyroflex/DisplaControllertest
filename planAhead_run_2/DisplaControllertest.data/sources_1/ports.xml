@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="led0" Dir="OUT"/>
+		<Port Id="dp" Dir="OUT"/>
+		<Port Id="Mode" Dir="IN"/>
+		<Port Id="CCout" Dir="OUT"/>
+		<Port Id="ring_out" Dir="OUT"/>
+		<Port Id="DCout" Dir="OUT"/>
+		<Port Id="fpga_clk1" Dir="IN"/>
+		<Port Id="Stress" Dir="IN"/>
+		<Port Id="an0" Dir="OUT"/>
+		<Port Id="an1" Dir="OUT"/>
+		<Port Id="an2" Dir="OUT"/>
+		<Port Id="an3" Dir="OUT"/>
+		<Port Id="seg0" Dir="OUT"/>
+		<Port Id="seg1" Dir="OUT"/>
+		<Port Id="seg2" Dir="OUT"/>
+		<Port Id="seg3" Dir="OUT"/>
+		<Port Id="seg4" Dir="OUT"/>
+		<Port Id="seg5" Dir="OUT"/>
+		<Port Id="seg6" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

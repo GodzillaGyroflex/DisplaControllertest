@@ -3,7 +3,8 @@
 # - remove or comment the lines corresponding to unused pins
 # - rename the used signals according to the project
 # clock pin for Basys rev E Board                                                                                                                        
- NET "fpga_clk1"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5N_2/D3/GCLK31, Sch name = CLK1
+# Bank = 2,  Pin name = IO_L5N_2/D3/GCLK31, Sch name = CLK1
+NET "fpga_clk1" LOC = P54;
 #NET "Clk2"      LOC = "P54"; # Bank = 2,  Pin name = IO_L5P_2/D4/GCLK30, Sch name = CLK2
 #NET "lut_end" XBLKNM=CRIT_WIRE;
 
@@ -33,18 +34,30 @@
 # NET "UsbAdr<1>" LOC = "P113"; # Bank = 0, Pin name = IO_L1N_0,           Sch name = U-FAD1
 
 # onBoard 7seg display                                                                                                                        
- NET "seg0"    LOC = "P25"; # Bank = 3, Pin name = IO_L8P_3,            Sch name = CA
- NET "seg1"    LOC = "P16"; # Bank = 3, Pin name = IO_L5P_3/GCLK22,     Sch name = CB
- NET "seg2"    LOC = "P23"; # Bank = 3, Pin name = IO_L7N_3/GCLK27      Sch name = CC
- NET "seg3"    LOC = "P21"; # Bank = 3, Pin name = IO_L6N_3/GCLK25,     Sch name = CD
- NET "seg4"    LOC = "P20"; # Bank = 3, Pin name = IO_L6P_3/GCLK24/TRDY2,Sch name = CE
- NET "seg5"    LOC = "P17"; # Bank = 3, Pin name = IO_L5N_3/GCLK23/IRDY2,Sch name = CF
- NET "seg6"    LOC = "P83"; # Bank = 1, Pin name = IO/VREF_1,           Sch name = CG
- NET "dp"        LOC = "P22"; # Bank = 3, Pin name = IO_L7P_3/GCLK26,     Sch name = DP
- NET "an0"     LOC = "P34"; # Bank = 3, Pin name = IO_L10P_3,           Sch name = AN1
- NET "an1"     LOC = "P33"; # Bank = 3, Pin name = IO_L9N_3,            Sch name = AN2
- NET "an2"     LOC = "P32"; # Bank = 3, Pin name = IO_L9P_3,            Sch name = AN3
- NET "an3"     LOC = "P26"; # Bank = 3, Pin name = IO_L8N_3,            Sch name = AN4
+# Bank = 3, Pin name = IO_L8P_3,            Sch name = CA
+NET "seg0" LOC = P25;
+# Bank = 3, Pin name = IO_L5P_3/GCLK22,     Sch name = CB
+NET "seg1" LOC = P16;
+# Bank = 3, Pin name = IO_L7N_3/GCLK27      Sch name = CC
+NET "seg2" LOC = P23;
+# Bank = 3, Pin name = IO_L6N_3/GCLK25,     Sch name = CD
+NET "seg3" LOC = P21;
+# Bank = 3, Pin name = IO_L6P_3/GCLK24/TRDY2,Sch name = CE
+NET "seg4" LOC = P20;
+# Bank = 3, Pin name = IO_L5N_3/GCLK23/IRDY2,Sch name = CF
+NET "seg5" LOC = P17;
+# Bank = 1, Pin name = IO/VREF_1,           Sch name = CG
+NET "seg6" LOC = P83;
+# Bank = 3, Pin name = IO_L7P_3/GCLK26,     Sch name = DP
+NET "dp" LOC = P22;
+# Bank = 3, Pin name = IO_L10P_3,           Sch name = AN1
+NET "an0" LOC = P34;
+# Bank = 3, Pin name = IO_L9N_3,            Sch name = AN2
+NET "an1" LOC = P33;
+# Bank = 3, Pin name = IO_L9P_3,            Sch name = AN3
+NET "an2" LOC = P32;
+# Bank = 3, Pin name = IO_L8N_3,            Sch name = AN4
+NET "an3" LOC = P26;
 
 #  Leds                                                                                                                        
 # NET "ready"    LOC = "P15"; # Bank = 3, Pin name = IO_L4N_3/GCLK21      Sch name = LD0
@@ -60,8 +73,10 @@
 # NET "sw<0>"     LOC = "P38"; # Bank = 2, Pin name = IP,                  Sch name = SW0
 # NET "sw<1>"     LOC = "P36"; # Bank = 3, Pin name = IP,                  Sch name = SW1
 # NET "enable"     LOC = "P29"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW2
-NET "Mode"     LOC = "P24"; # Bank = 3, Pin name = IP                   Sch name = SW3
-NET "Stress"     LOC = "P18"; # Bank = 3, Pin name = IP,                  Sch name = SW4
+# Bank = 3, Pin name = IP                   Sch name = SW3
+NET "Mode" LOC = P24;
+# Bank = 3, Pin name = IP,                  Sch name = SW4
+NET "Stress" LOC = P18;
 # NET "sw<5>"     LOC = "P12"; # Bank = 3, Pin name = IP/VREF_3,           Sch name = SW5
 # NET "sw<6>"     LOC = "P10"; # Bank = 3, Pin name = IO(3S100E)/IP(3S250E),Sch name = SW6
 # NET "sw<7>"     LOC = "P6";  # Bank = 3, Pin name = IP,                  Sch name = SW7#
@@ -90,12 +105,15 @@ NET "Stress"     LOC = "P18"; # Bank = 3, Pin name = IP,                  Sch na
 # 6 pin connectors                                                                                                                       
 #NET "JA0" LOC = "P81"; # Bank = 1, Pin name = IO_L3P_1/A12,            Sch name = JA-1
 # NET "JA<1>" LOC = "P91"; # Bank = 1, Pin name = IO_L6P_1/A6/GCLK8/IRDY1, Sch name = JA-2
-NET "ring_out" LOC = "P82"; # Bank = 1, Pin name = IO_L3N_1/A11,            Sch name = JA-3
+# Bank = 1, Pin name = IO_L3N_1/A11,            Sch name = JA-3
+NET "ring_out" LOC = P82;
 # NET "JA<3>" LOC = "P92"; # Bank = 1, Pin name = IO_L6N_1/A5/GCLK9,       Sch name = JA-4
 #NET "JB0" LOC = "P87"; # Bank = 1, Pin name = IO_L5P_1/A8/GCLK6,       Sch name = JB-1
- NET "DCout" LOC = "P93"; # Bank = 1, Pin name = IO_L7P_1/A4/GCLK10,      Sch name = JB-2
+# Bank = 1, Pin name = IO_L7P_1/A4/GCLK10,      Sch name = JB-2
+NET "DCout" LOC = P93;
 # NET "JB<2>" LOC = "P88"; # Bank = 1, Pin name = IO_L5N_1/A7/GCLK7/TRDY1, Sch name = JB-3
- NET "CCout" LOC = "P94"; # Bank = 1, Pin name = IO_L7N_1/A3/GCLK11,      Sch name = JB-4
+# Bank = 1, Pin name = IO_L7N_1/A3/GCLK11,      Sch name = JB-4
+NET "CCout" LOC = P94;
 # NET "DCout" LOC = "P77"; # Bank = 1, Pin name = IO_L2N_1/A13,            Sch name = JC-1
 # NET "JC<1>" LOC = "P86"; # Bank = 1, Pin name = IO_L4N_1/A9/GCLK5,       Sch name = JC-2
 # NET "JC<2>" LOC = "P76"; # Bank = 1, Pin name = IO_L2P_1/A14,            Sch name = JC-3
@@ -105,3 +123,231 @@ NET "ring_out" LOC = "P82"; # Bank = 1, Pin name = IO_L3N_1/A11,            Sch 
 # NET "JD<2>" LOC = "P74"; # Bank = 1, Pin name = IO_L1P_1/A16,            Sch name = JD-3
 # NET "JD<3>" LOC = "P58"; # Bank = 2, Pin name = IO_L7P_2/M1/GCLK2,       Sch name = JD-4
 
+
+# PlanAhead Generated physical constraints 
+
+INST "RingOscillator/Lut[9].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[8].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[7].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[6].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[5].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[4].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[3].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[30].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[2].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[21].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[29].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[28].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[27].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[26].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[25].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[24].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[23].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[22].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[20].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[1].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[19].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[18].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[17].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[16].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[15].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[14].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[13].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[12].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[11].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/Lut[10].Lut/o1" AREA_GROUP = "Ring_osc_block";
+INST "RingOscillator/LUTSel1/OUTSel1" AREA_GROUP = "Ring_osc_block";
+INST "ring_out_OBUF" AREA_GROUP = "Ring_osc_block";
+AREA_GROUP "Ring_osc_block" RANGE=SLICE_X16Y14:SLICE_X19Y19;
+INST "Dut/rst_not00014" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<7>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<7>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<1>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<6>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<5>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<4>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<3>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<2>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<1>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<6>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<5>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<4>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<3>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<2>_rt" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_lut<0>_INV_0" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_lut<0>_INV_0" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/rst_inv1_INV_0" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<7>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<6>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<6>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<5>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<5>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<4>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<4>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<3>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<3>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<2>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<2>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<1>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<1>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_xor<0>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/Mcount_count_cy<0>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<7>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<6>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<6>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<5>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<5>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<4>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<4>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<3>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<3>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<2>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<2>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<1>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<1>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_xor<0>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/Mcount_count_cy<0>" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_7" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_6" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_5" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_4" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_3" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_2" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_1" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter1/count_0" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_7" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_6" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_5" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_4" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_3" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_2" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_1" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/Counter2/count_0" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_7" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_6" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_5" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_4" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_3" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_2" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_1" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/value_0" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/rst" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/rst_not00019" AREA_GROUP = "Duty_cycle_meas";
+INST "Dut/rst_not000110" AREA_GROUP = "Duty_cycle_meas";
+AREA_GROUP "Duty_cycle_meas" RANGE=SLICE_X20Y8:SLICE_X25Y15;
+INST "Counter/Counter1/count_0" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<15>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<7>_rt" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_lut<4>_INV_0" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<14>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<13>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<12>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<11>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<10>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<9>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<8>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<7>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<6>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<5>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<4>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<3>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<2>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<1>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<6>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<5>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<4>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<3>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<2>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<1>_rt" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_lut<0>_INV_0" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_lut<0>_INV_0" AREA_GROUP = "Counter";
+INST "Counter/rst_not00011_INV_0" AREA_GROUP = "Counter";
+INST "Counter/rst_inv1_INV_0" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_7" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_6" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_5" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_4" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_3" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_2" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_1" AREA_GROUP = "Counter";
+INST "Counter/Counter2/count_0" AREA_GROUP = "Counter";
+INST "Counter/value_out_7" AREA_GROUP = "Counter";
+INST "Counter/value_out_6" AREA_GROUP = "Counter";
+INST "Counter/value_out_5" AREA_GROUP = "Counter";
+INST "Counter/value_out_4" AREA_GROUP = "Counter";
+INST "Counter/value_out_3" AREA_GROUP = "Counter";
+INST "Counter/value_out_2" AREA_GROUP = "Counter";
+INST "Counter/value_out_1" AREA_GROUP = "Counter";
+INST "Counter/value_out_0" AREA_GROUP = "Counter";
+INST "Counter/rst" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_5" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_6" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_9" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_7" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_8" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_11" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_10" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_13" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_12" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_14" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_15" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<0>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<0>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<1>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<1>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<2>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<2>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<3>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<3>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<4>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<4>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<5>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<5>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_cy<6>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<6>" AREA_GROUP = "Counter";
+INST "Counter/Counter2/Mcount_count_xor<7>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_lut<0>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_cy<0>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_lut<1>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_cy<1>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_lut<2>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_cy<2>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_cy<3>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_lut<3>" AREA_GROUP = "Counter";
+INST "Counter/Mcompar_rst_cmp_le0000_cy<4>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<0>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<0>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<1>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<1>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<2>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<2>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<3>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<3>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<4>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<4>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<5>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<5>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<6>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<6>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<7>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<7>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<8>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<8>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<9>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<9>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<10>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<11>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<10>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<15>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<14>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<14>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<13>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<13>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_cy<12>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<12>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/Mcount_count_xor<11>" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_4" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_3" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_2" AREA_GROUP = "Counter";
+INST "Counter/Counter1/count_1" AREA_GROUP = "Counter";
+AREA_GROUP "Counter" RANGE=SLICE_X26Y8:SLICE_X33Y17;

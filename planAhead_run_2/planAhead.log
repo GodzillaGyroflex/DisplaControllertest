@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Jun 22 14:55:40 2017
+# Process ID: 5152
+# Log file: C:/Users/Saulo/Documents/DisplaControllertest/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Saulo/Documents/DisplaControllertest/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Saulo/Documents/DisplaControllertest/pa.fromNcd.tcl
+# create_project -name DisplaControllertest -dir "C:/Users/Saulo/Documents/DisplaControllertest/planAhead_run_2" -part xc3s250etq144-4
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Users/Saulo/Documents/DisplaControllertest/Top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/Saulo/Documents/DisplaControllertest} }
+# set_property target_constrs_file "TOP_MODULE.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Saulo/Documents/DisplaControllertest/TOP_MODULE.ucf' to fileset 'constrs_1'
+# add_files [list {TOP_MODULE.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s250etq144-4
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Top.ngc ...
+WARNING:NetListWriters:298 - No output is written to Top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Top.edif ...
+ngc2edif: Total memory usage is 93920 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/DisplaControllertest.data/cache/Top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/DisplaControllertest.data/cache/Top_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockRegion.xml
+Loading clock buffers from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/ClockBuffers.xml
+Loading package from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/tq144/Package.xml
+Loading io standards from F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s250e/tq144/SSORules.xml
+Loading list of drcs for the architecture : F:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library F:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/Saulo/Documents/DisplaControllertest/TOP_MODULE.ucf]
+Finished Parsing UCF File [C:/Users/Saulo/Documents/DisplaControllertest/TOP_MODULE.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f135e990
+link_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 539.797 ; gain = 112.293
+# read_xdl -file "C:/Users/Saulo/Documents/DisplaControllertest/Top.ncd"
+Release 14.7 - xdl P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '3s250e.nph' in environment F:\14.7\ISE_DS\ISE\.
+   "Top" is an NCD, version 3.2, device xc3s250e, package tq144, speed -4
+Successfully converted design 'C:\Users\Saulo\Documents\DisplaControllertest\Top.ncd' to 'C:\Users\Saulo\Documents\DisplaControllertest\Top.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : C:/Users/Saulo/Documents/DisplaControllertest/Top.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/Users/Saulo/Documents/DisplaControllertest/Top.ncd
+INFO: [Designutils 20-671] Placed 501 instances
+read_xdl: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 550.926 ; gain = 2.879
+# if {[catch {read_twx -name results_1 -file "C:/Users/Saulo/Documents/DisplaControllertest/Top.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Users/Saulo/Documents/DisplaControllertest/Top.twx\": $eInfo"
+# }
+startgroup
+create_pblock Ring_osc_block
+resize_pblock Ring_osc_block -add SLICE_X12Y14:SLICE_X19Y19
+add_cells_to_pblock Ring_osc_block [get_cells [list ring_out_OBUF {RingOscillator/Lut[1].Lut/o1} {RingOscillator/Lut[2].Lut/o1} {RingOscillator/Lut[3].Lut/o1} {RingOscillator/Lut[4].Lut/o1} {RingOscillator/Lut[5].Lut/o1} {RingOscillator/Lut[6].Lut/o1} {RingOscillator/Lut[7].Lut/o1} {RingOscillator/Lut[8].Lut/o1} {RingOscillator/Lut[9].Lut/o1} {RingOscillator/Lut[10].Lut/o1} {RingOscillator/Lut[11].Lut/o1} {RingOscillator/Lut[12].Lut/o1} {RingOscillator/Lut[13].Lut/o1} {RingOscillator/Lut[15].Lut/o1} {RingOscillator/Lut[14].Lut/o1} {RingOscillator/Lut[16].Lut/o1} {RingOscillator/Lut[17].Lut/o1} {RingOscillator/Lut[18].Lut/o1} {RingOscillator/Lut[19].Lut/o1} {RingOscillator/Lut[20].Lut/o1} {RingOscillator/Lut[21].Lut/o1} {RingOscillator/Lut[22].Lut/o1} {RingOscillator/Lut[23].Lut/o1} {RingOscillator/Lut[24].Lut/o1} {RingOscillator/Lut[25].Lut/o1} {RingOscillator/Lut[26].Lut/o1} {RingOscillator/Lut[27].Lut/o1} {RingOscillator/Lut[28].Lut/o1} {RingOscillator/Lut[29].Lut/o1} {RingOscillator/Lut[30].Lut/o1} RingOscillator/LUTSel1/OUTSel1]] -clear_locs
+WARNING: [Constraints 18-297] IO instance ring_out_OBUF added to the physical block Ring_osc_block, embedded IO created
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[9].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[8].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[7].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[6].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[5].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[4].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[3].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[30].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[2].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[21].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[29].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[28].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[27].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[26].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[25].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[24].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[23].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[22].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[20].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[1].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[19].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[18].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[17].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[16].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[15].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[14].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[13].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[12].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[11].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/Lut[10].Lut/o1
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance RingOscillator/LUTSel1/OUTSel1
+endgroup
+startgroup
+create_pblock Duty_cycle_meas
+resize_pblock Duty_cycle_meas -add SLICE_X20Y8:SLICE_X25Y15
+add_cells_to_pblock Duty_cycle_meas [get_cells [list Dut/Counter1/count_0 Dut/Counter1/count_1 Dut/Counter1/count_2 Dut/Counter1/count_3 Dut/Counter1/count_4 Dut/Counter1/count_5 Dut/Counter1/count_6 Dut/Counter1/count_7 Dut/Counter1/Mcount_count_cy<1> Dut/Counter1/Mcount_count_cy<0> Dut/Counter1/Mcount_count_cy<1>_rt Dut/Counter1/Mcount_count_cy<2> Dut/Counter1/Mcount_count_cy<2>_rt Dut/Counter1/Mcount_count_cy<3> Dut/Counter1/Mcount_count_cy<3>_rt Dut/Counter1/Mcount_count_cy<4> Dut/Counter1/Mcount_count_cy<4>_rt Dut/Counter1/Mcount_count_cy<5> Dut/Counter1/Mcount_count_cy<5>_rt Dut/Counter1/Mcount_count_cy<6> Dut/Counter1/Mcount_count_cy<6>_rt Dut/Counter1/Mcount_count_lut<0>_INV_0 Dut/Counter1/Mcount_count_xor<0> Dut/Counter1/Mcount_count_xor<1> Dut/Counter1/Mcount_count_xor<2> Dut/Counter1/Mcount_count_xor<3> Dut/Counter1/Mcount_count_xor<4> Dut/Counter1/Mcount_count_xor<5> Dut/Counter1/Mcount_count_xor<6> Dut/Counter1/Mcount_count_xor<7> Dut/Counter1/Mcount_count_xor<7>_rt Dut/Counter2/count_0 Dut/Counter2/count_1 Dut/Counter2/count_2 Dut/Counter2/count_3 Dut/Counter2/count_4 Dut/Counter2/count_5 Dut/Counter2/count_6 Dut/Counter2/count_7 Dut/Counter2/Mcount_count_cy<0> Dut/Counter2/Mcount_count_cy<1> Dut/Counter2/Mcount_count_cy<1>_rt Dut/Counter2/Mcount_count_cy<2> Dut/Counter2/Mcount_count_cy<2>_rt Dut/Counter2/Mcount_count_cy<3> Dut/Counter2/Mcount_count_cy<3>_rt Dut/Counter2/Mcount_count_cy<4> Dut/Counter2/Mcount_count_cy<4>_rt Dut/Counter2/Mcount_count_cy<5> Dut/Counter2/Mcount_count_cy<5>_rt Dut/Counter2/Mcount_count_cy<6> Dut/Counter2/Mcount_count_cy<6>_rt Dut/Counter2/Mcount_count_lut<0>_INV_0 Dut/Counter2/Mcount_count_xor<0> Dut/Counter2/Mcount_count_xor<1> Dut/Counter2/Mcount_count_xor<2> Dut/Counter2/Mcount_count_xor<4> Dut/Counter2/Mcount_count_xor<3> Dut/Counter2/Mcount_count_xor<5> Dut/Counter2/Mcount_count_xor<6> Dut/Counter2/Mcount_count_xor<7> Dut/Counter2/Mcount_count_xor<7>_rt Dut/rst Dut/rst_inv1_INV_0 Dut/rst_not00014 Dut/rst_not00019 Dut/rst_not000110 Dut/value_0 Dut/value_1 Dut/value_2 Dut/value_3 Dut/value_4 Dut/value_5 Dut/value_6 Dut/value_7]] -clear_locs
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/rst_not00014
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_lut<0>_INV_0
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter2/Mcount_count_lut<0>_INV_0
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<7>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<6>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<6>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<5>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<5>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<4>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<4>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<3>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<3>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<2>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<2>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<1>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<1>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_xor<0>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter1/Mcount_count_cy<0>
+WARNING: [Constraints 18-286] Removing inconsistent LOC on instance Dut/Counter2/Mcount_count_xor<7>
+INFO: [Common 17-14] Message 'Constraints 18-286' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+endgroup
+resize_pblock Ring_osc_block -add SLICE_X12Y14:SLICE_X19Y19 -remove SLICE_X12Y14:SLICE_X19Y19 -locs keep_all
+resize_pblock Ring_osc_block -add SLICE_X16Y14:SLICE_X19Y19 -remove SLICE_X12Y14:SLICE_X19Y19 -locs keep_all
+save_constraints
+WARNING: [Constraints 18-297] IO instance ring_out_OBUF added to the physical block Ring_osc_block, embedded IO created
+startgroup
+create_pblock Counter
+resize_pblock Counter -add SLICE_X26Y8:SLICE_X33Y17
+add_cells_to_pblock Counter [get_cells [list Counter/Counter1/count_0 Counter/Counter1/count_1 Counter/Counter1/count_2 Counter/Counter1/count_3 Counter/Counter1/count_4 Counter/Counter1/count_6 Counter/Counter1/count_5 Counter/Counter1/count_7 Counter/Counter1/count_8 Counter/Counter1/count_9 Counter/Counter1/count_10 Counter/Counter1/count_11 Counter/Counter1/count_12 Counter/Counter1/count_13 Counter/Counter1/count_14 Counter/Counter1/count_15 Counter/Counter1/Mcount_count_cy<0> Counter/Counter1/Mcount_count_cy<1> Counter/Counter1/Mcount_count_cy<1>_rt Counter/Counter1/Mcount_count_cy<2> Counter/Counter1/Mcount_count_cy<2>_rt Counter/Counter1/Mcount_count_cy<3> Counter/Counter1/Mcount_count_cy<3>_rt Counter/Counter1/Mcount_count_cy<4> Counter/Counter1/Mcount_count_cy<4>_rt Counter/Counter1/Mcount_count_cy<5> Counter/Counter1/Mcount_count_cy<5>_rt Counter/Counter1/Mcount_count_cy<6> Counter/Counter1/Mcount_count_cy<6>_rt Counter/Counter1/Mcount_count_cy<7> Counter/Counter1/Mcount_count_cy<7>_rt Counter/Counter1/Mcount_count_cy<8> Counter/Counter1/Mcount_count_cy<8>_rt Counter/Counter1/Mcount_count_cy<9> Counter/Counter1/Mcount_count_cy<9>_rt Counter/Counter1/Mcount_count_cy<10> Counter/Counter1/Mcount_count_cy<10>_rt Counter/Counter1/Mcount_count_cy<11> Counter/Counter1/Mcount_count_cy<11>_rt Counter/Counter1/Mcount_count_cy<12> Counter/Counter1/Mcount_count_cy<12>_rt Counter/Counter1/Mcount_count_cy<13> Counter/Counter1/Mcount_count_cy<13>_rt Counter/Counter1/Mcount_count_cy<14> Counter/Counter1/Mcount_count_cy<14>_rt Counter/Counter1/Mcount_count_lut<0>_INV_0 Counter/Counter1/Mcount_count_xor<0> Counter/Counter1/Mcount_count_xor<1> Counter/Counter1/Mcount_count_xor<2> Counter/Counter1/Mcount_count_xor<3> Counter/Counter1/Mcount_count_xor<4> Counter/Counter1/Mcount_count_xor<5> Counter/Counter1/Mcount_count_xor<6> Counter/Counter1/Mcount_count_xor<7> Counter/Counter1/Mcount_count_xor<8> Counter/Counter1/Mcount_count_xor<9> Counter/Counter1/Mcount_count_xor<11> Counter/Counter1/Mcount_count_xor<10> Counter/Counter1/Mcount_count_xor<12> Counter/Counter1/Mcount_count_xor<13> Counter/Counter1/Mcount_count_xor<14> Counter/Counter1/Mcount_count_xor<15> Counter/Counter1/Mcount_count_xor<15>_rt Counter/Counter2/count_0 Counter/Counter2/count_1 Counter/Counter2/count_2 Counter/Counter2/count_3 Counter/Counter2/count_4 Counter/Counter2/count_5 Counter/Counter2/count_6 Counter/Counter2/count_7 Counter/Counter2/Mcount_count_cy<0> Counter/Counter2/Mcount_count_cy<1> Counter/Counter2/Mcount_count_cy<1>_rt Counter/Counter2/Mcount_count_cy<2> Counter/Counter2/Mcount_count_cy<2>_rt Counter/Counter2/Mcount_count_cy<3> Counter/Counter2/Mcount_count_cy<3>_rt Counter/Counter2/Mcount_count_cy<4> Counter/Counter2/Mcount_count_cy<4>_rt Counter/Counter2/Mcount_count_cy<5> Counter/Counter2/Mcount_count_cy<5>_rt Counter/Counter2/Mcount_count_cy<6> Counter/Counter2/Mcount_count_cy<6>_rt Counter/Counter2/Mcount_count_lut<0>_INV_0 Counter/Counter2/Mcount_count_xor<0> Counter/Counter2/Mcount_count_xor<1> Counter/Counter2/Mcount_count_xor<2> Counter/Counter2/Mcount_count_xor<3> Counter/Counter2/Mcount_count_xor<4> Counter/Counter2/Mcount_count_xor<5> Counter/Counter2/Mcount_count_xor<6> Counter/Counter2/Mcount_count_xor<7> Counter/Counter2/Mcount_count_xor<7>_rt Counter/Mcompar_rst_cmp_le0000_cy<0> Counter/Mcompar_rst_cmp_le0000_cy<1> Counter/Mcompar_rst_cmp_le0000_cy<2> Counter/Mcompar_rst_cmp_le0000_cy<3> Counter/Mcompar_rst_cmp_le0000_cy<4> Counter/Mcompar_rst_cmp_le0000_lut<0> Counter/Mcompar_rst_cmp_le0000_lut<1> Counter/Mcompar_rst_cmp_le0000_lut<2> Counter/Mcompar_rst_cmp_le0000_lut<3> Counter/Mcompar_rst_cmp_le0000_lut<4>_INV_0 Counter/rst Counter/rst_inv1_INV_0 Counter/rst_not00011_INV_0 Counter/value_out_0 Counter/value_out_1 Counter/value_out_2 Counter/value_out_3 Counter/value_out_4 Counter/value_out_5 Counter/value_out_6 Counter/value_out_7]] -clear_locs
+endgroup
+save_constraints
+WARNING: [Constraints 18-297] IO instance ring_out_OBUF added to the physical block Ring_osc_block, embedded IO created
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/Saulo/Documents/DisplaControllertest\planAhead_pid5152.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Jun 22 15:19:31 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead
