@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : tq144
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Jun 22 14:39:17 2017
+Mapped Date    : Fri Jun 23 15:34:53 2017
 
 Design Summary
 --------------
@@ -17,26 +17,27 @@ Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
   Number of Slice Flip Flops:           144 out of   4,896    2%
-  Number of 4 input LUTs:               137 out of   4,896    2%
+  Number of 4 input LUTs:               177 out of   4,896    3%
 Logic Distribution:
-  Number of occupied Slices:            151 out of   2,448    6%
-    Number of Slices containing only related logic:     151 out of     151 100%
-    Number of Slices containing unrelated logic:          0 out of     151   0%
+  Number of occupied Slices:            185 out of   2,448    7%
+    Number of Slices containing only related logic:     185 out of     185 100%
+    Number of Slices containing unrelated logic:          0 out of     185   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         220 out of   4,896    4%
-    Number used as logic:               137
+  Total Number of 4 input LUTs:         260 out of   4,896    5%
+    Number used as logic:               177
     Number used as a route-thru:         83
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 19 out of     108   17%
-  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of DCMs:                         1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                2.45
+Average Fanout of Non-Clock Nets:                2.27
 
-Peak Memory Usage:  306 MB
-Total REAL time to MAP completion:  3 secs 
+Peak Memory Usage:  307 MB
+Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:
@@ -79,7 +80,7 @@ Section 1 - Errors
 Section 2 - Warnings
 --------------------
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   RingOscillator/connect_wire<30> is sourced by a combinatorial pin. This is
+   RingOscillator/connect_wire<70> is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 
@@ -153,9 +154,41 @@ Partition Implementation Status
 Area Group Information
 ----------------------
 
-  No area groups were found in this design.
+Area Group "Counter"
+  No COMPRESSION specified for Area Group "Counter"
+  RANGE: SLICE_X26Y8:SLICE_X33Y17
+  Area Group Logic Utilization:
+  Number of Slice Flip Flops:               33 out of    160   20%
+  Logic Distribution:
+    Number of occupied Slices:              20 out of     80   25%
+      Number of Slices containing only related logic:     20 out of     20 100%
+  Total Number of 4 input LUTs:             29 out of    160   18%
+    Number used as logic:                    7
+    Number used as a route-thru:            22
 
-----------------------
+Area Group "Duty_cycle_meas"
+  No COMPRESSION specified for Area Group "Duty_cycle_meas"
+  RANGE: SLICE_X20Y8:SLICE_X25Y15
+  Area Group Logic Utilization:
+  Number of Slice Flip Flops:               25 out of     96   26%
+  Logic Distribution:
+    Number of occupied Slices:              15 out of     48   31%
+      Number of Slices containing only related logic:     15 out of     15 100%
+  Total Number of 4 input LUTs:             19 out of     96   19%
+    Number used as logic:                    5
+    Number used as a route-thru:            14
+
+Area Group "Ring_osc_block"
+  No COMPRESSION specified for Area Group "Ring_osc_block"
+  RANGE: SLICE_X16Y14:SLICE_X19Y19
+  Area Group Logic Utilization:
+  Logic Distribution:
+    Number of occupied Slices:              24 out of     24  100%
+      Number of Slices containing only related logic:     24 out of     24 100%
+  Total Number of 4 input LUTs:             31 out of     48   64%
+    Number used as logic:                   31
+  Number of bonded IOBs:                     1
+
 
 Section 10 - Timing Report
 --------------------------

@@ -11,24 +11,6 @@ Done.
 Annotating constraints to design from ucf file "TOP_MODULE.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem:59 - Constraint <INST "Dut/rst_not00014" AREA_GROUP =
-   "Duty_cycle_meas";> [TOP_MODULE.ucf(162)]: INST "Dut/rst_not00014" not found.
-    Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <INST "Dut/rst_not00019" AREA_GROUP =
-   "Duty_cycle_meas";> [TOP_MODULE.ucf(235)]: INST "Dut/rst_not00019" not found.
-    Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <INST "Dut/rst_not000110" AREA_GROUP =
-   "Duty_cycle_meas";> [TOP_MODULE.ucf(236)]: INST "Dut/rst_not000110" not
-   found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
 Done...
 
 Checking expanded design ...
@@ -41,14 +23,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     2
-  Number of warnings:   1
+  Number of errors:     0
+  Number of warnings:   0
 
-Total memory usage is 157252 kilobytes
+Total memory usage is 156228 kilobytes
 
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Writing NGD file "Top.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "Top.bld"...

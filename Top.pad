@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Jun 22 14:39:31 2017
+Fri Jun 23 15:35:07 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -57,7 +57,7 @@ P35||DIFFS|IO_L10N_3|UNUSED||3|||||||||
 P36||IBUF|IP|UNUSED||3|||||||||
 P37|||GND||||||||||||
 P38||IBUF|IP|UNUSED||2|||||||||
-P39|led0|IOB|IO_L01P_2/CSO_B|OUTPUT|LVCMOS25*|2|12|SLOW|NONE**|||UNLOCATED|NO|NONE|
+P39||DIFFM|IO_L01P_2/CSO_B|UNUSED||2|||||||||
 P40||DIFFS|IO_L01N_2/INIT_B|UNUSED||2|||||||||
 P41||DIFFSI|IP|UNUSED||2|||||||||
 P42|||VCCO_2|||2|||||2.50||||
@@ -130,7 +130,7 @@ P108|||TMS||||||||||||
 P109|||TDO||||||||||||
 P110|||TCK||||||||||||
 P111||IBUF|IP|UNUSED||0|||||||||
-P112||DIFFM|IO_L01P_0|UNUSED||0|||||||||
+P112|led0|IOB|IO_L01P_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||UNLOCATED|NO|NONE|
 P113||DIFFS|IO_L01N_0|UNUSED||0|||||||||
 P114||IBUF|IP|UNUSED||0|||||||||
 P115|||VCCINT||||||||1.2||||
@@ -139,7 +139,7 @@ P117||DIFFS|IO_L02N_0|UNUSED||0|||||||||
 P118|||GND||||||||||||
 P119||DIFFMI|IP_L03P_0|UNUSED||0|||||||||
 P120||DIFFSI|IP_L03N_0|UNUSED||0|||||||||
-P121|||VCCO_0|||0|||||any******||||
+P121|||VCCO_0|||0|||||2.50||||
 P122||DIFFM|IO_L04P_0/GCLK4|UNUSED||0|||||||||
 P123||DIFFS|IO_L04N_0/GCLK5|UNUSED||0|||||||||
 P124||IOB|IO/VREF_0|UNUSED||0|||||||||
@@ -156,7 +156,7 @@ P134||DIFFM|IO_L08P_0|UNUSED||0|||||||||
 P135||DIFFS|IO_L08N_0/VREF_0|UNUSED||0|||||||||
 P136||IBUF|IP|UNUSED||0|||||||||
 P137|||VCCAUX||||||||2.5||||
-P138|||VCCO_0|||0|||||any******||||
+P138|||VCCO_0|||0|||||2.50||||
 P139||DIFFM|IO_L09P_0|UNUSED||0|||||||||
 P140||DIFFS|IO_L09N_0|UNUSED||0|||||||||
 P141||IBUF|IP|UNUSED||0|||||||||

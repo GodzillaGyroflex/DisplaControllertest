@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PEDRO-PC::  Thu Jun 22 14:39:23 2017
+PEDRO-PC::  Fri Jun 23 15:34:59 2017
 
 par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
 
@@ -41,8 +41,9 @@ Design Summary Report:
    Number of External Bidir IOBs                  0
 
 
-   Number of BUFGMUXs                        1 out of 24      4%
-   Number of Slices                        151 out of 2448    6%
+   Number of BUFGMUXs                        2 out of 24      8%
+   Number of DCMs                            1 out of 4      25%
+   Number of Slices                        185 out of 2448    7%
       Number of SLICEMs                      0 out of 1224    0%
 
 
@@ -52,58 +53,58 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 2 secs 
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:3ee6985f) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:b1e06c35) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 16 IOs, 15 are locked and 1 are not locked. If you would like
    to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:3ee6985f) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:b1e06c35) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:3ee6985f) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:b1e06c35) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-..........
-Phase 4.2  Initial Clock and IO Placement (Checksum:536e7522) REAL time: 3 secs 
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:33c5b47e) REAL time: 4 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:536e7522) REAL time: 3 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:33c5b47e) REAL time: 4 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:536e7522) REAL time: 3 secs 
+Phase 6.36  Local Placement Optimization (Checksum:33c5b47e) REAL time: 4 secs 
 
 Phase 7.3  Local Placement Optimization
-........
-Phase 7.3  Local Placement Optimization (Checksum:5429de3e) REAL time: 3 secs 
+
+Phase 7.3  Local Placement Optimization (Checksum:acade096) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:5429de3e) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:acade096) REAL time: 4 secs 
 
 Phase 9.8  Global Placement
-.............................
 .....................
-Phase 9.8  Global Placement (Checksum:5c8f84b9) REAL time: 3 secs 
+.................................
+Phase 9.8  Global Placement (Checksum:b21f8ae) REAL time: 4 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:5c8f84b9) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:b21f8ae) REAL time: 4 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:b9432ca7) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:63af2aaa) REAL time: 4 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:b9432ca7) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:63af2aaa) REAL time: 4 secs 
 
-Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
 Writing design to file Top.ncd
 
 
@@ -111,19 +112,19 @@ Writing design to file Top.ncd
 Starting Router
 
 
-Phase  1  : 723 unrouted;      REAL time: 5 secs 
+Phase  1  : 773 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 630 unrouted;      REAL time: 6 secs 
+Phase  2  : 679 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 113 unrouted;      REAL time: 6 secs 
+Phase  3  : 125 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 131 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  4  : 137 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Updating file: Top.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
@@ -136,8 +137,8 @@ Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7
 Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
-WARNING:Route:455 - CLK Net:RingOscillator/connect_wire<30> may have excessive skew because 
-      0 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:RingOscillator/connect_wire<70> may have excessive skew because 
+      3 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
 
 Total REAL time to Router completion: 7 secs 
 Total CPU time to Router completion: 7 secs 
@@ -158,10 +159,12 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|     fpga_clk1_BUFGP |  BUFGMUX_X1Y0| No   |   71 |  0.042     |  0.111      |
+|                 clk |  BUFGMUX_X2Y1| No   |   59 |  0.045     |  0.116      |
++---------------------+--------------+------+------+------------+-------------+
+|                clk2 |  BUFGMUX_X1Y0| No   |   13 |  0.002     |  0.113      |
 +---------------------+--------------+------+------+------------+-------------+
 |RingOscillator/conne |              |      |      |            |             |
-|         ct_wire<30> |         Local|      |   15 |  0.018     |  1.509      |
+|         ct_wire<70> |         Local|      |   15 |  0.250     |  0.869      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -181,11 +184,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net fpg | SETUP       |         N/A|     5.608ns|     N/A|           0
-  a_clk1_BUFGP                              | HOLD        |     0.938ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.580ns|     N/A|           0
+                                            | HOLD        |     1.050ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Rin | SETUP       |         N/A|     3.506ns|     N/A|           0
-  gOscillator/connect_wire<30>              | HOLD        |     1.009ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.464ns|     N/A|           0
+  2                                         | HOLD        |     0.985ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Rin | SETUP       |         N/A|     3.502ns|     N/A|           0
+  gOscillator/connect_wire<70>              | HOLD        |     0.954ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -202,9 +208,9 @@ Generating Pad Report.
 All signals are completely routed.
 
 Total REAL time to PAR completion: 8 secs 
-Total CPU time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  323 MB
+Peak Memory Usage:  327 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
