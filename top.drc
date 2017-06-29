@@ -1,12 +1,12 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Jun 23 15:35:34 2017
+Thu Jun 29 16:54:25 2017
 
 drc -z Top.ncd Top.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   RingOscillator/connect_wire<70> is sourced by a combinatorial pin. This is
+   RingOscillator/connect_wire<40> is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 DRC detected 0 errors and 1 warnings.  Please see the previously displayed

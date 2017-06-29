@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jun 23 15:34:55 2017
+// Written by: Map P.20131013 on Thu Jun 29 16:57:09 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -21,43 +21,40 @@ COMP "DCout" LOCATE = SITE "P93" LEVEL 1;
 COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
 COMP "Stress" LOCATE = SITE "P18" LEVEL 1;
 COMP "ring_out" LOCATE = SITE "P82" LEVEL 1;
-COMPGRP Ring_osc_block.SLICE = COMP "RingOscillator/connect_wire<26>" COMP
-        "RingOscillator/connect_wire<10>" COMP
+COMPGRP Ring_osc_block.SLICE = COMP "RingOscillator/connect_wire<16>" COMP
+        "RingOscillator/connect_wire<5>" COMP "RingOscillator/connect_wire<6>"
+        COMP "RingOscillator/connect_wire<7>" COMP
+        "RingOscillator/connect_wire<8>" COMP "RingOscillator/connect_wire<9>"
+        COMP "RingOscillator/connect_wire<10>" COMP
         "RingOscillator/connect_wire<11>" COMP
         "RingOscillator/connect_wire<12>" COMP
         "RingOscillator/connect_wire<20>" COMP
         "RingOscillator/connect_wire<13>" COMP
-        "RingOscillator/connect_wire<21>" COMP
+        "RingOscillator/connect_wire<2>" COMP
         "RingOscillator/connect_wire<14>" COMP
-        "RingOscillator/connect_wire<22>" COMP
+        "RingOscillator/connect_wire<29>" COMP
         "RingOscillator/connect_wire<30>" COMP
-        "RingOscillator/connect_wire<15>" COMP
-        "RingOscillator/connect_wire<6>" COMP
-        "RingOscillator/connect_wire<16>" COMP
+        "RingOscillator/connect_wire<0>" COMP
+        "RingOscillator/connect_wire<23>" COMP
+        "RingOscillator/connect_wire<24>" COMP
+        "RingOscillator/connect_wire<3>" COMP
+        "RingOscillator/connect_wire<25>" COMP
+        "RingOscillator/connect_wire<1>" COMP
+        "RingOscillator/connect_wire<26>" COMP
         "RingOscillator/connect_wire<4>" COMP
-        "RingOscillator/connect_wire<17>" COMP
-        "RingOscillator/connect_wire<7>" COMP
-        "RingOscillator/connect_wire<18>" COMP
-        "RingOscillator/connect_wire<19>" COMP
-        "RingOscillator/connect_wire<8>" COMP
-        "RingOscillator/connect_wire<28>" COMP
-        "RingOscillator/connect_wire<5>" COMP "RingOscillator/connect_wire<1>"
-        COMP "RingOscillator/connect_wire<9>" COMP
-        "RingOscillator/connect_wire<0>";
+        "RingOscillator/connect_wire<27>";
 COMPGRP "Ring_osc_block.SLICE" LOCATE = SITE "SLICE_X16Y14:SLICE_X19Y19" LEVEL
         4;
-COMPGRP Duty_cycle_meas.SLICE = COMP "Dut/rst_not00019" COMP "Dut/value<1>"
-        COMP "Dut/value<3>" COMP "Dut/value<5>" COMP "Dut/value<7>" COMP
-        "Dut/Counter2/count<0>" COMP "Dut/Counter2/count<2>" COMP
-        "Dut/Counter2/count<4>" COMP "Dut/Counter2/count<6>" COMP
-        "Dut/Counter1/count<0>" COMP "Dut/Counter1/count<2>" COMP
-        "Dut/Counter1/count<4>" COMP "Dut/Counter1/count<6>" COMP
-        "Dut/rst_not0001" COMP "Dut/rst";
+COMPGRP Duty_cycle_meas.SLICE = COMP "Dut/Counter2/count<0>" COMP
+        "Dut/Counter2/count<2>" COMP "Dut/Counter2/count<4>" COMP
+        "Dut/Counter2/count<6>" COMP "Dut/Counter1/count<0>" COMP
+        "Dut/Counter1/count<2>" COMP "Dut/Counter1/count<4>" COMP
+        "Dut/Counter1/count<6>" COMP "Dut/rst_not0001" COMP "Dut/rst" COMP
+        "Dut/rst_not00019" COMP "Dut/value<1>" COMP "Dut/value<3>" COMP
+        "Dut/value<5>" COMP "Dut/value<7>";
 COMPGRP "Duty_cycle_meas.SLICE" LOCATE = SITE "SLICE_X20Y8:SLICE_X25Y15" LEVEL
         4;
-COMPGRP Counter.SLICE = COMP "Counter/value_out<1>" COMP
-        "Counter/value_out<3>" COMP "Counter/value_out<5>" COMP
-        "Counter/value_out<7>" COMP "Counter/Counter1/count<0>" COMP
+COMPGRP Counter.SLICE = COMP "Counter/Counter1/count<0>" COMP
         "Counter/Counter1/count<2>" COMP "Counter/Counter1/count<4>" COMP
         "Counter/Counter1/count<6>" COMP "Counter/Counter1/count<8>" COMP
         "Counter/Counter1/count<10>" COMP "Counter/Counter1/count<12>" COMP
@@ -66,7 +63,8 @@ COMPGRP Counter.SLICE = COMP "Counter/value_out<1>" COMP
         "Counter/Mcompar_rst_cmp_le0000_cy<3>" COMP "Counter/rst_cmp_le0000"
         COMP "Counter/Counter2/count<0>" COMP "Counter/Counter2/count<2>" COMP
         "Counter/Counter2/count<4>" COMP "Counter/Counter2/count<6>" COMP
-        "Counter/rst";
+        "Counter/rst" COMP "Counter/value_out<1>" COMP "Counter/value_out<3>"
+        COMP "Counter/value_out<5>" COMP "Counter/value_out<7>";
 COMPGRP "Counter.SLICE" LOCATE = SITE "SLICE_X26Y8:SLICE_X33Y17" LEVEL 4;
 SCHEMATIC END;
 

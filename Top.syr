@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: Top.prj
 
@@ -143,7 +143,7 @@ Analyzing hierarchy for module <Top> in library <work>.
 Analyzing hierarchy for module <DCM> in library <work>.
 
 Analyzing hierarchy for module <RingOsc2> in library <work> with parameters.
-	LENGTH = "00000000000000000000000001000110"
+	LENGTH = "00000000000000000000000000011110"
 
 Analyzing hierarchy for module <Counting_circuit> in library <work> with parameters.
 	max = "00000000000000000000000001100011"
@@ -154,9 +154,9 @@ Analyzing hierarchy for module <Duty_Cycle_Circuit> in library <work> with param
 Analyzing hierarchy for module <SensorController> in library <work>.
 
 Analyzing hierarchy for module <uart_send> in library <work> with parameters.
-	BAUD_RATE = "00000000000000011100001000000000"
+	BAUD_RATE = "00000000000000000010010110000000"
 	CLOCK_SPEED_MHZ = "00000000000000000000000001100100"
-	CYCLES_WAIT = 868
+	CYCLES_WAIT = 10417
 	DATA_BIT = "00000000000000000000000000000011"
 	END_BIT = "00000000000000000000000000000010"
 	IDLE = "00000000000000000000000000000000"
@@ -208,7 +208,7 @@ Module <DCM> is correct for synthesis.
     Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <DCM>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <DCM>.
 Analyzing module <RingOsc2> in library <work>.
-	LENGTH = 32'sb00000000000000000000000001000110
+	LENGTH = 32'sb00000000000000000000000000011110
 Module <RingOsc2> is correct for synthesis.
  
     Set user-defined property "S =  TRUE" for signal <connect_wire>.
@@ -245,9 +245,9 @@ Analyzing module <DisplayController> in library <work>.
 Module <DisplayController> is correct for synthesis.
  
 Analyzing module <uart_send> in library <work>.
-	BAUD_RATE = 32'sb00000000000000011100001000000000
+	BAUD_RATE = 32'sb00000000000000000010010110000000
 	CLOCK_SPEED_MHZ = 32'sb00000000000000000000000001100100
-	CYCLES_WAIT = 868
+	CYCLES_WAIT = 10417
 	DATA_BIT = 32'sb00000000000000000000000000000011
 	END_BIT = 32'sb00000000000000000000000000000010
 	IDLE = 32'sb00000000000000000000000000000000
@@ -533,7 +533,7 @@ WARNING:Xst:2677 - Node <Counter1/count_12> of sequential type is unconnected in
 WARNING:Xst:2677 - Node <Counter1/count_13> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
 WARNING:Xst:2677 - Node <Counter1/count_14> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
 WARNING:Xst:2677 - Node <Counter1/count_15> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
-WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<28>, connect_wire<1>, connect_wire<4>, connect_wire<67>, connect_wire<7>, connect_wire<34>, connect_wire<37>, connect_wire<40>, connect_wire<43>, connect_wire<46>, LUTSel1/OUTSel_and0000, connect_wire<49>, connect_wire<52>, connect_wire<55>, connect_wire<58>, connect_wire<61>, connect_wire<64>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<27>, connect_wire<30>, connect_wire<0>, connect_wire<3>, connect_wire<6>, connect_wire<68>, connect_wire<32>, connect_wire<36>, connect_wire<39>, connect_wire<33>, connect_wire<42>, connect_wire<45>, connect_wire<48>, connect_wire<51>, connect_wire<54>, connect_wire<57>, connect_wire<60>, connect_wire<63>, connect_wire<66>, connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<26>, connect_wire<29>, connect_wire<2>, connect_wire<5>, connect_wire<69>, connect_wire<31>, connect_wire<35>, connect_wire<38>, connect_wire<41>, connect_wire<44>, connect_wire<47>, connect_wire<50>, connect_wire<53>, connect_wire<56>, connect_wire<59>, connect_wire<62>, connect_wire<65>, connect_wire<70>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>.
+WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<27>, connect_wire<2>, connect_wire<5>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<30>, connect_wire<28>, connect_wire<1>, connect_wire<4>, connect_wire<7>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<29>, connect_wire<0>, connect_wire<3>, connect_wire<6>, LUTSel1/OUTSel_and0000, connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<26>.
 
 Optimizing unit <Top> ...
 
@@ -567,7 +567,7 @@ WARNING:Xst:2677 - Node <Counter/value_out_8> of sequential type is unconnected 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 6.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -605,10 +605,10 @@ Design Statistics
 # IOs                              : 19
 
 Cell Usage :
-# BELS                             : 464
+# BELS                             : 424
 #      GND                         : 1
 #      INV                         : 11
-#      LUT1                        : 153
+#      LUT1                        : 113
 #      LUT2                        : 11
 #      LUT3                        : 26
 #      LUT4                        : 57
@@ -638,9 +638,9 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                      140  out of   2448     5%  
+ Number of Slices:                      117  out of   2448     4%  
  Number of Slice Flip Flops:            144  out of   4896     2%  
- Number of 4 input LUTs:                261  out of   4896     5%  
+ Number of 4 input LUTs:                221  out of   4896     4%  
  Number of IOs:                          19
  Number of bonded IOBs:                  19  out of    108    17%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -691,9 +691,9 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 9.702ns (Maximum Frequency: 103.072MHz)
-   Minimum input arrival time before clock: 95.263ns
+   Minimum input arrival time before clock: 43.303ns
    Maximum output required time after clock: 8.027ns
-   Maximum combinational path delay: 97.980ns
+   Maximum combinational path delay: 46.020ns
 
 Timing Detail:
 --------------
@@ -705,16 +705,16 @@ Timing constraint: Default period analysis for Clock 'fpga_clk1'
   Total number of paths / destination ports: 1567 / 173
 -------------------------------------------------------------------------
 Delay:               4.851ns (Levels of Logic = 2)
-  Source:            Dut/Counter1/count_1 (FF)
+  Source:            Dut/Counter1/count_2 (FF)
   Destination:       Dut/rst (FF)
   Source Clock:      fpga_clk1 rising 2.0X
   Destination Clock: fpga_clk1 rising 2.0X
 
-  Data Path: Dut/Counter1/count_1 to Dut/rst
+  Data Path: Dut/Counter1/count_2 to Dut/rst
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.591   0.622  Dut/Counter1/count_1 (Dut/Counter1/count_1)
+     FDCE:C->Q             2   0.591   0.622  Dut/Counter1/count_2 (Dut/Counter1/count_2)
      LUT4:I0->O            1   0.704   0.499  Dut/rst_not00019 (Dut/rst_not00019)
      LUT2:I1->O            9   0.704   0.820  Dut/rst_not000110 (Dut/rst_not0001)
      FDR:R                     0.911          Dut/rst
@@ -755,7 +755,7 @@ Delay:               3.788ns (Levels of Logic = 8)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_clk1'
   Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
-Offset:              95.263ns (Levels of Logic = 72)
+Offset:              43.303ns (Levels of Logic = 32)
   Source:            Mode (PAD)
   Destination:       Dut/Counter2/count_7 (FF)
   Destination Clock: fpga_clk1 rising 2.0X
@@ -795,51 +795,11 @@ Offset:              95.263ns (Levels of Logic = 72)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[27].Lut/o1 (RingOscillator/connect_wire<27>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[28].Lut/o1 (RingOscillator/connect_wire<28>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[29].Lut/o1 (RingOscillator/connect_wire<29>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[31].Lut/o1 (RingOscillator/connect_wire<31>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[32].Lut/o1 (RingOscillator/connect_wire<32>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[33].Lut/o1 (RingOscillator/connect_wire<33>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[34].Lut/o1 (RingOscillator/connect_wire<34>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[35].Lut/o1 (RingOscillator/connect_wire<35>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[36].Lut/o1 (RingOscillator/connect_wire<36>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[37].Lut/o1 (RingOscillator/connect_wire<37>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[38].Lut/o1 (RingOscillator/connect_wire<38>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[39].Lut/o1 (RingOscillator/connect_wire<39>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[40].Lut/o1 (RingOscillator/connect_wire<40>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[41].Lut/o1 (RingOscillator/connect_wire<41>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[42].Lut/o1 (RingOscillator/connect_wire<42>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[43].Lut/o1 (RingOscillator/connect_wire<43>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[44].Lut/o1 (RingOscillator/connect_wire<44>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[45].Lut/o1 (RingOscillator/connect_wire<45>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[46].Lut/o1 (RingOscillator/connect_wire<46>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[47].Lut/o1 (RingOscillator/connect_wire<47>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[48].Lut/o1 (RingOscillator/connect_wire<48>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[49].Lut/o1 (RingOscillator/connect_wire<49>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[50].Lut/o1 (RingOscillator/connect_wire<50>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[51].Lut/o1 (RingOscillator/connect_wire<51>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[52].Lut/o1 (RingOscillator/connect_wire<52>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[53].Lut/o1 (RingOscillator/connect_wire<53>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[54].Lut/o1 (RingOscillator/connect_wire<54>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[55].Lut/o1 (RingOscillator/connect_wire<55>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[56].Lut/o1 (RingOscillator/connect_wire<56>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[57].Lut/o1 (RingOscillator/connect_wire<57>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[58].Lut/o1 (RingOscillator/connect_wire<58>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[59].Lut/o1 (RingOscillator/connect_wire<59>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[60].Lut/o1 (RingOscillator/connect_wire<60>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[61].Lut/o1 (RingOscillator/connect_wire<61>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[62].Lut/o1 (RingOscillator/connect_wire<62>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[63].Lut/o1 (RingOscillator/connect_wire<63>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[64].Lut/o1 (RingOscillator/connect_wire<64>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[65].Lut/o1 (RingOscillator/connect_wire<65>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[66].Lut/o1 (RingOscillator/connect_wire<66>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[67].Lut/o1 (RingOscillator/connect_wire<67>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[68].Lut/o1 (RingOscillator/connect_wire<68>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[69].Lut/o1 (RingOscillator/connect_wire<69>)
-     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[70].Lut/o1 (RingOscillator/connect_wire<70>)
+     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
      FDCE:CE                   0.555          Dut/Counter2/count_0
     ----------------------------------------
-    Total                     95.263ns (51.757ns logic, 43.506ns route)
-                                       (54.3% logic, 45.7% route)
+    Total                     43.303ns (23.597ns logic, 19.706ns route)
+                                       (54.5% logic, 45.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_clk1'
@@ -868,7 +828,7 @@ Offset:              8.027ns (Levels of Logic = 5)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Delay:               97.980ns (Levels of Logic = 73)
+Delay:               46.020ns (Levels of Logic = 33)
   Source:            Mode (PAD)
   Destination:       ring_out (PAD)
 
@@ -907,61 +867,21 @@ Delay:               97.980ns (Levels of Logic = 73)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[27].Lut/o1 (RingOscillator/connect_wire<27>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[28].Lut/o1 (RingOscillator/connect_wire<28>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[29].Lut/o1 (RingOscillator/connect_wire<29>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[31].Lut/o1 (RingOscillator/connect_wire<31>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[32].Lut/o1 (RingOscillator/connect_wire<32>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[33].Lut/o1 (RingOscillator/connect_wire<33>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[34].Lut/o1 (RingOscillator/connect_wire<34>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[35].Lut/o1 (RingOscillator/connect_wire<35>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[36].Lut/o1 (RingOscillator/connect_wire<36>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[37].Lut/o1 (RingOscillator/connect_wire<37>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[38].Lut/o1 (RingOscillator/connect_wire<38>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[39].Lut/o1 (RingOscillator/connect_wire<39>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[40].Lut/o1 (RingOscillator/connect_wire<40>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[41].Lut/o1 (RingOscillator/connect_wire<41>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[42].Lut/o1 (RingOscillator/connect_wire<42>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[43].Lut/o1 (RingOscillator/connect_wire<43>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[44].Lut/o1 (RingOscillator/connect_wire<44>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[45].Lut/o1 (RingOscillator/connect_wire<45>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[46].Lut/o1 (RingOscillator/connect_wire<46>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[47].Lut/o1 (RingOscillator/connect_wire<47>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[48].Lut/o1 (RingOscillator/connect_wire<48>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[49].Lut/o1 (RingOscillator/connect_wire<49>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[50].Lut/o1 (RingOscillator/connect_wire<50>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[51].Lut/o1 (RingOscillator/connect_wire<51>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[52].Lut/o1 (RingOscillator/connect_wire<52>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[53].Lut/o1 (RingOscillator/connect_wire<53>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[54].Lut/o1 (RingOscillator/connect_wire<54>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[55].Lut/o1 (RingOscillator/connect_wire<55>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[56].Lut/o1 (RingOscillator/connect_wire<56>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[57].Lut/o1 (RingOscillator/connect_wire<57>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[58].Lut/o1 (RingOscillator/connect_wire<58>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[59].Lut/o1 (RingOscillator/connect_wire<59>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[60].Lut/o1 (RingOscillator/connect_wire<60>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[61].Lut/o1 (RingOscillator/connect_wire<61>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[62].Lut/o1 (RingOscillator/connect_wire<62>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[63].Lut/o1 (RingOscillator/connect_wire<63>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[64].Lut/o1 (RingOscillator/connect_wire<64>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[65].Lut/o1 (RingOscillator/connect_wire<65>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[66].Lut/o1 (RingOscillator/connect_wire<66>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[67].Lut/o1 (RingOscillator/connect_wire<67>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[68].Lut/o1 (RingOscillator/connect_wire<68>)
-     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[69].Lut/o1 (RingOscillator/connect_wire<69>)
-     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[70].Lut/o1 (RingOscillator/connect_wire<70>)
+     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
      OBUF:I->O                 3.272          ring_out_OBUF (ring_out)
     ----------------------------------------
-    Total                     97.980ns (54.474ns logic, 43.506ns route)
-                                       (55.6% logic, 44.4% route)
+    Total                     46.020ns (26.314ns logic, 19.706ns route)
+                                       (57.2% logic, 42.8% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.94 secs
+Total CPU time to Xst completion: 7.77 secs
  
 --> 
 
-Total memory usage is 281292 kilobytes
+Total memory usage is 284284 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   56 (   0 filtered)
