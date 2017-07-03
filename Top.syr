@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: Top.prj
 
@@ -143,7 +143,7 @@ Analyzing hierarchy for module <Top> in library <work>.
 Analyzing hierarchy for module <DCM> in library <work>.
 
 Analyzing hierarchy for module <RingOsc2> in library <work> with parameters.
-	LENGTH = "00000000000000000000000000011110"
+	LENGTH = "00000000000000000000000000100000"
 
 Analyzing hierarchy for module <Counting_circuit> in library <work> with parameters.
 	max = "00000000000000000000000001100011"
@@ -208,7 +208,7 @@ Module <DCM> is correct for synthesis.
     Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <DCM>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <DCM>.
 Analyzing module <RingOsc2> in library <work>.
-	LENGTH = 32'sb00000000000000000000000000011110
+	LENGTH = 32'sb00000000000000000000000000100000
 Module <RingOsc2> is correct for synthesis.
  
     Set user-defined property "S =  TRUE" for signal <connect_wire>.
@@ -533,7 +533,7 @@ WARNING:Xst:2677 - Node <Counter1/count_12> of sequential type is unconnected in
 WARNING:Xst:2677 - Node <Counter1/count_13> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
 WARNING:Xst:2677 - Node <Counter1/count_14> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
 WARNING:Xst:2677 - Node <Counter1/count_15> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
-WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<27>, connect_wire<2>, connect_wire<5>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<30>, connect_wire<28>, connect_wire<1>, connect_wire<4>, connect_wire<7>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<29>, connect_wire<0>, connect_wire<3>, connect_wire<6>, LUTSel1/OUTSel_and0000, connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<26>.
+WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<26>, connect_wire<31>, connect_wire<2>, connect_wire<5>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<28>, connect_wire<29>, connect_wire<1>, connect_wire<4>, connect_wire<7>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<27>, connect_wire<32>, LUTSel1/OUTSel_and0000, connect_wire<30>, connect_wire<0>, connect_wire<3>, connect_wire<6>.
 
 Optimizing unit <Top> ...
 
@@ -605,10 +605,10 @@ Design Statistics
 # IOs                              : 19
 
 Cell Usage :
-# BELS                             : 424
+# BELS                             : 426
 #      GND                         : 1
 #      INV                         : 11
-#      LUT1                        : 113
+#      LUT1                        : 115
 #      LUT2                        : 11
 #      LUT3                        : 26
 #      LUT4                        : 57
@@ -638,9 +638,9 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                      117  out of   2448     4%  
+ Number of Slices:                      118  out of   2448     4%  
  Number of Slice Flip Flops:            144  out of   4896     2%  
- Number of 4 input LUTs:                221  out of   4896     4%  
+ Number of 4 input LUTs:                223  out of   4896     4%  
  Number of IOs:                          19
  Number of bonded IOBs:                  19  out of    108    17%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -691,9 +691,9 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 9.702ns (Maximum Frequency: 103.072MHz)
-   Minimum input arrival time before clock: 43.303ns
+   Minimum input arrival time before clock: 45.901ns
    Maximum output required time after clock: 8.027ns
-   Maximum combinational path delay: 46.020ns
+   Maximum combinational path delay: 48.618ns
 
 Timing Detail:
 --------------
@@ -755,7 +755,7 @@ Delay:               3.788ns (Levels of Logic = 8)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_clk1'
   Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
-Offset:              43.303ns (Levels of Logic = 32)
+Offset:              45.901ns (Levels of Logic = 34)
   Source:            Mode (PAD)
   Destination:       Dut/Counter2/count_7 (FF)
   Destination Clock: fpga_clk1 rising 2.0X
@@ -795,10 +795,12 @@ Offset:              43.303ns (Levels of Logic = 32)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[27].Lut/o1 (RingOscillator/connect_wire<27>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[28].Lut/o1 (RingOscillator/connect_wire<28>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[29].Lut/o1 (RingOscillator/connect_wire<29>)
-     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[31].Lut/o1 (RingOscillator/connect_wire<31>)
+     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[32].Lut/o1 (RingOscillator/connect_wire<32>)
      FDCE:CE                   0.555          Dut/Counter2/count_0
     ----------------------------------------
-    Total                     43.303ns (23.597ns logic, 19.706ns route)
+    Total                     45.901ns (25.005ns logic, 20.896ns route)
                                        (54.5% logic, 45.5% route)
 
 =========================================================================
@@ -828,7 +830,7 @@ Offset:              8.027ns (Levels of Logic = 5)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Delay:               46.020ns (Levels of Logic = 33)
+Delay:               48.618ns (Levels of Logic = 35)
   Source:            Mode (PAD)
   Destination:       ring_out (PAD)
 
@@ -867,21 +869,23 @@ Delay:               46.020ns (Levels of Logic = 33)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[27].Lut/o1 (RingOscillator/connect_wire<27>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[28].Lut/o1 (RingOscillator/connect_wire<28>)
      LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[29].Lut/o1 (RingOscillator/connect_wire<29>)
-     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[30].Lut/o1 (RingOscillator/connect_wire<30>)
+     LUT1:I0->O            1   0.704   0.595  RingOscillator/Lut[31].Lut/o1 (RingOscillator/connect_wire<31>)
+     LUT1:I0->O           27   0.704   1.261  RingOscillator/Lut[32].Lut/o1 (RingOscillator/connect_wire<32>)
      OBUF:I->O                 3.272          ring_out_OBUF (ring_out)
     ----------------------------------------
-    Total                     46.020ns (26.314ns logic, 19.706ns route)
-                                       (57.2% logic, 42.8% route)
+    Total                     48.618ns (27.722ns logic, 20.896ns route)
+                                       (57.0% logic, 43.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.77 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.58 secs
  
 --> 
 
-Total memory usage is 284284 kilobytes
+Total memory usage is 277220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   56 (   0 filtered)

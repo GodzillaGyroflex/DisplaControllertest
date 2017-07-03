@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module RingOsc2(Mode, Stress, OUT);
-	parameter LENGTH = 30;
+	parameter LENGTH = 32;
 	input Mode, Stress;
 	output wire OUT;
 	(* S = "TRUE"*)wire [LENGTH : 0] connect_wire;
@@ -40,21 +40,7 @@ module RingOsc2(Mode, Stress, OUT);
 	endgenerate  
 	
 	
-	
-	/* inverter Lut2(a,LUTout);
-	inverter Lut3(b,a);
-	inverter Lut4(c,b);
-	inverter Lut5(d,c);
-	inverter Lut6(e,d);	
-	inverter Lut7(f,e);
-	inverter Lut8(g,f);
-	inverter Lut9(h,g);
-	inverter Lut10(i,h);
-	inverter Lut11(j,i);
-	inverter Lut12(k,j);
-	inverter Lut13(l,k);
-	inverter Lut14(m,l);
-	inverter Lut15(OUT,m); */
+
 	
 	
 endmodule
