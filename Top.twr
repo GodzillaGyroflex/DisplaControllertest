@@ -44,19 +44,19 @@ Clock fpga_clk1 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-CCout       |    9.160(R)|clk               |   0.000|
-DCout       |   10.025(R)|clk               |   0.000|
-an0         |    7.374(R)|clk               |   0.000|
-an1         |    6.756(R)|clk               |   0.000|
-an2         |    6.411(R)|clk               |   0.000|
-an3         |    6.239(R)|clk               |   0.000|
-seg0        |    9.987(R)|clk               |   0.000|
-seg1        |   10.623(R)|clk               |   0.000|
-seg2        |   10.485(R)|clk               |   0.000|
-seg3        |   10.309(R)|clk               |   0.000|
-seg4        |   10.016(R)|clk               |   0.000|
-seg5        |   10.416(R)|clk               |   0.000|
-seg6        |   10.394(R)|clk               |   0.000|
+CCout       |    9.467(R)|clk               |   0.000|
+DCout       |    9.492(R)|clk               |   0.000|
+an0         |    7.355(R)|clk               |   0.000|
+an1         |    6.737(R)|clk               |   0.000|
+an2         |    6.392(R)|clk               |   0.000|
+an3         |    6.220(R)|clk               |   0.000|
+seg0        |    9.427(R)|clk               |   0.000|
+seg1        |   10.315(R)|clk               |   0.000|
+seg2        |    9.987(R)|clk               |   0.000|
+seg3        |   10.001(R)|clk               |   0.000|
+seg4        |    9.695(R)|clk               |   0.000|
+seg5        |   10.253(R)|clk               |   0.000|
+seg6        |    9.558(R)|clk               |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Mode
@@ -64,9 +64,9 @@ Clock to Setup on destination clock Mode
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.529|         |         |         |
-Stress         |    3.529|         |         |         |
-fpga_clk1      |    5.113|         |         |         |
+Mode           |    3.417|         |         |         |
+Stress         |    3.417|         |         |         |
+fpga_clk1      |    4.861|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Stress
@@ -74,9 +74,9 @@ Clock to Setup on destination clock Stress
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.529|         |         |         |
-Stress         |    3.529|         |         |         |
-fpga_clk1      |    5.113|         |         |         |
+Mode           |    3.417|         |         |         |
+Stress         |    3.417|         |         |         |
+fpga_clk1      |    4.861|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fpga_clk1
@@ -84,28 +84,28 @@ Clock to Setup on destination clock fpga_clk1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |   43.881|   36.528|         |         |
-Stress         |   43.881|   36.618|         |         |
-fpga_clk1      |    5.691|         |         |         |
+Mode           |   37.039|   36.705|         |         |
+Stress         |   37.039|   36.668|         |         |
+fpga_clk1      |    6.737|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-Mode           |ring_out       |   39.552|
-Stress         |ring_out       |   39.642|
+Mode           |ring_out       |   40.024|
+Stress         |ring_out       |   39.987|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Jul 03 17:10:24 2017 
+Analysis completed Fri Aug 25 13:23:34 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 176 MB
+Peak Memory Usage: 183 MB
 
 
 

@@ -13,7 +13,8 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # restart
+# restart
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 79226774 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb.v" Line 59
+Stopped at time : 93289860 ns : File "C:/Users/Saulo/Documents/DisplaControllertest/Duty_Cycle_tb.v" Line 56

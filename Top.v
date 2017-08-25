@@ -50,7 +50,7 @@ module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	
 	Duty_Cycle_Circuit Dut(.ring_in(ring_out), .enable(1), .clk(clk2), .reset(rst), .value(value2));
 	
-	SensorController Display(.fpga_clk1(clk), .value(value1), .reset(1'b0),
+	SensorController Display(.fpga_clk1(clk), .value(value2), .reset(1'b0),
 										.seg0(seg0),
 										.seg1(seg1),
 										.seg2(seg2),

@@ -5,13 +5,13 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Mon Jul 03 17:10:08 2017">
+  <application stringID="Map" timeStamp="Fri Aug 25 13:23:16 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
+          <item stringID="variable" value="PATH"/>
           <item stringID="value" value="F:\14.7\ISE_DS\ISE\\lib\nt64;F:\14.7\ISE_DS\ISE\\bin\nt64;F:\14.7\ISE_DS\ISE\bin\nt64;F:\14.7\ISE_DS\ISE\lib\nt64;F:\14.7\ISE_DS\ISE\..\..\..\DocNav;F:\14.7\ISE_DS\PlanAhead\bin;F:\14.7\ISE_DS\EDK\bin\nt64;F:\14.7\ISE_DS\EDK\lib\nt64;F:\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;F:\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;F:\14.7\ISE_DS\EDK\gnuwin\bin;F:\14.7\ISE_DS\EDK\gnu\arm\nt\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;F:\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;F:\14.7\ISE_DS\common\bin\nt64;F:\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\ProgramData\Oracle\Java\javapath;C:\Qt\Qt5.3.2\Tools\mingw482_32\bin;C:\Qt\Qt5.3.2\5.3\mingw482_32\lib\cmake;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;D:\Android\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\tools;C:\Program Files\TortoiseGit\bin;C:\Program Files\Java\jdk1.7.0_75\bin;D:\Android\OpenCV-2.4.9-android-sdk;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\QuickTime\QTSystem\"/>
         </row>
         <row stringID="row" value="1">
@@ -69,16 +69,16 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="1"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="311208"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="2 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="318152"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="3 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="4896" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="144"/>
-        <item AVAILABLE="4896" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="222">
+        <item AVAILABLE="4896" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="145"/>
+        <item AVAILABLE="4896" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="226">
           <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="83"/>
         </item>
-        <item AVAILABLE="2448" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="146">
+        <item AVAILABLE="2448" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="150">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>

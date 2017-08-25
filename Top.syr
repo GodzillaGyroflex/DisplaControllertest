@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: Top.prj
 
@@ -533,7 +533,7 @@ WARNING:Xst:2677 - Node <Counter1/count_12> of sequential type is unconnected in
 WARNING:Xst:2677 - Node <Counter1/count_13> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
 WARNING:Xst:2677 - Node <Counter1/count_14> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
 WARNING:Xst:2677 - Node <Counter1/count_15> of sequential type is unconnected in block <Duty_Cycle_Circuit>.
-WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<26>, connect_wire<31>, connect_wire<2>, connect_wire<5>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<28>, connect_wire<29>, connect_wire<1>, connect_wire<4>, connect_wire<7>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<27>, connect_wire<32>, LUTSel1/OUTSel_and0000, connect_wire<30>, connect_wire<0>, connect_wire<3>, connect_wire<6>.
+WARNING:Xst:2170 - Unit RingOsc2 : the following signal(s) form a combinatorial loop: connect_wire<0>, connect_wire<3>, connect_wire<6>, connect_wire<9>, connect_wire<11>, connect_wire<14>, connect_wire<17>, connect_wire<20>, connect_wire<23>, connect_wire<26>, connect_wire<31>, connect_wire<2>, connect_wire<5>, connect_wire<8>, connect_wire<10>, connect_wire<13>, connect_wire<16>, connect_wire<19>, connect_wire<22>, connect_wire<25>, connect_wire<28>, connect_wire<29>, LUTSel1/OUTSel_and0000, connect_wire<1>, connect_wire<4>, connect_wire<7>, connect_wire<12>, connect_wire<15>, connect_wire<18>, connect_wire<21>, connect_wire<24>, connect_wire<27>, connect_wire<32>, connect_wire<30>.
 
 Optimizing unit <Top> ...
 
@@ -568,6 +568,7 @@ WARNING:Xst:2677 - Node <Counter/value_out_8> of sequential type is unconnected 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
+FlipFlop Dut/value_6 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -575,8 +576,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 144
- Flip-Flops                                            : 144
+# Registers                                            : 145
+ Flip-Flops                                            : 145
 
 =========================================================================
 
@@ -605,24 +606,28 @@ Design Statistics
 # IOs                              : 19
 
 Cell Usage :
-# BELS                             : 426
+# BELS                             : 430
 #      GND                         : 1
 #      INV                         : 11
 #      LUT1                        : 115
-#      LUT2                        : 11
-#      LUT3                        : 26
-#      LUT4                        : 57
-#      LUT4_L                      : 3
+#      LUT2                        : 10
+#      LUT3                        : 24
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 63
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
 #      MUXCY                       : 88
 #      MUXF5                       : 20
 #      MUXF6                       : 3
 #      VCC                         : 1
 #      XORCY                       : 90
-# FlipFlops/Latches                : 144
-#      FD                          : 30
+# FlipFlops/Latches                : 145
+#      FD                          : 29
 #      FDCE                        : 40
-#      FDE                         : 40
+#      FDE                         : 41
 #      FDR                         : 34
+#      FDS                         : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 2
 # IO Buffers                       : 19
@@ -638,9 +643,9 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-4 
 
- Number of Slices:                      118  out of   2448     4%  
- Number of Slice Flip Flops:            144  out of   4896     2%  
- Number of 4 input LUTs:                223  out of   4896     4%  
+ Number of Slices:                      120  out of   2448     4%  
+ Number of Slice Flip Flops:            145  out of   4896     2%  
+ Number of 4 input LUTs:                227  out of   4896     4%  
  Number of IOs:                          19
  Number of bonded IOBs:                  19  out of    108    17%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -669,7 +674,7 @@ Clock Signal                                                    | Clock buffer(F
 ----------------------------------------------------------------+----------------------------------+-------+
 fpga_clk1                                                       | dcm_clk/DCM_SP_INST:CLK0         | 102   |
 RingOscillator/connect_wire<0>(RingOscillator/LUTSel1/OUTSel1:O)| NONE(*)(Counter/Counter2/count_7)| 17    |
-fpga_clk1                                                       | dcm_clk/DCM_SP_INST:CLK2X        | 25    |
+fpga_clk1                                                       | dcm_clk/DCM_SP_INST:CLK2X        | 26    |
 ----------------------------------------------------------------+----------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -690,7 +695,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 9.702ns (Maximum Frequency: 103.072MHz)
+   Minimum period: 13.978ns (Maximum Frequency: 71.541MHz)
    Minimum input arrival time before clock: 45.901ns
    Maximum output required time after clock: 8.027ns
    Maximum combinational path delay: 48.618ns
@@ -701,26 +706,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fpga_clk1'
-  Clock period: 9.702ns (frequency: 103.072MHz)
-  Total number of paths / destination ports: 1567 / 173
+  Clock period: 13.978ns (frequency: 71.541MHz)
+  Total number of paths / destination ports: 2026 / 186
 -------------------------------------------------------------------------
-Delay:               4.851ns (Levels of Logic = 2)
-  Source:            Dut/Counter1/count_2 (FF)
-  Destination:       Dut/rst (FF)
+Delay:               6.989ns (Levels of Logic = 6)
+  Source:            Dut/value_7 (FF)
+  Destination:       Display/BinToBCD/dec_2 (FF)
   Source Clock:      fpga_clk1 rising 2.0X
-  Destination Clock: fpga_clk1 rising 2.0X
+  Destination Clock: fpga_clk1 rising
 
-  Data Path: Dut/Counter1/count_2 to Dut/rst
+  Data Path: Dut/value_7 to Display/BinToBCD/dec_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.591   0.622  Dut/Counter1/count_2 (Dut/Counter1/count_2)
-     LUT4:I0->O            1   0.704   0.499  Dut/rst_not00019 (Dut/rst_not00019)
-     LUT2:I1->O            9   0.704   0.820  Dut/rst_not000110 (Dut/rst_not0001)
-     FDR:R                     0.911          Dut/rst
+     FDE:C->Q             18   0.591   1.243  Dut/value_7 (Dut/value_7)
+     LUT4:I0->O            1   0.704   0.000  Display/BinToBCD/un_mux0030_F (N77)
+     MUXF5:I0->O           9   0.321   0.824  Display/BinToBCD/un_mux0030 (Display/BinToBCD/Madd__add0029_lut<3>)
+     LUT4:I3->O            6   0.704   0.748  Display/BinToBCD/dec_0_mux0011 (Display/BinToBCD/Madd__add0032_cy<0>)
+     LUT2:I1->O            1   0.704   0.000  Display/BinToBCD/dec_mux00282 (Display/BinToBCD/dec_mux00282)
+     MUXF5:I0->O           1   0.321   0.000  Display/BinToBCD/dec_mux0028_f5 (Display/BinToBCD/dec_mux0028_f5)
+     MUXF6:I1->O           1   0.521   0.000  Display/BinToBCD/dec_mux0028_f6 (Display/BinToBCD/dec_mux0028)
+     FD:D                      0.308          Display/BinToBCD/dec_2
     ----------------------------------------
-    Total                      4.851ns (2.910ns logic, 1.941ns route)
-                                       (60.0% logic, 40.0% route)
+    Total                      6.989ns (4.174ns logic, 2.815ns route)
+                                       (59.7% logic, 40.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RingOscillator/connect_wire<0>'
@@ -880,12 +889,12 @@ Delay:               48.618ns (Levels of Logic = 35)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.58 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.92 secs
  
 --> 
 
-Total memory usage is 277220 kilobytes
+Total memory usage is 283772 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   56 (   0 filtered)
