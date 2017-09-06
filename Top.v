@@ -18,10 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3,led0, CCout, DCout);
+module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3,led0, CCout, DCout, uart2_ready);
 	input fpga_clk1, Mode, Stress;
 	output seg0,seg1,seg2,seg3,seg4,seg5,seg6,dp,an0,an1,an2,an3, led0;
-	output ring_out, CCout, DCout;
+	output ring_out, CCout, DCout, uart2_ready;
 	wire [7:0] value1;
 	wire [7:0] value2;
 	wire clk, clk2;
@@ -50,7 +50,7 @@ module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	
 	Duty_Cycle_Circuit Dut(.ring_in(ring_out), .enable(1), .clk(clk2), .reset(rst), .value(value2));
 	
-	SensorController Display(.fpga_clk1(clk), .value(value2), .reset(1'b0),
+	SensorController Display(.fpga_clk1(clk), .value(value1), .reset(1'b0),
 										.seg0(seg0),
 										.seg1(seg1),
 										.seg2(seg2),
@@ -65,7 +65,7 @@ module Top(fpga_clk1, Mode, Stress, ring_out, seg0,seg1,seg2,seg3,seg4,seg5,seg6
 	
 	uart_send #(9600,100) CCsender(.data_byte(value1), .start_send(1), .clk(clk), .tx(CCout), .ready());
 	
-	uart_send #(9600,100) DCsender(.data_byte(value2), .start_send(1), .clk(clk), .tx(DCout), .ready());
+	uart_send #(9600,100) DCsender(.data_byte(value2), .start_send(1), .clk(clk), .tx(DCout), .ready(uart2_ready));
 	
 	
 	

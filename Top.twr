@@ -44,19 +44,20 @@ Clock fpga_clk1 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-CCout       |    9.467(R)|clk               |   0.000|
-DCout       |    9.492(R)|clk               |   0.000|
-an0         |    7.355(R)|clk               |   0.000|
-an1         |    6.737(R)|clk               |   0.000|
-an2         |    6.392(R)|clk               |   0.000|
-an3         |    6.220(R)|clk               |   0.000|
-seg0        |    9.427(R)|clk               |   0.000|
-seg1        |   10.315(R)|clk               |   0.000|
-seg2        |    9.987(R)|clk               |   0.000|
-seg3        |   10.001(R)|clk               |   0.000|
-seg4        |    9.695(R)|clk               |   0.000|
-seg5        |   10.253(R)|clk               |   0.000|
-seg6        |    9.558(R)|clk               |   0.000|
+CCout       |    9.217(R)|clk               |   0.000|
+DCout       |   12.494(R)|clk               |   0.000|
+an0         |    7.116(R)|clk               |   0.000|
+an1         |    6.603(R)|clk               |   0.000|
+an2         |    6.690(R)|clk               |   0.000|
+an3         |    6.657(R)|clk               |   0.000|
+seg0        |    9.806(R)|clk               |   0.000|
+seg1        |   10.571(R)|clk               |   0.000|
+seg2        |   10.878(R)|clk               |   0.000|
+seg3        |   10.262(R)|clk               |   0.000|
+seg4        |   10.569(R)|clk               |   0.000|
+seg5        |   10.526(R)|clk               |   0.000|
+seg6        |   10.208(R)|clk               |   0.000|
+uart2_ready |    7.829(R)|clk               |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Mode
@@ -64,9 +65,9 @@ Clock to Setup on destination clock Mode
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.417|         |         |         |
-Stress         |    3.417|         |         |         |
-fpga_clk1      |    4.861|         |         |         |
+Mode           |    3.524|         |         |         |
+Stress         |    3.524|         |         |         |
+fpga_clk1      |    4.902|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Stress
@@ -74,9 +75,9 @@ Clock to Setup on destination clock Stress
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |    3.417|         |         |         |
-Stress         |    3.417|         |         |         |
-fpga_clk1      |    4.861|         |         |         |
+Mode           |    3.524|         |         |         |
+Stress         |    3.524|         |         |         |
+fpga_clk1      |    4.902|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock fpga_clk1
@@ -84,21 +85,21 @@ Clock to Setup on destination clock fpga_clk1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode           |   37.039|   36.705|         |         |
-Stress         |   37.039|   36.668|         |         |
-fpga_clk1      |    6.737|         |         |         |
+Mode           |   43.126|   36.875|         |         |
+Stress         |   43.126|   37.064|         |         |
+fpga_clk1      |    5.721|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-Mode           |ring_out       |   40.024|
-Stress         |ring_out       |   39.987|
+Mode           |ring_out       |   39.594|
+Stress         |ring_out       |   39.783|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Aug 25 13:23:34 2017 
+Analysis completed Wed Sep 06 15:35:06 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

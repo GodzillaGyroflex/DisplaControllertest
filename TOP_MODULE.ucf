@@ -111,7 +111,7 @@ NET "ring_out" LOC = P82;
 #NET "JB0" LOC = "P87"; # Bank = 1, Pin name = IO_L5P_1/A8/GCLK6,       Sch name = JB-1
 # Bank = 1, Pin name = IO_L7P_1/A4/GCLK10,      Sch name = JB-2
 NET "DCout" LOC = P93;
-# NET "JB<2>" LOC = "P88"; # Bank = 1, Pin name = IO_L5N_1/A7/GCLK7/TRDY1, Sch name = JB-3
+ NET "uart2_ready" LOC = "P88"; # Bank = 1, Pin name = IO_L5N_1/A7/GCLK7/TRDY1, Sch name = JB-3
 # Bank = 1, Pin name = IO_L7N_1/A3/GCLK11,      Sch name = JB-4
 NET "CCout" LOC = P94;
 # NET "DCout" LOC = "P77"; # Bank = 1, Pin name = IO_L2N_1/A13,            Sch name = JC-1

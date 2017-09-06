@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Aug 25 13:23:16 2017
+// Written by: Map P.20131013 on Wed Sep 06 15:34:47 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -18,6 +18,7 @@ COMP "seg5" LOCATE = SITE "P17" LEVEL 1;
 COMP "seg6" LOCATE = SITE "P83" LEVEL 1;
 COMP "CCout" LOCATE = SITE "P94" LEVEL 1;
 COMP "DCout" LOCATE = SITE "P93" LEVEL 1;
+COMP "uart2_ready" LOCATE = SITE "P88" LEVEL 1;
 COMP "fpga_clk1" LOCATE = SITE "P54" LEVEL 1;
 COMP "Stress" LOCATE = SITE "P18" LEVEL 1;
 COMP "ring_out" LOCATE = SITE "P82" LEVEL 1;

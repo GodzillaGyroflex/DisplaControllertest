@@ -56,9 +56,9 @@ module Duty_Cycle_tb;
 			forever #10 clk = ~clk;
 			forever begin
 				ring_in = 1; 
-				#23;
+				#41;
 				ring_in = 0; 
-				#23;	end
+				#41;	end
 		join		
 		// Add stimulus here
 
