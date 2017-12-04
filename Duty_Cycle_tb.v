@@ -32,6 +32,7 @@ module Duty_Cycle_tb;
 
 	// Outputs
 	wire [7:0] value;
+	wire carry;
 
 	// Instantiate the Unit Under Test (UUT)
 	Duty_Cycle_Circuit uut (
@@ -39,7 +40,8 @@ module Duty_Cycle_tb;
 		.enable(enable), 
 		.clk(clk), 
 		.reset(reset), 
-		.value(value)
+		.C2_out(value),
+		.carry1(carry)
 	);
 
 	initial begin
@@ -56,9 +58,9 @@ module Duty_Cycle_tb;
 			forever #10 clk = ~clk;
 			forever begin
 				ring_in = 1; 
-				#41;
+				#100;
 				ring_in = 0; 
-				#41;	end
+				#100;	end
 		join		
 		// Add stimulus here
 

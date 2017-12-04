@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Post PAR Floorplanning, created by Project Navigator
 
-create_project -name DisplaControllertest -dir "C:/Users/Saulo/Documents/DisplaControllertest/planAhead_run_2" -part xc3s250etq144-4
+create_project -name DisplaControllertest -dir "C:/Users/Saulo/Documents/DisplaControllertest/planAhead_run_3" -part xc3s250etq144-4
 set srcset [get_property srcset [current_run -impl]]
 set_property design_mode GateLvl $srcset
 set_property edif_top_file "C:/Users/Saulo/Documents/DisplaControllertest/Top.ngc" [ get_property srcset [ current_run ] ]

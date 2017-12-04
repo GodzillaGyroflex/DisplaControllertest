@@ -9,7 +9,7 @@ Target Device  : xc3s250e
 Target Package : tq144
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Sep 06 15:34:43 2017
+Mapped Date    : Fri Dec 01 09:55:18 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -17,7 +17,7 @@ Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   RingOscillator/connect_wire<32> is sourced by a combinatorial pin. This is
+   RingOscillator/connect_wire<28> is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 
@@ -28,28 +28,29 @@ Design Summary:
 Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:           144 out of   4,896    2%
-  Number of 4 input LUTs:               140 out of   4,896    2%
+  Number of Slice Flip Flops:           137 out of   4,896    2%
+  Number of 4 input LUTs:               144 out of   4,896    2%
 Logic Distribution:
-  Number of occupied Slices:            146 out of   2,448    5%
-    Number of Slices containing only related logic:     146 out of     146 100%
-    Number of Slices containing unrelated logic:          0 out of     146   0%
+  Number of occupied Slices:            150 out of   2,448    6%
+    Number of Slices containing only related logic:     150 out of     150 100%
+    Number of Slices containing unrelated logic:          0 out of     150   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         223 out of   4,896    4%
-    Number used as logic:               140
-    Number used as a route-thru:         83
+  Total Number of 4 input LUTs:         219 out of   4,896    4%
+    Number used as logic:               144
+    Number used as a route-thru:         75
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 20 out of     108   18%
-  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of bonded IOBs:                 29 out of     108   26%
+    IOB Flip Flops:                       8
+  Number of BUFGMUXs:                     1 out of      24    4%
   Number of DCMs:                         1 out of       4   25%
 
-Average Fanout of Non-Clock Nets:                2.44
+Average Fanout of Non-Clock Nets:                2.62
 
-Peak Memory Usage:  310 MB
-Total REAL time to MAP completion:  4 secs 
+Peak Memory Usage:  258 MB
+Total REAL time to MAP completion:  5 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:

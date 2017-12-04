@@ -191,3 +191,237 @@ map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map
 par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
 bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 Top.ngc Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Saulo/Documents/Old Drive/DisplaControllertest/Top.xst" -ofn "C:/Users/Saulo/Documents/Old Drive/DisplaControllertest/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_MODULE.ucf -p xc3s250e-tq144-4 "Top.ngc" Top.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf TOP_MODULE.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
